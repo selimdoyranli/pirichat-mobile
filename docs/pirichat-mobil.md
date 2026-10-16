@@ -108,12 +108,13 @@ Communication Notifications, Push); App Store Connect'te `online.pirichat.mobile
 
 ## Durum (2026-10-17)
 
-- **iOS:** TestFlight'ta 1.0.0 (20261016.2011), iç test grubu "pirichat ekibi" (selimdoyranli@gmail.com).
+- **iOS:** TestFlight'ta 1.0.0 (20261017.207, sanalyer merge'ü), iç test grubu "pirichat ekibi" (selimdoyranli@gmail.com).
   App Store Connect'te uygulama `pirichat` (Apple ID 6823670202): Türkçe açıklama, anahtar kelimeler,
   altyazı, gizlilik bağlantısı, iPhone 6.9" ve iPad 13" ekran görüntüleri yüklü. İncelemeye
   gönderilmedi.
-- **Android:** Play Console'da `pirichat` (online.pirichat.mobile). Dahili test kanalında 1.0.0 (1)
-  yayında; kapalı test (Alpha) sürümü ve 16 değişiklik Google incelemesinde. Test listesi
+- **Android:** Play Console'da `pirichat` (online.pirichat.mobile). Dahili test ve kapalı test (Alpha)
+  kanallarında 1.0.0 (2) yayında; ilk inceleme geçti, yeni sürümler artık taslak değil doğrudan
+  yayına alınabiliyor. Test listesi
   "pirichat kapali test". Mağaza girişi Türkçe, kategori Haberleşme, tüm uygulama içeriği
   beyanları dolu. Ön plan hizmeti beyanının videosu `docs/media/pirichat-arka-plan-hizmetleri.mp4`.
   Play App Signing açık; upload anahtarı `~/.config/pirichat/android/upload.jks`.
@@ -125,6 +126,25 @@ Communication Notifications, Push); App Store Connect'te `online.pirichat.mobile
   (`fluxer_app_proxy`) pirichat kimliklerini veriyor.
 - **İnceleme hesabı:** `pirichatinceleme` (şifre `~/.config/pirichat/review_account.txt`), demo
   topluluğu "pirichat Ekibi". İkinci hesap `pirichattest2` bildirim testi için.
+
+## Play'e yükleme
+
+Android paketi FCM'li flavor'la derlenir; versionCode her yüklemede bir artmalı:
+
+```sh
+dart tool/configure_build.dart --profile=android-fcm && flutter pub get
+flutter build appbundle --release --flavor stableFcm --dart-define-from-file=tool/dart_defines/stable.json \
+  --dart-define=PUSH_PROVIDER=fcm --build-name=1.0.0 --build-number=<n>
+```
+
+Yükleme `~/.config/pirichat/play-service-account.json` ile androidpublisher v3 API'si üzerinden:
+edit aç, `upload_edit_bundle`, `internal` ve `alpha` track'lerine `completed` sürüm yaz, commit.
+fastlane'in gem'leri (`google-apis-androidpublisher_v3`, `googleauth`) Homebrew Ruby'siyle
+(`/opt/homebrew/opt/ruby/bin/ruby`, `GEM_HOME=~/.gem/ruby/4.0.0`) kullanılabiliyor; sistem Ruby'si
+(2.6) yüklemiyor. 277 MB'lık aab için istemci zaman aşımı `client_options.read_timeout_sec`
+(`request_options`'ta yok) uzatılmalı. Derleme bitince `git checkout -- pubspec.yaml
+lib/features/settings/services/premium_store_purchase_client.dart` (restore_pubspec oss
+profiline çevirir, repodaki hâl o değil).
 
 ## Mağaza görselleri
 
