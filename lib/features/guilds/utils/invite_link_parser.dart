@@ -1,6 +1,6 @@
-// sanalyer: only sanalyer.com invite links open in the app.
+// pirichat: only pirichat.online invite links open in the app.
 const List<String> kOfficialInviteUrlBases = <String>[
-  'https://sanalyer.com/invite',
+  'https://pirichat.online/invite',
 ];
 
 final RegExp _bareInviteCodePattern = RegExp(r'^[a-zA-Z0-9\-]{2,32}$');

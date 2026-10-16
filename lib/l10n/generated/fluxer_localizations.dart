@@ -7163,13 +7163,13 @@ abstract class FluxerLocalizations {
   /// Explanatory text for the token-file step. **bold markers** indicate inline-code styling applied by the widget.
   ///
   /// In en, this message translates to:
-  /// **'Download **sanalyer-verification** and place it in your **.well-known** folder so we can validate the domain.'**
+  /// **'Download **pirichat-verification** and place it in your **.well-known** folder so we can validate the domain.'**
   String get connectionTokenFileDescription;
 
   /// Label on the download button for the verification token file.
   ///
   /// In en, this message translates to:
-  /// **'Download sanalyer-verification'**
+  /// **'Download pirichat-verification'**
   String get connectionTokenFileDownload;
 
   /// Meta text below the download button with the fetch URL. **markers** indicate inline-code styling.
@@ -7181,7 +7181,7 @@ abstract class FluxerLocalizations {
   /// Title of the save-file dialog opened by the download button.
   ///
   /// In en, this message translates to:
-  /// **'Save sanalyer-verification'**
+  /// **'Save pirichat-verification'**
   String get connectionSaveTokenDialogTitle;
 
   /// Primary button on the verify step.
@@ -7307,7 +7307,7 @@ abstract class FluxerLocalizations {
   /// Toast shown after the token file is saved successfully.
   ///
   /// In en, this message translates to:
-  /// **'Saved sanalyer-verification'**
+  /// **'Saved pirichat-verification'**
   String get connectionTokenSavedToast;
 
   /// Toast shown if saving the token file fails.
@@ -15036,7 +15036,7 @@ abstract class FluxerLocalizations {
   /// User settings navigation item for Fluxer Plutonium subscription settings.
   ///
   /// In en, this message translates to:
-  /// **'sanalyer Premium'**
+  /// **'pirichat Premium'**
   String get userSettingsNavFluxerPlutonium;
 
   /// User settings navigation item for gifts and promo codes.
@@ -15510,7 +15510,7 @@ abstract class FluxerLocalizations {
   /// No description provided for @premiumCompletePaymentBody.
   ///
   /// In en, this message translates to:
-  /// **'You are now navigating to Stripe to complete the payment. Return to sanalyer once you\'ve completed it.'**
+  /// **'You are now navigating to Stripe to complete the payment. Return to pirichat once you\'ve completed it.'**
   String get premiumCompletePaymentBody;
 
   /// No description provided for @premiumChoosePaymentMethodTitle.
@@ -15582,7 +15582,7 @@ abstract class FluxerLocalizations {
   /// No description provided for @premiumExistingSubscriptionBody.
   ///
   /// In en, this message translates to:
-  /// **'We found an existing sanalyer Premium subscription for this account. Manage it in the secure billing portal to update payment details or check renewal status. If you just paid, wait a minute and reopen this page.'**
+  /// **'We found an existing pirichat Premium subscription for this account. Manage it in the secure billing portal to update payment details or check renewal status. If you just paid, wait a minute and reopen this page.'**
   String get premiumExistingSubscriptionBody;
 
   /// No description provided for @premiumPurchasesDisabledTitle.
@@ -15606,13 +15606,13 @@ abstract class FluxerLocalizations {
   /// No description provided for @premiumClaimAccountToPurchase.
   ///
   /// In en, this message translates to:
-  /// **'Claim your account to purchase sanalyer Premium.'**
+  /// **'Claim your account to purchase pirichat Premium.'**
   String get premiumClaimAccountToPurchase;
 
   /// No description provided for @premiumVerifyEmailToPurchase.
   ///
   /// In en, this message translates to:
-  /// **'You need to verify your email before you can purchase sanalyer Premium.'**
+  /// **'You need to verify your email before you can purchase pirichat Premium.'**
   String get premiumVerifyEmailToPurchase;
 
   /// No description provided for @premiumPerkCommunities.
@@ -15864,7 +15864,7 @@ abstract class FluxerLocalizations {
   /// No description provided for @storePlutoniumTagFootnote.
   ///
   /// In en, this message translates to:
-  /// **'You can only pick a tag that nobody else with the same username already has. Usernames aren\'t case sensitive, so Mina#4821 and mina#4821 count as the same. The #0000 tag is reserved for sanalyer Visionary members.'**
+  /// **'You can only pick a tag that nobody else with the same username already has. Usernames aren\'t case sensitive, so Mina#4821 and mina#4821 count as the same. The #0000 tag is reserved for pirichat Visionary members.'**
   String get storePlutoniumTagFootnote;
 
   /// No description provided for @storePlutoniumLearnVisionary.
@@ -15876,7 +15876,7 @@ abstract class FluxerLocalizations {
   /// No description provided for @storePlutoniumDonatePrompt.
   ///
   /// In en, this message translates to:
-  /// **'Just want to support sanalyer\'s open source development? '**
+  /// **'Just want to support pirichat\'s open source development? '**
   String get storePlutoniumDonatePrompt;
 
   /// No description provided for @storePlutoniumDonateLink.
@@ -15888,7 +15888,7 @@ abstract class FluxerLocalizations {
   /// No description provided for @storePlutoniumHighlightsLead.
   ///
   /// In en, this message translates to:
-  /// **'Subscribing funds sanalyer and unlocks'**
+  /// **'Subscribing funds pirichat and unlocks'**
   String get storePlutoniumHighlightsLead;
 
   /// No description provided for @storePlutoniumHighlightEmoji.
@@ -15948,7 +15948,7 @@ abstract class FluxerLocalizations {
   /// No description provided for @storePlutoniumAlreadySubscribed.
   ///
   /// In en, this message translates to:
-  /// **'You already have a sanalyer Premium subscription.'**
+  /// **'You already have a pirichat Premium subscription.'**
   String get storePlutoniumAlreadySubscribed;
 
   /// No description provided for @storePlutoniumSavePercent.
@@ -16740,13 +16740,13 @@ abstract class FluxerLocalizations {
   /// Notification settings section description explaining why the push relay exists.
   ///
   /// In en, this message translates to:
-  /// **'{pushProvider} only delivers push notifications through their own service, so pushes for this device pass through the sanalyer relay.'**
+  /// **'{pushProvider} only delivers push notifications through their own service, so pushes for this device pass through the pirichat relay.'**
   String notificationsPushRelaySectionDescription(String pushProvider);
 
   /// Toggle label for agreeing to the Fluxer push relay on this device.
   ///
   /// In en, this message translates to:
-  /// **'Use the sanalyer push relay'**
+  /// **'Use the pirichat push relay'**
   String get notificationsPushRelayConsentLabel;
 
   /// Toggle description explaining that revoking push relay consent unregisters the device.
@@ -16764,7 +16764,7 @@ abstract class FluxerLocalizations {
   /// Subtitle of the push relay consent sheet explaining why the relay exists.
   ///
   /// In en, this message translates to:
-  /// **'{pushProvider} only delivers push notifications through their own service, so pushes for this device pass through the sanalyer relay.'**
+  /// **'{pushProvider} only delivers push notifications through their own service, so pushes for this device pass through the pirichat relay.'**
   String pushRelayConsentDescription(String pushProvider);
 
   /// Text before the push relay privacy notice link in the consent sheet.
@@ -16944,7 +16944,7 @@ abstract class FluxerLocalizations {
   /// Body for the confirmation sheet before changing the app icon on Android.
   ///
   /// In en, this message translates to:
-  /// **'sanalyer will restart to apply the new home screen icon.'**
+  /// **'pirichat will restart to apply the new home screen icon.'**
   String get appIconAndroidChangeDescription;
 
   /// Confirm button for changing the app icon on Android.
@@ -17028,7 +17028,7 @@ abstract class FluxerLocalizations {
   /// Advanced settings section description for opt-in crash and performance reporting, which is off until the user turns it on. Keep the name Fluxer as is. Fluxer is the company that runs the error tracker.
   ///
   /// In en, this message translates to:
-  /// **'Help sanalyer fix bugs in this app by sharing crash and performance data. This is off by default.'**
+  /// **'Help pirichat fix bugs in this app by sharing crash and performance data. This is off by default.'**
   String get advancedCrashReportingSectionDescription;
 
   /// Toggle label for opting into crash and performance reporting.
@@ -17040,7 +17040,7 @@ abstract class FluxerLocalizations {
   /// Toggle description for crash and performance reporting. Reports always go to the error tracker run by Fluxer, the company, never to the instance the user is signed in to, and leave out instance names, IDs and message content. Keep the name Fluxer as is.
   ///
   /// In en, this message translates to:
-  /// **'Reports go to sanalyer\'s error tracker, whichever instance you\'re signed in to. They don\'t include instance names, IDs or message content.'**
+  /// **'Reports go to pirichat\'s error tracker, whichever instance you\'re signed in to. They don\'t include instance names, IDs or message content.'**
   String get advancedCrashReportingDescription;
 
   /// Button label that opens a dedicated advanced settings modal.
@@ -17942,7 +17942,7 @@ abstract class FluxerLocalizations {
   /// User settings What's New action to join the Fluxer Labs community.
   ///
   /// In en, this message translates to:
-  /// **'Join sanalyer Labs'**
+  /// **'Join pirichat Labs'**
   String get userSettingsJoinFluxerLabs;
 
   /// User settings navigation action to open the Fluxer feedback site.
@@ -18398,19 +18398,19 @@ abstract class FluxerLocalizations {
   /// Placeholder for the instance URL input.
   ///
   /// In en, this message translates to:
-  /// **'sanalyer.com'**
+  /// **'pirichat.online'**
   String get instanceUrlPlaceholder;
 
   /// Helper text explaining official vs self-hosted instance URLs.
   ///
   /// In en, this message translates to:
-  /// **'Use sanalyer.com for the official instance, or the exact URL of a self-hosted instance.'**
+  /// **'Use pirichat.online for the official instance, or the exact URL of a self-hosted instance.'**
   String get instanceUrlHelper;
 
   /// Tooltip for the button that resets the instance URL to the official Fluxer instance.
   ///
   /// In en, this message translates to:
-  /// **'Reset to sanalyer'**
+  /// **'Reset to pirichat'**
   String get resetToDefaultInstance;
 
   /// Button label to connect to a custom Fluxer instance.
@@ -18446,13 +18446,13 @@ abstract class FluxerLocalizations {
   /// Error when the instance api_code_version is below what this client requires.
   ///
   /// In en, this message translates to:
-  /// **'This instance is out of date for this app. Ask whoever runs {domain} to update sanalyer.'**
+  /// **'This instance is out of date for this app. Ask whoever runs {domain} to update pirichat.'**
   String instanceOutdatedForClient(String domain);
 
   /// Error when the instance speaks a protocol generation this client does not support.
   ///
   /// In en, this message translates to:
-  /// **'{domain} runs a newer version of sanalyer than this app. Update the app, then try again.'**
+  /// **'{domain} runs a newer version of pirichat than this app. Update the app, then try again.'**
   String instanceRequiresNewerClient(String domain);
 
   /// Title on the full-screen instance compatibility blocker.
@@ -24321,7 +24321,7 @@ abstract class FluxerLocalizations {
   /// Siri/Shortcuts result when the user is logged out.
   ///
   /// In en, this message translates to:
-  /// **'Open sanalyer and sign in first.'**
+  /// **'Open pirichat and sign in first.'**
   String get assistantNeedsLogin;
 
   /// Siri/Shortcuts result when mute or leave runs with no live call.
@@ -24333,7 +24333,7 @@ abstract class FluxerLocalizations {
   /// Siri/Shortcuts result when a friend, channel, or community cannot be resolved.
   ///
   /// In en, this message translates to:
-  /// **'sanalyer could not find that.'**
+  /// **'pirichat could not find that.'**
   String get assistantNotFound;
 
   /// Siri/Shortcuts result when DM actions are blocked by instance config.
@@ -24345,7 +24345,7 @@ abstract class FluxerLocalizations {
   /// Siri/Shortcuts fallback when an assistant command fails.
   ///
   /// In en, this message translates to:
-  /// **'sanalyer could not complete that.'**
+  /// **'pirichat could not complete that.'**
   String get assistantFailed;
 
   /// No description provided for @assistantOkMuted.
@@ -24387,7 +24387,7 @@ abstract class FluxerLocalizations {
   /// No description provided for @assistantOkOpened.
   ///
   /// In en, this message translates to:
-  /// **'Opening sanalyer.'**
+  /// **'Opening pirichat.'**
   String get assistantOkOpened;
 
   /// No description provided for @assistantOkMessageSent.

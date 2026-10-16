@@ -6,19 +6,19 @@
 	<string>development</string>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
-		<string>applinks:sanalyer.com</string>
-		<string>webcredentials:sanalyer.com</string>
+		<string>applinks:pirichat.online</string>
+		<string>webcredentials:pirichat.online</string>
 	</array>
 	<key>com.apple.developer.usernotifications.communication</key>
 	<true/>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.sanalyer.mobile</string>
+		<string>group.online.pirichat.mobile</string>
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)com.sanalyer.mobile</string>
-		<string>$(AppIdentifierPrefix)com.sanalyer.mobile.canary</string>
+		<string>$(AppIdentifierPrefix)online.pirichat.mobile</string>
+		<string>$(AppIdentifierPrefix)online.pirichat.mobile.canary</string>
 	</array>
 </dict>
 </plist>

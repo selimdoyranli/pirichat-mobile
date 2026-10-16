@@ -4408,10 +4408,10 @@ class FluxerLocalizationsId extends FluxerLocalizations {
 
   @override
   String get connectionTokenFileDescription =>
-      'Unduh **sanalyer-verification** dan letakkan di folder **.well-known** Anda agar kami dapat memvalidasi domain.';
+      'Unduh **pirichat-verification** dan letakkan di folder **.well-known** Anda agar kami dapat memvalidasi domain.';
 
   @override
-  String get connectionTokenFileDownload => 'Unduh sanalyer-verification';
+  String get connectionTokenFileDownload => 'Unduh pirichat-verification';
 
   @override
   String connectionTokenFileMeta(String dnsUrl) {
@@ -4419,7 +4419,7 @@ class FluxerLocalizationsId extends FluxerLocalizations {
   }
 
   @override
-  String get connectionSaveTokenDialogTitle => 'Simpan verifikasi sanalyer';
+  String get connectionSaveTokenDialogTitle => 'Simpan verifikasi pirichat';
 
   @override
   String get connectionVerifyButton => 'Verifikasi';
@@ -4490,7 +4490,7 @@ class FluxerLocalizationsId extends FluxerLocalizations {
   String get connectionRemoveFailed => 'Tidak dapat menghapus koneksi';
 
   @override
-  String get connectionTokenSavedToast => 'sanalyer-verifikasi tersimpan';
+  String get connectionTokenSavedToast => 'pirichat-verifikasi tersimpan';
 
   @override
   String get connectionTokenSaveFailedToast => 'Gagal menyimpan file';
@@ -9158,7 +9158,7 @@ class FluxerLocalizationsId extends FluxerLocalizations {
   String get userSettingsNavSecurityLogin => 'Keamanan & Login';
 
   @override
-  String get userSettingsNavFluxerPlutonium => 'sanalyer Premium';
+  String get userSettingsNavFluxerPlutonium => 'pirichat Premium';
 
   @override
   String get userSettingsNavGiftsAndCodes => 'Hadiah';
@@ -9430,7 +9430,7 @@ class FluxerLocalizationsId extends FluxerLocalizations {
 
   @override
   String get premiumCompletePaymentBody =>
-      'Anda sekarang diarahkan ke Stripe untuk menyelesaikan pembayaran. Kembali ke sanalyer setelah selesai.';
+      'Anda sekarang diarahkan ke Stripe untuk menyelesaikan pembayaran. Kembali ke pirichat setelah selesai.';
 
   @override
   String get premiumChoosePaymentMethodTitle => 'Pilih metode pembayaran';
@@ -9472,7 +9472,7 @@ class FluxerLocalizationsId extends FluxerLocalizations {
 
   @override
   String get premiumExistingSubscriptionBody =>
-      'Kami menemukan langganan sanalyer Premium yang sudah ada untuk akun ini. Kelola di portal penagihan aman untuk memperbarui detail pembayaran atau memeriksa status perpanjangan. Jika baru saja membayar, tunggu sebentar dan buka kembali halaman ini.';
+      'Kami menemukan langganan pirichat Premium yang sudah ada untuk akun ini. Kelola di portal penagihan aman untuk memperbarui detail pembayaran atau memeriksa status perpanjangan. Jika baru saja membayar, tunggu sebentar dan buka kembali halaman ini.';
 
   @override
   String get premiumPurchasesDisabledTitle => 'Pembelian tidak tersedia';
@@ -9488,11 +9488,11 @@ class FluxerLocalizationsId extends FluxerLocalizations {
 
   @override
   String get premiumClaimAccountToPurchase =>
-      'Klaim akun Anda untuk membeli sanalyer Premium.';
+      'Klaim akun Anda untuk membeli pirichat Premium.';
 
   @override
   String get premiumVerifyEmailToPurchase =>
-      'Anda perlu memverifikasi email Anda sebelum dapat membeli sanalyer Premium.';
+      'Anda perlu memverifikasi email Anda sebelum dapat membeli pirichat Premium.';
 
   @override
   String get premiumPerkCommunities => 'Komunitas';
@@ -9635,7 +9635,7 @@ class FluxerLocalizationsId extends FluxerLocalizations {
 
   @override
   String get storePlutoniumTagFootnote =>
-      'Anda hanya dapat memilih tag yang belum dimiliki oleh orang lain dengan nama pengguna yang sama. Nama pengguna tidak peka huruf besar/kecil, jadi Mina#4821 dan mina#4821 dianggap sama. Tag #0000 dicadangkan untuk anggota sanalyer Visionary.';
+      'Anda hanya dapat memilih tag yang belum dimiliki oleh orang lain dengan nama pengguna yang sama. Nama pengguna tidak peka huruf besar/kecil, jadi Mina#4821 dan mina#4821 dianggap sama. Tag #0000 dicadangkan untuk anggota pirichat Visionary.';
 
   @override
   String get storePlutoniumLearnVisionary =>
@@ -9643,14 +9643,14 @@ class FluxerLocalizationsId extends FluxerLocalizations {
 
   @override
   String get storePlutoniumDonatePrompt =>
-      'Hanya ingin mendukung pengembangan sumber terbuka sanalyer? ';
+      'Hanya ingin mendukung pengembangan sumber terbuka pirichat? ';
 
   @override
   String get storePlutoniumDonateLink => 'Donasi saja.';
 
   @override
   String get storePlutoniumHighlightsLead =>
-      'Berlangganan mendanai sanalyer dan membuka kunci';
+      'Berlangganan mendanai pirichat dan membuka kunci';
 
   @override
   String get storePlutoniumHighlightEmoji =>
@@ -9687,7 +9687,7 @@ class FluxerLocalizationsId extends FluxerLocalizations {
 
   @override
   String get storePlutoniumAlreadySubscribed =>
-      'Anda sudah memiliki langganan sanalyer Premium.';
+      'Anda sudah memiliki langganan pirichat Premium.';
 
   @override
   String storePlutoniumSavePercent(int percent) {
@@ -10147,12 +10147,12 @@ class FluxerLocalizationsId extends FluxerLocalizations {
 
   @override
   String notificationsPushRelaySectionDescription(String pushProvider) {
-    return '$pushProvider hanya mengirim notifikasi push lewat layanannya sendiri, jadi notifikasi untuk perangkat ini melewati relai sanalyer.';
+    return '$pushProvider hanya mengirim notifikasi push lewat layanannya sendiri, jadi notifikasi untuk perangkat ini melewati relai pirichat.';
   }
 
   @override
   String get notificationsPushRelayConsentLabel =>
-      'Gunakan relai push sanalyer';
+      'Gunakan relai push pirichat';
 
   @override
   String get notificationsPushRelayConsentDescription =>
@@ -10163,7 +10163,7 @@ class FluxerLocalizationsId extends FluxerLocalizations {
 
   @override
   String pushRelayConsentDescription(String pushProvider) {
-    return '$pushProvider hanya mengirim notifikasi push lewat layanannya sendiri, jadi notifikasi untuk perangkat ini melewati relai sanalyer.';
+    return '$pushProvider hanya mengirim notifikasi push lewat layanannya sendiri, jadi notifikasi untuk perangkat ini melewati relai pirichat.';
   }
 
   @override
@@ -10268,7 +10268,7 @@ class FluxerLocalizationsId extends FluxerLocalizations {
 
   @override
   String get appIconAndroidChangeDescription =>
-      'sanalyer will restart to apply the new home screen icon.';
+      'pirichat will restart to apply the new home screen icon.';
 
   @override
   String get appIconAndroidChangeConfirm => 'Change icon';
@@ -10312,7 +10312,7 @@ class FluxerLocalizationsId extends FluxerLocalizations {
 
   @override
   String get advancedCrashReportingSectionDescription =>
-      'Help sanalyer fix bugs in this app by sharing crash and performance data. This is off by default.';
+      'Help pirichat fix bugs in this app by sharing crash and performance data. This is off by default.';
 
   @override
   String get advancedPerformanceReportingLabel =>
@@ -10320,7 +10320,7 @@ class FluxerLocalizationsId extends FluxerLocalizations {
 
   @override
   String get advancedCrashReportingDescription =>
-      'Reports go to sanalyer\'s error tracker, whichever instance you\'re signed in to. They don\'t include instance names, IDs or message content.';
+      'Reports go to pirichat\'s error tracker, whichever instance you\'re signed in to. They don\'t include instance names, IDs or message content.';
 
   @override
   String get advancedSettingsConfigure => 'Konfigurasi';
@@ -10872,7 +10872,7 @@ class FluxerLocalizationsId extends FluxerLocalizations {
   String get userSettingsNavWhatsNew => 'Yang baru';
 
   @override
-  String get userSettingsJoinFluxerLabs => 'Gabung sanalyer Labs';
+  String get userSettingsJoinFluxerLabs => 'Gabung pirichat Labs';
 
   @override
   String get userSettingsGiveFeedback => 'Give feedback';
@@ -11124,14 +11124,14 @@ class FluxerLocalizationsId extends FluxerLocalizations {
 
   @override
   String get instanceUrlPlaceholder =>
-      'Masukkan URL instance (contoh: sanalyer.com)';
+      'Masukkan URL instance (contoh: pirichat.online)';
 
   @override
   String get instanceUrlHelper =>
-      'Gunakan sanalyer.com untuk instance resmi, atau URL persis dari instance yang di-host sendiri.';
+      'Gunakan pirichat.online untuk instance resmi, atau URL persis dari instance yang di-host sendiri.';
 
   @override
-  String get resetToDefaultInstance => 'Atur ulang ke sanalyer';
+  String get resetToDefaultInstance => 'Atur ulang ke pirichat';
 
   @override
   String get instanceConnect => 'Sambungkan';
@@ -11153,12 +11153,12 @@ class FluxerLocalizationsId extends FluxerLocalizations {
 
   @override
   String instanceOutdatedForClient(String domain) {
-    return 'This instance is out of date for this app. Ask whoever runs $domain to update sanalyer.';
+    return 'This instance is out of date for this app. Ask whoever runs $domain to update pirichat.';
   }
 
   @override
   String instanceRequiresNewerClient(String domain) {
-    return '$domain runs a newer version of sanalyer than this app. Update the app, then try again.';
+    return '$domain runs a newer version of pirichat than this app. Update the app, then try again.';
   }
 
   @override
@@ -14691,20 +14691,20 @@ class FluxerLocalizationsId extends FluxerLocalizations {
   String get homeQuickActionDms => 'Pesan Langsung';
 
   @override
-  String get assistantNeedsLogin => 'Buka sanalyer dan masuk terlebih dahulu.';
+  String get assistantNeedsLogin => 'Buka pirichat dan masuk terlebih dahulu.';
 
   @override
   String get assistantNotInVoice => 'Anda tidak sedang dalam panggilan.';
 
   @override
-  String get assistantNotFound => 'sanalyer tidak dapat menemukan itu.';
+  String get assistantNotFound => 'pirichat tidak dapat menemukan itu.';
 
   @override
   String get assistantDmsDisabled =>
       'Pesan langsung dinonaktifkan di instance ini.';
 
   @override
-  String get assistantFailed => 'sanalyer tidak dapat menyelesaikan itu.';
+  String get assistantFailed => 'pirichat tidak dapat menyelesaikan itu.';
 
   @override
   String get assistantOkMuted => 'Mikrofon dibisukan.';
@@ -14727,7 +14727,7 @@ class FluxerLocalizationsId extends FluxerLocalizations {
   }
 
   @override
-  String get assistantOkOpened => 'Membuka sanalyer.';
+  String get assistantOkOpened => 'Membuka pirichat.';
 
   @override
   String get assistantOkMessageSent => 'Pesan terkirim.';

@@ -1,0 +1,206 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+"""Regenerate the app's brand assets from the pirichat logo (tool/brand/pirichat_logo.png).
+
+Needs potrace on PATH and Python with Pillow, fonttools and brotli:
+  python3 -m venv /tmp/v && /tmp/v/bin/pip install pillow fonttools brotli
+  /tmp/v/bin/python tool/pirichat_brand_assets.py
+The source is the same opaque square as the desktop app's: a dark rounded tile on pure black with a
+white speech bubble, a white R and a red square. The white and red parts are traced to vectors; the
+wordmark is "pirichat" in Radio Canada Big Bold, the landing page's font.
+"""
+
+import re
+import subprocess
+import tempfile
+from pathlib import Path
+
+from PIL import Image, ImageChops, ImageDraw
+
+ROOT = Path(__file__).resolve().parents[1]
+BRAND = ROOT / "tool/brand"
+SOURCE = BRAND / "pirichat_logo.png"
+FONT = BRAND / "RadioCanadaBig-latin.woff2"
+RES = ROOT / "android/app/src/main/res"
+IMAGES = ROOT / "assets/images"
+RED = "#FD012D"
+TILE = (10, 10, 16)
+# Tile corner radius as a share of the tile width, measured on the source (same as desktop).
+CORNER_RATIO = 0.236
+WORDMARK = "pirichat"
+
+
+def cut_tile(source):
+    box = source.convert("L").point(lambda v: 255 if v > 4 else 0).getbbox()
+    tile = source.crop(box).convert("RGB")
+    side = max(tile.size)
+    return tile.resize((side, side), Image.Resampling.LANCZOS)
+
+
+def trace(mask):
+    """potrace a 0/255 mask (255 = ink) into absolute path data in mask pixel units."""
+    with tempfile.TemporaryDirectory() as tmp:
+        pbm, svg = Path(tmp, "m.pbm"), Path(tmp, "m.svg")
+        mask.point(lambda v: 0 if v else 255).convert("1").save(pbm)
+        subprocess.run(["potrace", "-s", "-t", "8", "-a", "1.0", "-O", "0.3", "-u", "10", str(pbm), "-o", str(svg)], check=True)
+        text = svg.read_text()
+    height = mask.size[1]
+    out = []
+    for d in re.findall(r'<path d="([^"]+)"', text):
+        x = y = sx = sy = 0.0
+        tokens = re.findall(r"[MmLlCcZz]|-?\d+(?:\.\d+)?", d)
+        cmd, i, seg = None, 0, []
+        while i < len(tokens):
+            t = tokens[i]
+            if t.isalpha():
+                cmd = t
+                i += 1
+                if cmd in "Zz":
+                    seg.append("Z")
+                    x, y = sx, sy
+                continue
+            n = {"M": 2, "m": 2, "L": 2, "l": 2, "C": 6, "c": 6}[cmd]
+            vals = [float(v) for v in tokens[i:i + n]]
+            i += n
+            # potrace units: 10 per pixel, y up from the bottom edge.
+            pts = [(vals[k] / 10, vals[k + 1] / 10) for k in range(0, n, 2)]
+            if cmd.islower():
+                pts = [(x + px, y + py) for px, py in pts]
+            x, y = pts[-1]
+            if cmd in "Mm":
+                sx, sy = x, y
+                cmd = "l" if cmd == "m" else "L"
+                letter = "M"
+            else:
+                letter = "L" if cmd in "Ll" else "C"
+            seg.append(letter + " ".join(f"{px:.1f},{height - py:.1f}" for px, py in pts))
+        out.append("".join(seg))
+    return " ".join(out)
+
+
+def mark_paths(tile):
+    """White and red path data in a 1024 frame of the tile, plus the mark's bounding box there."""
+    big = tile.resize((2048, 2048), Image.Resampling.LANCZOS)
+    r, g, b = big.split()
+    white = ImageChops.darker(ImageChops.darker(r, g), b).point(lambda v: 255 if v > 128 else 0)
+    red = ImageChops.subtract(r, g).point(lambda v: 255 if v > 120 else 0)
+    box = ImageChops.lighter(white, red).getbbox()
+    scale = lambda d: re.sub(r"-?\d+\.\d", lambda m: f"{float(m.group()) / 2:.1f}", d)
+    return scale(trace(white)), scale(trace(red)), tuple(v / 2 for v in box)
+
+
+def fit(box, size, share):
+    """Transform (scale, tx, ty) placing box centred in a size x size canvas at share of its side."""
+    x0, y0, x1, y1 = box
+    s = size * share / max(x1 - x0, y1 - y0)
+    return s, size / 2 - (x0 + x1) / 2 * s, size / 2 - (y0 + y1) / 2 * s
+
+
+def svg(size_w, size_h, body):
+    return f'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 {size_w} {size_h}">\n{body}\n</svg>\n'
+
+
+def svg_mark(white, red, box, size, share, white_fill, red_fill):
+    s, tx, ty = fit(box, size, share)
+    return svg(size, size, f'  <!-- pirichat logo mark (asset name kept for upstream code) -->\n'
+               f'  <g transform="translate({tx:.2f} {ty:.2f}) scale({s:.4f})">'
+               f'<path fill="{white_fill}" fill-rule="evenodd" d="{white}"/><path fill="{red_fill}" fill-rule="evenodd" d="{red}"/></g>')
+
+
+def vector(white, red, box, viewport, share, white_fill, red_fill):
+    s, tx, ty = fit(box, viewport, share)
+    path = lambda fill, d: (f'        <path\n            android:fillColor="{fill}"\n            android:fillType="evenOdd"\n'
+                            f'            android:pathData="{d}" />\n')
+    return ('<?xml version="1.0" encoding="utf-8"?>\n<!-- pirichat logo mark, generated by tool/pirichat_brand_assets.py -->\n'
+            '<vector xmlns:android="http://schemas.android.com/apk/res/android"\n'
+            f'    android:width="{viewport}dp"\n    android:height="{viewport}dp"\n'
+            f'    android:viewportWidth="{viewport}"\n    android:viewportHeight="{viewport}">\n'
+            f'    <group\n        android:scaleX="{s:.5f}"\n        android:scaleY="{s:.5f}"\n'
+            f'        android:translateX="{tx:.3f}"\n        android:translateY="{ty:.3f}">\n'
+            + path(white_fill, white) + path(red_fill, red) + '    </group>\n</vector>\n')
+
+
+def wordmark_path():
+    """'pirichat' as one path in font units (y down, baseline at 0) and its advance width."""
+    from fontTools.pens.svgPathPen import SVGPathPen
+    from fontTools.pens.transformPen import TransformPen
+    from fontTools.ttLib import TTFont
+    from fontTools.varLib.instancer import instantiateVariableFont
+
+    font = instantiateVariableFont(TTFont(FONT), {"wght": 700})
+    glyphs, cmap = font.getGlyphSet(), font.getBestCmap()
+    pen = SVGPathPen(glyphs)
+    x = 0
+    # tracking-tight on the landing: -0.025em.
+    track = -0.025 * font["head"].unitsPerEm
+    for ch in WORDMARK:
+        name = cmap[ord(ch)]
+        glyphs[name].draw(TransformPen(pen, (1, 0, 0, -1, x, 0)))
+        x += glyphs[name].width + track
+    return pen.getCommands(), x - track, font["OS/2"].sCapHeight, font["head"].unitsPerEm
+
+
+def rounded(image, radius_ratio):
+    side = image.size[0]
+    mask = Image.new("L", (side * 4, side * 4), 0)
+    ImageDraw.Draw(mask).rounded_rectangle((0, 0, side * 4 - 1, side * 4 - 1), radius=round(side * 4 * radius_ratio), fill=255)
+    out = image.convert("RGBA")
+    out.putalpha(mask.resize((side, side), Image.Resampling.LANCZOS))
+    return out
+
+
+def round_icon(tile, size):
+    # Circle icon: the mark (cropped from the tile) on the tile colour, inside a circle.
+    canvas = tile.resize((size, size), Image.Resampling.LANCZOS).convert("RGBA")
+    mask = Image.new("L", (size * 4, size * 4), 0)
+    ImageDraw.Draw(mask).ellipse((0, 0, size * 4 - 1, size * 4 - 1), fill=255)
+    canvas.putalpha(mask.resize((size, size), Image.Resampling.LANCZOS))
+    return canvas
+
+
+def main():
+    tile = cut_tile(Image.open(SOURCE))
+    white, red, box = mark_paths(tile)
+
+    (IMAGES / "fluxer-symbol.svg").write_text(svg_mark(white, red, box, 512, 0.62, "#fff", RED))
+    (IMAGES / "fluxer-logo-monochrome.svg").write_text(svg_mark(white, red, box, 512, 0.86, "currentColor", "currentColor"))
+
+    # Adaptive icon: 108dp canvas, 66dp safe zone; launcher masks crop to ~72dp.
+    (RES / "drawable/ic_launcher_foreground.xml").write_text(vector(white, red, box, 108, 0.56, "#FFFFFF", RED))
+    (RES / "drawable/ic_launcher_monochrome.xml").write_text(vector(white, red, box, 108, 0.56, "#FFFFFF", "#FFFFFF"))
+    (RES / "drawable/fluxer_logo_monochrome.xml").write_text(vector(white, red, box, 512, 0.9, "#FFFFFF", "#FFFFFF"))
+    (RES / "values/ic_launcher_background.xml").write_text(
+        '<?xml version="1.0" encoding="utf-8"?>\n<resources>\n    <color name="ic_launcher_background">#0A0A10</color>\n</resources>\n')
+    for folder, size in {"mdpi": 48, "hdpi": 72, "xhdpi": 96, "xxhdpi": 144, "xxxhdpi": 192}.items():
+        rounded(tile.resize((size, size), Image.Resampling.LANCZOS), CORNER_RATIO).save(RES / f"mipmap-{folder}/ic_launcher.webp", lossless=True)
+        round_icon(tile, size).save(RES / f"mipmap-{folder}/ic_launcher_round.webp", lossless=True)
+    # Play Store wants a full square; it applies its own mask.
+    tile.resize((512, 512), Image.Resampling.LANCZOS).save(ROOT / "android/app/src/main/ic_launcher-playstore.png")
+    rounded(tile.resize((1024, 1024), Image.Resampling.LANCZOS), CORNER_RATIO).save(IMAGES / "app_icon.png")
+
+    # iOS Icon Composer layer: the mark alone, the icon.json fill is the tile colour.
+    x0, y0, x1, y1 = box
+    w, h = round(x1 - x0), round(y1 - y0)
+    for icon in ("AppIcon", "CanaryAppIcon"):
+        (ROOT / f"ios/Runner/{icon}.icon/Assets/Vector.svg").write_text(
+            f'<svg width="{w}" height="{h}" viewBox="0 0 {w} {h}" fill="none" xmlns="http://www.w3.org/2000/svg">\n'
+            f'<!-- pirichat logo mark, generated by tool/pirichat_brand_assets.py -->\n'
+            f'<g transform="translate({-x0:.1f} {-y0:.1f})"><path fill="white" fill-rule="evenodd" d="{white}"/>'
+            f'<path fill="{RED}" fill-rule="evenodd" d="{red}"/></g>\n</svg>\n')
+
+    text, advance, cap, upm = wordmark_path()
+    # Text-only wordmark: 256 high, x-height-ish text centred like the upstream asset.
+    s = 150 / upm
+    (IMAGES / "fluxer-logo-text.svg").write_text(svg(round(advance * s + 16), 256,
+        f'<path fill="currentColor" transform="translate(8 {128 + cap * s / 2:.1f}) scale({s:.4f})" d="{text}"/>'))
+    # Mark + text, 256 high: mark fills 200, text follows after a gap.
+    ms, mtx, mty = fit(box, 256, 0.78)
+    gap = 40
+    tx = 256 - (256 - (x1 - x0) * ms) / 2 + gap
+    (IMAGES / "fluxer-logo-wordmark-monochrome.svg").write_text(svg(round(tx + advance * s + 16), 256,
+        f'<g transform="translate({mtx:.2f} {mty:.2f}) scale({ms:.4f})"><path fill="currentColor" fill-rule="evenodd" d="{white}"/>'
+        f'<path fill="currentColor" fill-rule="evenodd" d="{red}"/></g>'
+        f'<path fill="currentColor" transform="translate({tx:.1f} {128 + cap * s / 2:.1f}) scale({s:.4f})" d="{text}"/>'))
+
+
+if __name__ == "__main__":
+    main()

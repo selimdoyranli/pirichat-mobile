@@ -111,8 +111,8 @@ class _ConnectionAddBodyState extends ConsumerState<_ConnectionAddBody> {
   void _setVerification(ConnectionVerificationResponse v) {
     _hostCtrl?.dispose();
     _valueCtrl?.dispose();
-    _hostCtrl = TextEditingController(text: '_fluxer.${v.id}');
-    _valueCtrl = TextEditingController(text: 'fluxer-verification=${v.token}');
+    _hostCtrl = TextEditingController(text: '_pirichat.${v.id}');
+    _valueCtrl = TextEditingController(text: 'pirichat-verification=${v.token}');
     setState(() {
       _verification = v;
       _step = _AddStep.verify;
@@ -282,7 +282,7 @@ class _ConnectionAddBodyState extends ConsumerState<_ConnectionAddBody> {
 
   String get _dnsUrl => _verification == null
       ? ''
-      : 'https://${_verification!.id}/.well-known/fluxer-verification';
+      : 'https://${_verification!.id}/.well-known/pirichat-verification';
 
   Widget _buildVerify() {
     final l10n = FluxerLocalizations.of(context);
@@ -542,7 +542,7 @@ class _ConnectionAddBodyState extends ConsumerState<_ConnectionAddBody> {
       final bytes = utf8.encode(_verification!.token);
       final Uri? savedUri = await FilePicker.saveFile(
         dialogTitle: l10n.connectionSaveTokenDialogTitle,
-        fileName: 'fluxer-verification',
+        fileName: 'pirichat-verification',
         bytes: bytes,
       );
       if (savedUri != null) {

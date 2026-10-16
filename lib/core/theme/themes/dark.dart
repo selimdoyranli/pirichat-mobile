@@ -77,8 +77,8 @@ FluxerColorTheme buildDarkColorTheme({double saturationFactor = 1.0}) {
     ],
   ).build(saturationFactor: saturationFactor);
 
-  // sanalyer: lightness 40 gives exactly #B5179E.
-  final brandPrimary = tone(FluxerColorFamilies.brand, 40);
+  // pirichat: lightness 50 is the logo red #FD012D.
+  final brandPrimary = tone(FluxerColorFamilies.brand, 50);
   final statusOnline = tone(FluxerColorFamilies.statusOnline, 40);
   final statusIdle = tone(FluxerColorFamilies.statusIdle, 50);
   final statusDnd = tone(FluxerColorFamilies.statusDnd, 60);
@@ -132,7 +132,7 @@ FluxerColorTheme buildDarkColorTheme({double saturationFactor = 1.0}) {
 
     brandPrimary: brandPrimary,
     brandSecondary: tone(FluxerColorFamilies.brand, 34, saturation: 60),
-    brandPrimaryLight: toneDirect(hue: 309, saturation: 77, lightness: 84),
+    brandPrimaryLight: toneDirect(hue: 349, saturation: 99, lightness: 84),
     brandPrimaryFill: toneDirect(
       hue: 0,
       saturation: 0,

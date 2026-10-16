@@ -21,7 +21,7 @@ const double _kColorAreaHeight = 160;
 const double _kHueTrackHeight = 16;
 const double _kThumbSize = 18;
 const double _kPopoverWidth = 260;
-const int _kDefaultPickerBaselineColor = 0xB5179E;
+const int _kDefaultPickerBaselineColor = 0xFD012D;
 
 int _colorToInt(Color color) =>
     ((color.r * 255).round() << 16) |

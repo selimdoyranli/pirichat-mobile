@@ -1,5 +1,5 @@
 abstract final class ThemeColorsPreviewContent {
-  static const communityName = 'sanalyer';
+  static const communityName = 'pirichat';
 
   static const selectedChannel = 'general';
   static const channelMemes = 'memes';
@@ -18,18 +18,18 @@ abstract final class ThemeColorsPreviewContent {
   static const buttonPrimary = 'Join voice';
   static const buttonSecondary = 'Share invite';
 
-  static const textPrimarySample = 'sanalyer';
+  static const textPrimarySample = 'pirichat';
   static const textSecondarySample = 'Hang out with friends, your way';
   static const textLinkSample = 'youtube.com/watch?v=y6120QOlsfU';
 
-  static const appHeaderSample = 'sanalyer';
+  static const appHeaderSample = 'pirichat';
   static const String channelHeaderSample = selectedChannel;
 
   static const embedTitle = 'Stay in touch with your friends';
-  static const embedProvider = 'sanalyer';
+  static const embedProvider = 'pirichat';
   static const mentionLabel = '@Mateo';
 
-  static const discoveryBannerTitle = 'Welcome to sanalyer';
+  static const discoveryBannerTitle = 'Welcome to pirichat';
   static const discoveryBannerMessage =
       'Say hi in #general—check #rules if you are new here.';
 

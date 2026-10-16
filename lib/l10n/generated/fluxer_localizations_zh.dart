@@ -4193,10 +4193,10 @@ class FluxerLocalizationsZh extends FluxerLocalizations {
 
   @override
   String get connectionTokenFileDescription =>
-      '下载 **sanalyer-verification** 并将其放置在您的 **.well-known** 文件夹中，以便我们验证域名。';
+      '下载 **pirichat-verification** 并将其放置在您的 **.well-known** 文件夹中，以便我们验证域名。';
 
   @override
-  String get connectionTokenFileDownload => '下载 sanalyer-verification';
+  String get connectionTokenFileDownload => '下载 pirichat-verification';
 
   @override
   String connectionTokenFileMeta(String dnsUrl) {
@@ -4204,7 +4204,7 @@ class FluxerLocalizationsZh extends FluxerLocalizations {
   }
 
   @override
-  String get connectionSaveTokenDialogTitle => '保存 sanalyer-verification';
+  String get connectionSaveTokenDialogTitle => '保存 pirichat-verification';
 
   @override
   String get connectionVerifyButton => '验证';
@@ -4267,7 +4267,7 @@ class FluxerLocalizationsZh extends FluxerLocalizations {
   String get connectionRemoveFailed => '无法移除连接';
 
   @override
-  String get connectionTokenSavedToast => '已保存 sanalyer-verification';
+  String get connectionTokenSavedToast => '已保存 pirichat-verification';
 
   @override
   String get connectionTokenSaveFailedToast => '无法保存文件';
@@ -8621,7 +8621,7 @@ class FluxerLocalizationsZh extends FluxerLocalizations {
   String get userSettingsNavSecurityLogin => '安全与登录';
 
   @override
-  String get userSettingsNavFluxerPlutonium => 'sanalyer Premium';
+  String get userSettingsNavFluxerPlutonium => 'pirichat Premium';
 
   @override
   String get userSettingsNavGiftsAndCodes => '礼物';
@@ -8881,7 +8881,7 @@ class FluxerLocalizationsZh extends FluxerLocalizations {
 
   @override
   String get premiumCompletePaymentBody =>
-      '您即将跳转至 Stripe 完成支付。完成后请返回 sanalyer。';
+      '您即将跳转至 Stripe 完成支付。完成后请返回 pirichat。';
 
   @override
   String get premiumChoosePaymentMethodTitle => '选择付款方式';
@@ -8921,7 +8921,7 @@ class FluxerLocalizationsZh extends FluxerLocalizations {
 
   @override
   String get premiumExistingSubscriptionBody =>
-      '我们已在此账号下找到一个现有的 sanalyer Premium 订阅。请在安全账单门户中管理它，以更新付款详情或查看续订状态。如果您刚付款，请等待一分钟后重新打开此页面。';
+      '我们已在此账号下找到一个现有的 pirichat Premium 订阅。请在安全账单门户中管理它，以更新付款详情或查看续订状态。如果您刚付款，请等待一分钟后重新打开此页面。';
 
   @override
   String get premiumPurchasesDisabledTitle => '无法购买';
@@ -8936,11 +8936,11 @@ class FluxerLocalizationsZh extends FluxerLocalizations {
       '此账号已禁用购买功能。如果此情况不正确，请联系此实例的管理员。';
 
   @override
-  String get premiumClaimAccountToPurchase => '认领您的账号以购买 sanalyer Premium。';
+  String get premiumClaimAccountToPurchase => '认领您的账号以购买 pirichat Premium。';
 
   @override
   String get premiumVerifyEmailToPurchase =>
-      '您需要先验证您的电子邮件，然后才能购买 sanalyer Premium。';
+      '您需要先验证您的电子邮件，然后才能购买 pirichat Premium。';
 
   @override
   String get premiumPerkCommunities => '社区';
@@ -9070,19 +9070,19 @@ class FluxerLocalizationsZh extends FluxerLocalizations {
 
   @override
   String get storePlutoniumTagFootnote =>
-      '你只能选择其他同名用户尚未使用的标签。用户名不区分大小写，因此 Mina#4821 和 mina#4821 视为相同。#0000 标签专供 sanalyer Visionary 成员使用。';
+      '你只能选择其他同名用户尚未使用的标签。用户名不区分大小写，因此 Mina#4821 和 mina#4821 视为相同。#0000 标签专供 pirichat Visionary 成员使用。';
 
   @override
   String get storePlutoniumLearnVisionary => '了解 Visionary 详情。';
 
   @override
-  String get storePlutoniumDonatePrompt => '只想支持 sanalyer 的开源开发？ ';
+  String get storePlutoniumDonatePrompt => '只想支持 pirichat 的开源开发？ ';
 
   @override
   String get storePlutoniumDonateLink => '改为捐赠。';
 
   @override
-  String get storePlutoniumHighlightsLead => '订阅可为 sanalyer 提供资金并解锁';
+  String get storePlutoniumHighlightsLead => '订阅可为 pirichat 提供资金并解锁';
 
   @override
   String get storePlutoniumHighlightEmoji => '在任何聊天中使用自定义表情符号和贴纸';
@@ -9112,7 +9112,7 @@ class FluxerLocalizationsZh extends FluxerLocalizations {
   String get storePlutoniumRestorePurchases => 'Restore purchases';
 
   @override
-  String get storePlutoniumAlreadySubscribed => '你已拥有 sanalyer Premium 订阅。';
+  String get storePlutoniumAlreadySubscribed => '你已拥有 pirichat Premium 订阅。';
 
   @override
   String storePlutoniumSavePercent(int percent) {
@@ -9544,11 +9544,11 @@ class FluxerLocalizationsZh extends FluxerLocalizations {
 
   @override
   String notificationsPushRelaySectionDescription(String pushProvider) {
-    return '$pushProvider 只通过自家服务投递推送通知，因此本设备的推送会经过 sanalyer 中继。';
+    return '$pushProvider 只通过自家服务投递推送通知，因此本设备的推送会经过 pirichat 中继。';
   }
 
   @override
-  String get notificationsPushRelayConsentLabel => '使用 sanalyer 推送中继';
+  String get notificationsPushRelayConsentLabel => '使用 pirichat 推送中继';
 
   @override
   String get notificationsPushRelayConsentDescription =>
@@ -9559,7 +9559,7 @@ class FluxerLocalizationsZh extends FluxerLocalizations {
 
   @override
   String pushRelayConsentDescription(String pushProvider) {
-    return '$pushProvider 只通过自家服务投递推送通知，因此本设备的推送会经过 sanalyer 中继。';
+    return '$pushProvider 只通过自家服务投递推送通知，因此本设备的推送会经过 pirichat 中继。';
   }
 
   @override
@@ -9656,7 +9656,7 @@ class FluxerLocalizationsZh extends FluxerLocalizations {
 
   @override
   String get appIconAndroidChangeDescription =>
-      'sanalyer will restart to apply the new home screen icon.';
+      'pirichat will restart to apply the new home screen icon.';
 
   @override
   String get appIconAndroidChangeConfirm => 'Change icon';
@@ -9699,14 +9699,14 @@ class FluxerLocalizationsZh extends FluxerLocalizations {
 
   @override
   String get advancedCrashReportingSectionDescription =>
-      'Help sanalyer fix bugs in this app by sharing crash and performance data. This is off by default.';
+      'Help pirichat fix bugs in this app by sharing crash and performance data. This is off by default.';
 
   @override
   String get advancedPerformanceReportingLabel => '发送崩溃和性能报告';
 
   @override
   String get advancedCrashReportingDescription =>
-      'Reports go to sanalyer\'s error tracker, whichever instance you\'re signed in to. They don\'t include instance names, IDs or message content.';
+      'Reports go to pirichat\'s error tracker, whichever instance you\'re signed in to. They don\'t include instance names, IDs or message content.';
 
   @override
   String get advancedSettingsConfigure => '配置';
@@ -10196,7 +10196,7 @@ class FluxerLocalizationsZh extends FluxerLocalizations {
   String get userSettingsNavWhatsNew => '新功能';
 
   @override
-  String get userSettingsJoinFluxerLabs => '加入 sanalyer 实验室';
+  String get userSettingsJoinFluxerLabs => '加入 pirichat 实验室';
 
   @override
   String get userSettingsGiveFeedback => 'Give feedback';
@@ -10439,13 +10439,13 @@ class FluxerLocalizationsZh extends FluxerLocalizations {
   String get instanceUrlLabel => '实例 URL';
 
   @override
-  String get instanceUrlPlaceholder => '输入实例 URL（例如 sanalyer.com）';
+  String get instanceUrlPlaceholder => '输入实例 URL（例如 pirichat.online）';
 
   @override
-  String get instanceUrlHelper => '官方实例请使用 sanalyer.com，自托管实例请使用确切的 URL。';
+  String get instanceUrlHelper => '官方实例请使用 pirichat.online，自托管实例请使用确切的 URL。';
 
   @override
-  String get resetToDefaultInstance => '重置为 sanalyer';
+  String get resetToDefaultInstance => '重置为 pirichat';
 
   @override
   String get instanceConnect => '连接';
@@ -10467,12 +10467,12 @@ class FluxerLocalizationsZh extends FluxerLocalizations {
 
   @override
   String instanceOutdatedForClient(String domain) {
-    return 'This instance is out of date for this app. Ask whoever runs $domain to update sanalyer.';
+    return 'This instance is out of date for this app. Ask whoever runs $domain to update pirichat.';
   }
 
   @override
   String instanceRequiresNewerClient(String domain) {
-    return '$domain runs a newer version of sanalyer than this app. Update the app, then try again.';
+    return '$domain runs a newer version of pirichat than this app. Update the app, then try again.';
   }
 
   @override
@@ -13824,19 +13824,19 @@ class FluxerLocalizationsZh extends FluxerLocalizations {
   String get homeQuickActionDms => '私信';
 
   @override
-  String get assistantNeedsLogin => '请先打开 sanalyer 并登录。';
+  String get assistantNeedsLogin => '请先打开 pirichat 并登录。';
 
   @override
   String get assistantNotInVoice => '你不在通话中。';
 
   @override
-  String get assistantNotFound => 'sanalyer 找不到该内容。';
+  String get assistantNotFound => 'pirichat 找不到该内容。';
 
   @override
   String get assistantDmsDisabled => '此实例已禁用私信。';
 
   @override
-  String get assistantFailed => 'sanalyer 无法完成此操作。';
+  String get assistantFailed => 'pirichat 无法完成此操作。';
 
   @override
   String get assistantOkMuted => '已将麦克风静音。';
@@ -13859,7 +13859,7 @@ class FluxerLocalizationsZh extends FluxerLocalizations {
   }
 
   @override
-  String get assistantOkOpened => '正在打开 sanalyer。';
+  String get assistantOkOpened => '正在打开 pirichat。';
 
   @override
   String get assistantOkMessageSent => '消息已发送。';
@@ -19316,10 +19316,10 @@ class FluxerLocalizationsZhHant extends FluxerLocalizationsZh {
 
   @override
   String get connectionTokenFileDescription =>
-      '下載 **sanalyer-verification** 並將其放置在您的 **.well-known** 資料夾中，以便我們驗證網域。';
+      '下載 **pirichat-verification** 並將其放置在您的 **.well-known** 資料夾中，以便我們驗證網域。';
 
   @override
-  String get connectionTokenFileDownload => '下載 sanalyer-verification';
+  String get connectionTokenFileDownload => '下載 pirichat-verification';
 
   @override
   String connectionTokenFileMeta(String dnsUrl) {
@@ -19327,7 +19327,7 @@ class FluxerLocalizationsZhHant extends FluxerLocalizationsZh {
   }
 
   @override
-  String get connectionSaveTokenDialogTitle => '儲存 sanalyer-verification';
+  String get connectionSaveTokenDialogTitle => '儲存 pirichat-verification';
 
   @override
   String get connectionVerifyButton => '驗證';
@@ -19390,7 +19390,7 @@ class FluxerLocalizationsZhHant extends FluxerLocalizationsZh {
   String get connectionRemoveFailed => '無法移除連線';
 
   @override
-  String get connectionTokenSavedToast => '已儲存 sanalyer-verification';
+  String get connectionTokenSavedToast => '已儲存 pirichat-verification';
 
   @override
   String get connectionTokenSaveFailedToast => '無法儲存檔案';
@@ -23430,7 +23430,7 @@ class FluxerLocalizationsZhHant extends FluxerLocalizationsZh {
   String get userSettingsNavSecurityLogin => '安全性與登入';
 
   @override
-  String get userSettingsNavFluxerPlutonium => 'sanalyer Premium';
+  String get userSettingsNavFluxerPlutonium => 'pirichat Premium';
 
   @override
   String get userSettingsNavGiftsAndCodes => '禮物';
@@ -23688,7 +23688,7 @@ class FluxerLocalizationsZhHant extends FluxerLocalizationsZh {
   String get premiumCompletePaymentTitle => '完成付款';
 
   @override
-  String get premiumCompletePaymentBody => '您即將前往 Stripe 完成付款。完成後請返回 sanalyer。';
+  String get premiumCompletePaymentBody => '您即將前往 Stripe 完成付款。完成後請返回 pirichat。';
 
   @override
   String get premiumChoosePaymentMethodTitle => '選擇付款方式';
@@ -23728,7 +23728,7 @@ class FluxerLocalizationsZhHant extends FluxerLocalizationsZh {
 
   @override
   String get premiumExistingSubscriptionBody =>
-      '我們在此帳戶找到現有的 sanalyer Premium 訂閱。請前往安全的帳單入口網站進行管理，以更新付款詳情或查看續訂狀態。如果您剛付款，請稍候一分鐘後重新開啟此頁面。';
+      '我們在此帳戶找到現有的 pirichat Premium 訂閱。請前往安全的帳單入口網站進行管理，以更新付款詳情或查看續訂狀態。如果您剛付款，請稍候一分鐘後重新開啟此頁面。';
 
   @override
   String get premiumPurchasesDisabledTitle => '無法購買';
@@ -23743,11 +23743,11 @@ class FluxerLocalizationsZhHant extends FluxerLocalizationsZh {
       '此帳號已停用購買功能。如果這看起來有誤，請聯絡此實例的管理員。';
 
   @override
-  String get premiumClaimAccountToPurchase => '領取你的帳號即可購買 sanalyer Premium。';
+  String get premiumClaimAccountToPurchase => '領取你的帳號即可購買 pirichat Premium。';
 
   @override
   String get premiumVerifyEmailToPurchase =>
-      '購買 sanalyer Premium 前，你需要驗證你的電子郵件。';
+      '購買 pirichat Premium 前，你需要驗證你的電子郵件。';
 
   @override
   String get premiumPerkCommunities => '社群';
@@ -23878,19 +23878,19 @@ class FluxerLocalizationsZhHant extends FluxerLocalizationsZh {
 
   @override
   String get storePlutoniumTagFootnote =>
-      '您只能選擇沒有其他使用者名稱相同的人使用的標籤。使用者名稱不區分大小寫，因此 Mina#4821 和 mina#4821 視為相同。#0000 標籤保留給 sanalyer Visionary 會員。';
+      '您只能選擇沒有其他使用者名稱相同的人使用的標籤。使用者名稱不區分大小寫，因此 Mina#4821 和 mina#4821 視為相同。#0000 標籤保留給 pirichat Visionary 會員。';
 
   @override
   String get storePlutoniumLearnVisionary => '深入了解 Visionary。';
 
   @override
-  String get storePlutoniumDonatePrompt => '只想支持 sanalyer 的開源開發嗎？ ';
+  String get storePlutoniumDonatePrompt => '只想支持 pirichat 的開源開發嗎？ ';
 
   @override
   String get storePlutoniumDonateLink => '改為捐款。';
 
   @override
-  String get storePlutoniumHighlightsLead => '訂閱可資助 sanalyer 並解鎖';
+  String get storePlutoniumHighlightsLead => '訂閱可資助 pirichat 並解鎖';
 
   @override
   String get storePlutoniumHighlightEmoji => '在任何聊天室中使用自訂表情符號和貼圖';
@@ -23918,7 +23918,7 @@ class FluxerLocalizationsZhHant extends FluxerLocalizationsZh {
       '透過 App Store 自動續訂，直到您取消為止。';
 
   @override
-  String get storePlutoniumAlreadySubscribed => '您已經有 sanalyer Premium 訂閱了。';
+  String get storePlutoniumAlreadySubscribed => '您已經有 pirichat Premium 訂閱了。';
 
   @override
   String storePlutoniumSavePercent(int percent) {
@@ -24350,11 +24350,11 @@ class FluxerLocalizationsZhHant extends FluxerLocalizationsZh {
 
   @override
   String notificationsPushRelaySectionDescription(String pushProvider) {
-    return '$pushProvider 只透過自家服務傳送推播通知，因此本裝置的推播會經過 sanalyer 中繼。';
+    return '$pushProvider 只透過自家服務傳送推播通知，因此本裝置的推播會經過 pirichat 中繼。';
   }
 
   @override
-  String get notificationsPushRelayConsentLabel => '使用 sanalyer 推播中繼';
+  String get notificationsPushRelayConsentLabel => '使用 pirichat 推播中繼';
 
   @override
   String get notificationsPushRelayConsentDescription =>
@@ -24365,7 +24365,7 @@ class FluxerLocalizationsZhHant extends FluxerLocalizationsZh {
 
   @override
   String pushRelayConsentDescription(String pushProvider) {
-    return '$pushProvider 只透過自家服務傳送推播通知，因此本裝置的推播會經過 sanalyer 中繼。';
+    return '$pushProvider 只透過自家服務傳送推播通知，因此本裝置的推播會經過 pirichat 中繼。';
   }
 
   @override
@@ -24964,7 +24964,7 @@ class FluxerLocalizationsZhHant extends FluxerLocalizationsZh {
   String get userSettingsNavWhatsNew => '最新功能';
 
   @override
-  String get userSettingsJoinFluxerLabs => '加入 sanalyer Labs';
+  String get userSettingsJoinFluxerLabs => '加入 pirichat Labs';
 
   @override
   String get userSettingsNavAppLicenses => '應用程式授權';
@@ -25198,13 +25198,13 @@ class FluxerLocalizationsZhHant extends FluxerLocalizationsZh {
   String get instanceUrlLabel => '伺服器網址';
 
   @override
-  String get instanceUrlPlaceholder => '輸入伺服器網址 (例如 sanalyer.com)';
+  String get instanceUrlPlaceholder => '輸入伺服器網址 (例如 pirichat.online)';
 
   @override
-  String get instanceUrlHelper => '官方伺服器請使用 sanalyer.com，自架伺服器請使用確切的網址。';
+  String get instanceUrlHelper => '官方伺服器請使用 pirichat.online，自架伺服器請使用確切的網址。';
 
   @override
-  String get resetToDefaultInstance => '重設為 sanalyer';
+  String get resetToDefaultInstance => '重設為 pirichat';
 
   @override
   String get instanceConnect => '連線';
@@ -28118,19 +28118,19 @@ class FluxerLocalizationsZhHant extends FluxerLocalizationsZh {
   String get homeQuickActionDms => '私訊';
 
   @override
-  String get assistantNeedsLogin => '請先開啟 sanalyer 並登入。';
+  String get assistantNeedsLogin => '請先開啟 pirichat 並登入。';
 
   @override
   String get assistantNotInVoice => '您沒有在通話中。';
 
   @override
-  String get assistantNotFound => 'sanalyer 找不到該項目。';
+  String get assistantNotFound => 'pirichat 找不到該項目。';
 
   @override
   String get assistantDmsDisabled => '此伺服器已停用私訊功能。';
 
   @override
-  String get assistantFailed => 'sanalyer 無法完成該操作。';
+  String get assistantFailed => 'pirichat 無法完成該操作。';
 
   @override
   String get assistantOkMuted => '已將麥克風靜音。';
@@ -28153,7 +28153,7 @@ class FluxerLocalizationsZhHant extends FluxerLocalizationsZh {
   }
 
   @override
-  String get assistantOkOpened => '正在開啟 sanalyer。';
+  String get assistantOkOpened => '正在開啟 pirichat。';
 
   @override
   String get assistantOkMessageSent => '訊息已傳送。';

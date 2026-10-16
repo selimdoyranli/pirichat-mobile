@@ -1,2 +1,2 @@
-app_identifier("com.sanalyer.mobile")
+app_identifier("online.pirichat.mobile")
 team_id(ENV["APPLE_TEAM_ID"])

@@ -11,7 +11,7 @@ import 'package:fluxer_app/shared/markdown/fluxer_markdown_adapter.dart';
 import 'package:fluxer_app/shared/markdown/native_markdown_parser.dart';
 import 'package:fluxer_markdown/fluxer_markdown.dart';
 
-const String kAccessibilityLinkPreviewExampleUrl = 'https://sanalyer.com';
+const String kAccessibilityLinkPreviewExampleUrl = 'https://pirichat.online';
 const Color _kPreviewUsernameColor = Color(0xFFE91E63);
 
 class UserAccessibilityPreview extends ConsumerWidget {

@@ -5,10 +5,10 @@ import 'package:fluxer_app/features/guilds/utils/invite_link_parser.dart';
 
 const String appProtocolScheme = 'fluxer';
 
-// sanalyer has no invite short-link domain.
+// pirichat has no invite short-link domain.
 const Set<String> kInviteShortLinkHosts = <String>{};
 
-const Set<String> kOfficialAppLinkHosts = <String>{'sanalyer.com'};
+const Set<String> kOfficialAppLinkHosts = <String>{'pirichat.online'};
 
 final RegExp _inviteShortLinkCodePattern = RegExp(r'^[a-zA-Z0-9\-]{2,32}$');
 

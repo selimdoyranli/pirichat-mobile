@@ -4271,11 +4271,11 @@
     "@connectionTokenFileTitle": {
         "description": "Title of the token-file section in the verify step."
     },
-    "connectionTokenFileDescription": "Töltsd le a **sanalyer-verification** fájlt, és helyezd el a **.well-known** mappába, hogy érvényesíteni tudjuk a tartományt.",
+    "connectionTokenFileDescription": "Töltsd le a **pirichat-verification** fájlt, és helyezd el a **.well-known** mappába, hogy érvényesíteni tudjuk a tartományt.",
     "@connectionTokenFileDescription": {
         "description": "Explanatory text for the token-file step. **bold markers** indicate inline-code styling applied by the widget."
     },
-    "connectionTokenFileDownload": "sanalyer-verification letöltése",
+    "connectionTokenFileDownload": "pirichat-verification letöltése",
     "@connectionTokenFileDownload": {
         "description": "Label on the download button for the verification token file."
     },
@@ -4285,11 +4285,11 @@
         "placeholders": {
             "dnsUrl": {
                 "type": "String",
-                "example": "https://example.com/.well-known/fluxer-verification"
+                "example": "https://example.com/.well-known/pirichat-verification"
             }
         }
     },
-    "connectionSaveTokenDialogTitle": "sanalyer-verification mentése",
+    "connectionSaveTokenDialogTitle": "pirichat-verification mentése",
     "@connectionSaveTokenDialogTitle": {
         "description": "Title of the save-file dialog opened by the download button."
     },
@@ -4373,7 +4373,7 @@
     "@connectionRemoveFailed": {
         "description": "Toast shown when the delete request fails."
     },
-    "connectionTokenSavedToast": "sanalyer-verification mentve",
+    "connectionTokenSavedToast": "pirichat-verification mentve",
     "@connectionTokenSavedToast": {
         "description": "Toast shown after the token file is saved successfully."
     },
@@ -6202,7 +6202,7 @@
     "@userSettingsNavSecurityLogin": {
         "description": "User settings navigation item for security and login settings."
     },
-    "userSettingsNavFluxerPlutonium": "sanalyer Premium",
+    "userSettingsNavFluxerPlutonium": "pirichat Premium",
     "@userSettingsNavFluxerPlutonium": {
         "description": "User settings navigation item for Fluxer Plutonium subscription settings."
     },
@@ -6500,15 +6500,15 @@
     "@instanceUrlLabel": {
         "description": "Label for the self-hosted instance URL input on the login screen."
     },
-    "instanceUrlPlaceholder": "Add meg a példány URL-jét (pl. sanalyer.com)",
+    "instanceUrlPlaceholder": "Add meg a példány URL-jét (pl. pirichat.online)",
     "@instanceUrlPlaceholder": {
         "description": "Placeholder for the self-hosted instance URL input."
     },
-    "instanceUrlHelper": "Használd a sanalyer.com címet a hivatalos példányhoz, vagy egy saját üzemeltetésű példány pontos URL-jét.",
+    "instanceUrlHelper": "Használd a pirichat.online címet a hivatalos példányhoz, vagy egy saját üzemeltetésű példány pontos URL-jét.",
     "@instanceUrlHelper": {
         "description": "Helper text explaining official vs self-hosted instance URLs."
     },
-    "resetToDefaultInstance": "Visszaállítás sanalyer-re",
+    "resetToDefaultInstance": "Visszaállítás pirichat-re",
     "@resetToDefaultInstance": {
         "description": "Tooltip for the button that resets the instance URL to the official Fluxer instance."
     },
@@ -11549,7 +11549,7 @@
     "@notificationsPushRelaySectionTitle": {
         "description": "Notification settings section title for the Fluxer push relay."
     },
-    "notificationsPushRelaySectionDescription": "A(z) {pushProvider} csak a saját szolgáltatásán keresztül kézbesít push-értesítéseket, ezért az eszköz értesítései a sanalyer továbbítóján haladnak át.",
+    "notificationsPushRelaySectionDescription": "A(z) {pushProvider} csak a saját szolgáltatásán keresztül kézbesít push-értesítéseket, ezért az eszköz értesítései a pirichat továbbítóján haladnak át.",
     "@notificationsPushRelaySectionDescription": {
         "description": "Notification settings section description explaining why the push relay exists.",
         "placeholders": {
@@ -11558,7 +11558,7 @@
             }
         }
     },
-    "notificationsPushRelayConsentLabel": "A sanalyer push-továbbítójának használata",
+    "notificationsPushRelayConsentLabel": "A pirichat push-továbbítójának használata",
     "@notificationsPushRelayConsentLabel": {
         "description": "Toggle label for agreeing to the Fluxer push relay on this device."
     },
@@ -11570,7 +11570,7 @@
     "@pushRelayConsentTitle": {
         "description": "Title of the one-time Fluxer push relay consent sheet."
     },
-    "pushRelayConsentDescription": "A(z) {pushProvider} csak a saját szolgáltatásán keresztül kézbesít push-értesítéseket, ezért az eszköz értesítései a sanalyer továbbítóján haladnak át.",
+    "pushRelayConsentDescription": "A(z) {pushProvider} csak a saját szolgáltatásán keresztül kézbesít push-értesítéseket, ezért az eszköz értesítései a pirichat továbbítóján haladnak át.",
     "@pushRelayConsentDescription": {
         "description": "Subtitle of the push relay consent sheet explaining why the relay exists.",
         "placeholders": {
@@ -14666,7 +14666,7 @@
         "description": "Error shown on a self-hosted instance when the selected Plutonium plan is not available. Names no support mailbox."
     },
     "premiumCompletePaymentTitle": "Fizetés befejezése",
-    "premiumCompletePaymentBody": "Most a rendszer átirányít a Stripe oldalára a fizetés befejezéséhez. Miután befejezted, térj vissza a sanalyerbe.",
+    "premiumCompletePaymentBody": "Most a rendszer átirányít a Stripe oldalára a fizetés befejezéséhez. Miután befejezted, térj vissza a pirichatbe.",
     "premiumChoosePaymentMethodTitle": "Fizetési mód kiválasztása",
     "premiumPixPaymentPromptDescription": "Fizess automatikus Pix-szel, hogy jóváhagyd az ismétlődő terheléseket közvetlenül a brazil bankszámládról. Vagy válaszd a kártyás fizetést, hogy megadd a hitelkártya adataidat a Stripe következő képernyőjén.",
     "premiumUsePix": "Használj Pixet",
@@ -14678,7 +14678,7 @@
     "premiumAlreadyVisionaryTitle": "Már Visionary vagy",
     "premiumAlreadyVisionaryBody": "A Visionary már tartalmazza az állandó hozzáférést, így nincs szükség ismétlődő előfizetésre. Továbbra is vásárolhatsz ajándékokat másoknak.",
     "premiumExistingSubscriptionTitle": "Az előfizetés már létezik",
-    "premiumExistingSubscriptionBody": "Már találtunk egy meglévő sanalyer Premium előfizetést ehhez a fiókhoz. Kezeld a biztonságos számlázási portálon a fizetési adatok frissítéséhez vagy az újítási állapot ellenőrzéséhez. Ha most fizettél, várj egy percet, és nyisd meg újra ezt az oldalt.",
+    "premiumExistingSubscriptionBody": "Már találtunk egy meglévő pirichat Premium előfizetést ehhez a fiókhoz. Kezeld a biztonságos számlázási portálon a fizetési adatok frissítéséhez vagy az újítási állapot ellenőrzéséhez. Ha most fizettél, várj egy percet, és nyisd meg újra ezt az oldalt.",
     "premiumPurchasesDisabledTitle": "Vásárlások nem elérhetők",
     "premiumPurchasesDisabledBody": "A vásárlások le vannak tiltva ehhez a fiókhoz. Ha úgy gondolod, hogy ez hiba, lépj kapcsolatba a {supportEmail} címmel.",
     "@premiumPurchasesDisabledBody": {
@@ -14693,8 +14693,8 @@
     "@premiumPurchasesDisabledBodySelfHosted": {
         "description": "Shown on a self-hosted instance when purchases are disabled for the account. Names no email address."
     },
-    "premiumClaimAccountToPurchase": "Igényeld a fiókodat a sanalyer Premium megvásárlásához.",
-    "premiumVerifyEmailToPurchase": "A sanalyer Premium megvásárlásához először igazolnod kell az e-mail címedet.",
+    "premiumClaimAccountToPurchase": "Igényeld a fiókodat a pirichat Premium megvásárlásához.",
+    "premiumVerifyEmailToPurchase": "A pirichat Premium megvásárlásához először igazolnod kell az e-mail címedet.",
     "premiumPerkCommunities": "Közösségek",
     "premiumPerkMessageCharacterLimit": "Üzenet karakterkorlátja",
     "premiumPerkBookmarkedMessages": "Mentett üzenetek",
@@ -14746,11 +14746,11 @@
     "storePlutoniumCompareThemes": "Egyéni témák az alkalmazáshoz",
     "storePlutoniumVideoFree": "Akár 720p felbontás 30 FPS sebességgel",
     "storePlutoniumVideoPlutonium": "Akár 4K felbontás 60 FPS sebességgel",
-    "storePlutoniumTagFootnote": "Csak olyan címkét választhatsz, amellyel még senki más nem rendelkezik ugyanazzal a felhasználónévvel. A felhasználónevek nem különböztetik meg a kis- és nagybetűket, így a Mina#4821 és a mina#4821 ugyanannak számít. A #0000 címke a sanalyer Visionary tagok számára van fenntartva.",
+    "storePlutoniumTagFootnote": "Csak olyan címkét választhatsz, amellyel még senki más nem rendelkezik ugyanazzal a felhasználónévvel. A felhasználónevek nem különböztetik meg a kis- és nagybetűket, így a Mina#4821 és a mina#4821 ugyanannak számít. A #0000 címke a pirichat Visionary tagok számára van fenntartva.",
     "storePlutoniumLearnVisionary": "Tudj meg többet a Visionaryról.",
-    "storePlutoniumDonatePrompt": "Csak a sanalyer nyílt forráskódú fejlesztését szeretnéd támogatni? ",
+    "storePlutoniumDonatePrompt": "Csak a pirichat nyílt forráskódú fejlesztését szeretnéd támogatni? ",
     "storePlutoniumDonateLink": "Adományozz inkább.",
-    "storePlutoniumHighlightsLead": "Az előfizetéssel támogatod a sanalyert, és feloldod a következőket",
+    "storePlutoniumHighlightsLead": "Az előfizetéssel támogatod a pirichatt, és feloldod a következőket",
     "storePlutoniumHighlightEmoji": "Egyéni emojik és matricák bármely csevegésben",
     "storePlutoniumHighlightProfile": "Animált profil, jelvény és egyedi 4 számjegyű szám",
     "storePlutoniumHighlightFiles": "Feltöltések akár 500 MB-ig",
@@ -14759,7 +14759,7 @@
     "storePlutoniumHighlightsMore": "És még sok más",
     "storePlutoniumRenewsThroughPlay": "A lemondásig automatikusan megújul a Google Playen keresztül.",
     "storePlutoniumRenewsThroughAppStore": "Az App Store-on keresztül automatikusan megújul, amíg le nem mondod.",
-    "storePlutoniumAlreadySubscribed": "Már van sanalyer Premium előfizetésed.",
+    "storePlutoniumAlreadySubscribed": "Már van pirichat Premium előfizetésed.",
     "storePlutoniumSavePercent": "Spórolj {percent}%-ot",
     "@storePlutoniumSavePercent": {
         "placeholders": {
@@ -15030,7 +15030,7 @@
             }
         }
     },
-    "userSettingsJoinFluxerLabs": "Csatlakozz a sanalyer Labshoz",
+    "userSettingsJoinFluxerLabs": "Csatlakozz a pirichat Labshoz",
     "@userSettingsJoinFluxerLabs": {
         "description": "User settings What's New action to join the Fluxer Labs community."
     },
@@ -15872,7 +15872,7 @@
     "@homeQuickActionDms": {
         "description": "Home screen quick action that opens Direct Messages."
     },
-    "assistantNeedsLogin": "Először nyisd meg a sanalyert, és jelentkezz be.",
+    "assistantNeedsLogin": "Először nyisd meg a pirichatt, és jelentkezz be.",
     "@assistantNeedsLogin": {
         "description": "Siri/Shortcuts result when the user is logged out."
     },
@@ -15880,7 +15880,7 @@
     "@assistantNotInVoice": {
         "description": "Siri/Shortcuts result when mute or leave runs with no live call."
     },
-    "assistantNotFound": "A sanalyer nem találta.",
+    "assistantNotFound": "A pirichat nem találta.",
     "@assistantNotFound": {
         "description": "Siri/Shortcuts result when a friend, channel, or community cannot be resolved."
     },
@@ -15888,7 +15888,7 @@
     "@assistantDmsDisabled": {
         "description": "Siri/Shortcuts result when DM actions are blocked by instance config."
     },
-    "assistantFailed": "A sanalyer nem tudta befejezni.",
+    "assistantFailed": "A pirichat nem tudta befejezni.",
     "@assistantFailed": {
         "description": "Siri/Shortcuts fallback when an assistant command fails."
     },
@@ -15905,7 +15905,7 @@
             }
         }
     },
-    "assistantOkOpened": "sanalyer megnyitása.",
+    "assistantOkOpened": "pirichat megnyitása.",
     "applicationsTitle": "Alkalmazások",
     "@applicationsTitle": {
         "description": "Title for the developer Applications settings tab."

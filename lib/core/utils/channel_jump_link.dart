@@ -19,7 +19,7 @@ class MessageJumpLink extends ChannelJumpLink {
   final String messageId;
 }
 
-const Set<String> kOfficialChannelJumpHosts = <String>{'sanalyer.com'};
+const Set<String> kOfficialChannelJumpHosts = <String>{'pirichat.online'};
 
 String? channelJumpHostFromBaseUrl(String baseUrl) {
   final String trimmed = baseUrl.trim().replaceAll(RegExp(r'/+$'), '');

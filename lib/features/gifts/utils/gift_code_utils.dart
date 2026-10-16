@@ -5,8 +5,8 @@ const int kMaxGiftCodesPerMessage = 10;
 
 const String _giftCodeCapture = r'([a-zA-Z0-9\-]{2,32})(?![a-zA-Z0-9\-])';
 
-// sanalyer: only sanalyer.com gift links are recognised as official.
-const List<String> kOfficialGiftUrlBases = <String>['https://sanalyer.com/gift'];
+// pirichat: only pirichat.online gift links are recognised as official.
+const List<String> kOfficialGiftUrlBases = <String>['https://pirichat.online/gift'];
 
 String? _cachedGiftKey;
 RegExp? _cachedGiftRegExp;

@@ -5246,11 +5246,11 @@
     "@connectionTokenFileTitle": {
         "description": "Title of the token-file section in the verify step."
     },
-    "connectionTokenFileDescription": "Preuzmite **sanalyer-verification** i stavite ga u svoju mapu **.well-known** kako bismo mogli potvrditi domenu.",
+    "connectionTokenFileDescription": "Preuzmite **pirichat-verification** i stavite ga u svoju mapu **.well-known** kako bismo mogli potvrditi domenu.",
     "@connectionTokenFileDescription": {
         "description": "Explanatory text for the token-file step. **bold markers** indicate inline-code styling applied by the widget."
     },
-    "connectionTokenFileDownload": "Preuzmi sanalyer-verification",
+    "connectionTokenFileDownload": "Preuzmi pirichat-verification",
     "@connectionTokenFileDownload": {
         "description": "Label on the download button for the verification token file."
     },
@@ -5260,11 +5260,11 @@
         "placeholders": {
             "dnsUrl": {
                 "type": "String",
-                "example": "https://example.com/.well-known/fluxer-verification"
+                "example": "https://example.com/.well-known/pirichat-verification"
             }
         }
     },
-    "connectionSaveTokenDialogTitle": "Spremi sanalyer-verifikaciju",
+    "connectionSaveTokenDialogTitle": "Spremi pirichat-verifikaciju",
     "@connectionSaveTokenDialogTitle": {
         "description": "Title of the save-file dialog opened by the download button."
     },
@@ -5348,7 +5348,7 @@
     "@connectionRemoveFailed": {
         "description": "Toast shown when the delete request fails."
     },
-    "connectionTokenSavedToast": "sanalyer-verifikacija spremljena",
+    "connectionTokenSavedToast": "pirichat-verifikacija spremljena",
     "@connectionTokenSavedToast": {
         "description": "Toast shown after the token file is saved successfully."
     },
@@ -10737,7 +10737,7 @@
     "@userSettingsNavSecurityLogin": {
         "description": "User settings navigation item for security and login settings."
     },
-    "userSettingsNavFluxerPlutonium": "sanalyer Premium",
+    "userSettingsNavFluxerPlutonium": "pirichat Premium",
     "@userSettingsNavFluxerPlutonium": {
         "description": "User settings navigation item for Fluxer Plutonium subscription settings."
     },
@@ -10880,7 +10880,7 @@
         "description": "Error shown on a self-hosted instance when the selected Plutonium plan is not available. Names no support mailbox."
     },
     "premiumCompletePaymentTitle": "Dovrši plaćanje",
-    "premiumCompletePaymentBody": "Sada prelazite na Stripe kako biste dovršili plaćanje. Vratite se u sanalyer nakon što završite.",
+    "premiumCompletePaymentBody": "Sada prelazite na Stripe kako biste dovršili plaćanje. Vratite se u pirichat nakon što završite.",
     "premiumChoosePaymentMethodTitle": "Odaberite način plaćanja",
     "premiumPixPaymentPromptDescription": "Platite automatskim Pixom za autorizaciju ponavljajućih naplata izravno s vašeg brazilskog bankovnog računa. Ili odaberite \"upotrijebi karticu\" za unos kreditne kartice na sljedećem zaslonu Stripe.",
     "premiumUsePix": "Upotrijebi Pix",
@@ -10892,7 +10892,7 @@
     "premiumAlreadyVisionaryTitle": "Već ste Visionary",
     "premiumAlreadyVisionaryBody": "Visionary već uključuje trajni pristup, pa ponavljajuća pretplata nije potrebna. I dalje možete kupovati poklone za druge.",
     "premiumExistingSubscriptionTitle": "Pretplata već postoji",
-    "premiumExistingSubscriptionBody": "Pronašli smo postojeću pretplatu na sanalyer Premium za ovaj račun. Upravljajte njome u sigurnosnom portalu za naplatu kako biste ažurirali podatke o plaćanju ili provjerili status obnove. Ako ste upravo platili, pričekajte minutu i ponovno otvorite ovu stranicu.",
+    "premiumExistingSubscriptionBody": "Pronašli smo postojeću pretplatu na pirichat Premium za ovaj račun. Upravljajte njome u sigurnosnom portalu za naplatu kako biste ažurirali podatke o plaćanju ili provjerili status obnove. Ako ste upravo platili, pričekajte minutu i ponovno otvorite ovu stranicu.",
     "premiumPurchasesDisabledTitle": "Kupnja nije dostupna",
     "premiumPurchasesDisabledBody": "Kupnje su onemogućene za ovaj račun. Obratite se na {supportEmail} ako ovo izgleda pogrešno.",
     "@premiumPurchasesDisabledBody": {
@@ -10907,8 +10907,8 @@
     "@premiumPurchasesDisabledBodySelfHosted": {
         "description": "Shown on a self-hosted instance when purchases are disabled for the account. Names no email address."
     },
-    "premiumClaimAccountToPurchase": "Preuzmite svoj račun za kupnju sanalyer Premium.",
-    "premiumVerifyEmailToPurchase": "Potrebno je potvrditi svoju e-poštu prije nego što možete kupiti sanalyer Premium.",
+    "premiumClaimAccountToPurchase": "Preuzmite svoj račun za kupnju pirichat Premium.",
+    "premiumVerifyEmailToPurchase": "Potrebno je potvrditi svoju e-poštu prije nego što možete kupiti pirichat Premium.",
     "premiumPerkCommunities": "Zajednice",
     "premiumPerkMessageCharacterLimit": "Ograničenje broja znakova u poruci",
     "premiumPerkBookmarkedMessages": "Označene poruke",
@@ -10960,11 +10960,11 @@
     "storePlutoniumCompareThemes": "Prilagođene teme za aplikaciju",
     "storePlutoniumVideoFree": "Do 720p pri 30 FPS",
     "storePlutoniumVideoPlutonium": "Do 4K pri 60 FPS",
-    "storePlutoniumTagFootnote": "Možete odabrati samo oznaku koju nitko drugi s istim korisničkim imenom već nema. Korisnička imena ne razlikuju velika i mala slova, tako da se Mina#4821 i mina#4821 smatraju istima. Oznaka #0000 rezervirana je za članove sanalyer Visionary.",
+    "storePlutoniumTagFootnote": "Možete odabrati samo oznaku koju nitko drugi s istim korisničkim imenom već nema. Korisnička imena ne razlikuju velika i mala slova, tako da se Mina#4821 i mina#4821 smatraju istima. Oznaka #0000 rezervirana je za članove pirichat Visionary.",
     "storePlutoniumLearnVisionary": "Saznajte više o programu Visionary.",
-    "storePlutoniumDonatePrompt": "Želite li samo podržati razvoj sanalyera otvorenog koda? ",
+    "storePlutoniumDonatePrompt": "Želite li samo podržati razvoj pirichata otvorenog koda? ",
     "storePlutoniumDonateLink": "Donirajte umjesto toga.",
-    "storePlutoniumHighlightsLead": "Pretplatom financirate sanalyer i otključavate",
+    "storePlutoniumHighlightsLead": "Pretplatom financirate pirichat i otključavate",
     "storePlutoniumHighlightEmoji": "Prilagođeni emojiji i naljepnice u bilo kojem chatu",
     "storePlutoniumHighlightProfile": "Animirani profil, značka i odabrani četveroznamenkasti broj",
     "storePlutoniumHighlightFiles": "Prijenosi do 500 MB",
@@ -10973,7 +10973,7 @@
     "storePlutoniumHighlightsMore": "I više",
     "storePlutoniumRenewsThroughPlay": "Automatski se obnavlja putem Google Playa dok ne otkažete.",
     "storePlutoniumRenewsThroughAppStore": "Automatski se obnavlja putem App Storea dok ne otkažete.",
-    "storePlutoniumAlreadySubscribed": "Već imate pretplatu na sanalyer Premium.",
+    "storePlutoniumAlreadySubscribed": "Već imate pretplatu na pirichat Premium.",
     "storePlutoniumSavePercent": "Uštedite {percent}%",
     "@storePlutoniumSavePercent": {
         "placeholders": {
@@ -11547,7 +11547,7 @@
     "@notificationsPushRelaySectionTitle": {
         "description": "Notification settings section title for the Fluxer push relay."
     },
-    "notificationsPushRelaySectionDescription": "{pushProvider} isporučuje push obavijesti samo preko vlastite usluge, pa obavijesti za ovaj uređaj idu kroz sanalyerov prijenosnik.",
+    "notificationsPushRelaySectionDescription": "{pushProvider} isporučuje push obavijesti samo preko vlastite usluge, pa obavijesti za ovaj uređaj idu kroz pirichatov prijenosnik.",
     "@notificationsPushRelaySectionDescription": {
         "description": "Notification settings section description explaining why the push relay exists.",
         "placeholders": {
@@ -11556,7 +11556,7 @@
             }
         }
     },
-    "notificationsPushRelayConsentLabel": "Koristi sanalyerov push prijenosnik",
+    "notificationsPushRelayConsentLabel": "Koristi pirichatov push prijenosnik",
     "@notificationsPushRelayConsentLabel": {
         "description": "Toggle label for agreeing to the Fluxer push relay on this device."
     },
@@ -11568,7 +11568,7 @@
     "@pushRelayConsentTitle": {
         "description": "Title of the one-time Fluxer push relay consent sheet."
     },
-    "pushRelayConsentDescription": "{pushProvider} isporučuje push obavijesti samo preko vlastite usluge, pa obavijesti za ovaj uređaj idu kroz sanalyerov prijenosnik.",
+    "pushRelayConsentDescription": "{pushProvider} isporučuje push obavijesti samo preko vlastite usluge, pa obavijesti za ovaj uređaj idu kroz pirichatov prijenosnik.",
     "@pushRelayConsentDescription": {
         "description": "Subtitle of the push relay consent sheet explaining why the relay exists.",
         "placeholders": {
@@ -11890,7 +11890,7 @@
     "@userSettingsNavWhatsNew": {
         "description": "User settings navigation item for release notes."
     },
-    "userSettingsJoinFluxerLabs": "Pridruži se sanalyer Labs",
+    "userSettingsJoinFluxerLabs": "Pridruži se pirichat Labs",
     "@userSettingsJoinFluxerLabs": {
         "description": "User settings What's New action to join the Fluxer Labs community."
     },
@@ -12185,15 +12185,15 @@
     "@instanceUrlLabel": {
         "description": "Label for the self-hosted instance URL input on the login screen."
     },
-    "instanceUrlPlaceholder": "Unesite URL instance (npr. sanalyer.com)",
+    "instanceUrlPlaceholder": "Unesite URL instance (npr. pirichat.online)",
     "@instanceUrlPlaceholder": {
         "description": "Placeholder for the self-hosted instance URL input."
     },
-    "instanceUrlHelper": "Koristite sanalyer.com za službenu instancu ili točan URL samostalno hostirane instance.",
+    "instanceUrlHelper": "Koristite pirichat.online za službenu instancu ili točan URL samostalno hostirane instance.",
     "@instanceUrlHelper": {
         "description": "Helper text explaining official vs self-hosted instance URLs."
     },
-    "resetToDefaultInstance": "Vrati na sanalyer",
+    "resetToDefaultInstance": "Vrati na pirichat",
     "@resetToDefaultInstance": {
         "description": "Tooltip for the button that resets the instance URL to the official Fluxer instance."
     },
@@ -15843,7 +15843,7 @@
     "@homeQuickActionDms": {
         "description": "Home screen quick action that opens Direct Messages."
     },
-    "assistantNeedsLogin": "Prvo otvorite sanalyer i prijavite se.",
+    "assistantNeedsLogin": "Prvo otvorite pirichat i prijavite se.",
     "@assistantNeedsLogin": {
         "description": "Siri/Shortcuts result when the user is logged out."
     },
@@ -15851,7 +15851,7 @@
     "@assistantNotInVoice": {
         "description": "Siri/Shortcuts result when mute or leave runs with no live call."
     },
-    "assistantNotFound": "sanalyer to nije mogao pronaći.",
+    "assistantNotFound": "pirichat to nije mogao pronaći.",
     "@assistantNotFound": {
         "description": "Siri/Shortcuts result when a friend, channel, or community cannot be resolved."
     },
@@ -15859,7 +15859,7 @@
     "@assistantDmsDisabled": {
         "description": "Siri/Shortcuts result when DM actions are blocked by instance config."
     },
-    "assistantFailed": "sanalyer to nije mogao dovršiti.",
+    "assistantFailed": "pirichat to nije mogao dovršiti.",
     "@assistantFailed": {
         "description": "Siri/Shortcuts fallback when an assistant command fails."
     },
@@ -15876,7 +15876,7 @@
             }
         }
     },
-    "assistantOkOpened": "Otvaram sanalyer.",
+    "assistantOkOpened": "Otvaram pirichat.",
     "lookAndFeelChatWallpaperTitle": "Pozadina chata",
     "@lookAndFeelChatWallpaperTitle": {
         "description": "Look and Feel section title for chat wallpaper presets."

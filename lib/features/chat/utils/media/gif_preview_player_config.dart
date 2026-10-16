@@ -7,7 +7,7 @@ const int gifPreviewPlayerBufferSize = 4 * 1024 * 1024;
 const PlayerConfiguration gifPreviewPlayerConfiguration = PlayerConfiguration(
   muted: true,
   bufferSize: gifPreviewPlayerBufferSize,
-  title: 'sanalyer GIF preview',
+  title: 'pirichat GIF preview',
 );
 
 mkv.VideoControllerConfiguration gifPreviewVideoControllerConfiguration() =>

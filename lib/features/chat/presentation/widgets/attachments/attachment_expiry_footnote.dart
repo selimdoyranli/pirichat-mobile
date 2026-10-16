@@ -3,7 +3,7 @@ import 'package:fluxer_app/features/ui/ui.dart';
 import 'package:fluxer_app/material_ui.dart';
 
 const String attachmentExpiryHelpUrl =
-    'https://sanalyer.com';
+    'https://pirichat.online';
 
 class AttachmentExpiryFootnote extends StatelessWidget {
   const AttachmentExpiryFootnote({required this.text, super.key});

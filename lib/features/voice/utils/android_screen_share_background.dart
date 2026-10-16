@@ -38,7 +38,7 @@ Future<bool> enableAndroidScreenShareBackground({
     if (!isRetry) {
       final FlutterBackgroundAndroidConfig androidConfig =
           FlutterBackgroundAndroidConfig(
-            notificationTitle: 'sanalyer',
+            notificationTitle: 'pirichat',
             notificationText: notificationText,
           );
       hasPermissions = await FlutterBackground.initialize(

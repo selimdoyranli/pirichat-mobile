@@ -11,7 +11,7 @@ import 'package:fluxer_app/l10n/generated/fluxer_localizations.dart';
 import 'package:fluxer_app/material_ui.dart';
 import 'package:fluxer_app/shared/utils/api_error_presentation.dart';
 
-const String kProductCommunityName = 'sanalyer';
+const String kProductCommunityName = 'pirichat';
 
 class GuildMembershipCtaNagbar extends ConsumerStatefulWidget
     implements NagbarWidget {

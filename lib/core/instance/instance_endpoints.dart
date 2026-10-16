@@ -4,12 +4,12 @@ import 'package:fluxer_dart/export.dart';
 // Preserves the global endpoint holder API used across provider and link code.
 // ignore: avoid_classes_with_only_static_members
 abstract final class InstanceEndpoints {
-  // sanalyer: fallbacks match sanalyer.com/.well-known/fluxer.
-  static const String defaultMedia = 'https://sanalyer.com/media';
-  static const String defaultStaticCdn = 'https://sanalyer.com';
-  static const String defaultInvite = 'https://sanalyer.com/invite';
-  static const String defaultGift = 'https://sanalyer.com/gift';
-  static const String defaultWebApp = 'https://sanalyer.com';
+  // pirichat: fallbacks match pirichat.online/.well-known/fluxer.
+  static const String defaultMedia = 'https://pirichat.online/media';
+  static const String defaultStaticCdn = 'https://pirichat.online';
+  static const String defaultInvite = 'https://pirichat.online/invite';
+  static const String defaultGift = 'https://pirichat.online/gift';
+  static const String defaultWebApp = 'https://pirichat.online';
 
   static String staticCdn = defaultStaticCdn;
   static String media = defaultMedia;

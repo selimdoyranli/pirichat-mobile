@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:fluxer_app/core/push/push_message.dart';
 import 'package:fluxer_app/core/push/push_notification_payload.dart';
 
-const String kWebPushDefaultTitle = 'sanalyer';
+const String kWebPushDefaultTitle = 'pirichat';
 
 const String kWebPushDefaultBody = 'New message';
 

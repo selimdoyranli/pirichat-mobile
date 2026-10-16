@@ -4271,11 +4271,11 @@
     "@connectionTokenFileTitle": {
         "description": "Title of the token-file section in the verify step."
     },
-    "connectionTokenFileDescription": "Baixe **sanalyer-verification** e coloque-o na sua pasta **.well-known** para que possamos validar o domínio.",
+    "connectionTokenFileDescription": "Baixe **pirichat-verification** e coloque-o na sua pasta **.well-known** para que possamos validar o domínio.",
     "@connectionTokenFileDescription": {
         "description": "Explanatory text for the token-file step. **bold markers** indicate inline-code styling applied by the widget."
     },
-    "connectionTokenFileDownload": "Baixar sanalyer-verification",
+    "connectionTokenFileDownload": "Baixar pirichat-verification",
     "@connectionTokenFileDownload": {
         "description": "Label on the download button for the verification token file."
     },
@@ -4285,11 +4285,11 @@
         "placeholders": {
             "dnsUrl": {
                 "type": "String",
-                "example": "https://example.com/.well-known/fluxer-verification"
+                "example": "https://example.com/.well-known/pirichat-verification"
             }
         }
     },
-    "connectionSaveTokenDialogTitle": "Salvar sanalyer-verification",
+    "connectionSaveTokenDialogTitle": "Salvar pirichat-verification",
     "@connectionSaveTokenDialogTitle": {
         "description": "Title of the save-file dialog opened by the download button."
     },
@@ -4373,7 +4373,7 @@
     "@connectionRemoveFailed": {
         "description": "Toast shown when the delete request fails."
     },
-    "connectionTokenSavedToast": "sanalyer-verification salvo",
+    "connectionTokenSavedToast": "pirichat-verification salvo",
     "@connectionTokenSavedToast": {
         "description": "Toast shown after the token file is saved successfully."
     },
@@ -6186,7 +6186,7 @@
     "@userSettingsNavSecurityLogin": {
         "description": "User settings navigation item for security and login settings."
     },
-    "userSettingsNavFluxerPlutonium": "sanalyer Premium",
+    "userSettingsNavFluxerPlutonium": "pirichat Premium",
     "@userSettingsNavFluxerPlutonium": {
         "description": "User settings navigation item for Fluxer Plutonium subscription settings."
     },
@@ -6234,7 +6234,7 @@
     "@notificationsPushRelaySectionTitle": {
         "description": "Notification settings section title for the Fluxer push relay."
     },
-    "notificationsPushRelaySectionDescription": "A {pushProvider} só entrega notificações push através do seu próprio serviço, por isso as deste dispositivo passam pela retransmissão da sanalyer.",
+    "notificationsPushRelaySectionDescription": "A {pushProvider} só entrega notificações push através do seu próprio serviço, por isso as deste dispositivo passam pela retransmissão da pirichat.",
     "@notificationsPushRelaySectionDescription": {
         "description": "Notification settings section description explaining why the push relay exists.",
         "placeholders": {
@@ -6243,7 +6243,7 @@
             }
         }
     },
-    "notificationsPushRelayConsentLabel": "Usar a retransmissão push da sanalyer",
+    "notificationsPushRelayConsentLabel": "Usar a retransmissão push da pirichat",
     "@notificationsPushRelayConsentLabel": {
         "description": "Toggle label for agreeing to the Fluxer push relay on this device."
     },
@@ -6255,7 +6255,7 @@
     "@pushRelayConsentTitle": {
         "description": "Title of the one-time Fluxer push relay consent sheet."
     },
-    "pushRelayConsentDescription": "A {pushProvider} só entrega notificações push através do seu próprio serviço, por isso as deste dispositivo passam pela retransmissão da sanalyer.",
+    "pushRelayConsentDescription": "A {pushProvider} só entrega notificações push através do seu próprio serviço, por isso as deste dispositivo passam pela retransmissão da pirichat.",
     "@pushRelayConsentDescription": {
         "description": "Subtitle of the push relay consent sheet explaining why the relay exists.",
         "placeholders": {
@@ -6538,11 +6538,11 @@
     "@instanceUrlLabel": {
         "description": "Label for the self-hosted instance URL input on the login screen."
     },
-    "instanceUrlPlaceholder": "Digite a URL da instância (ex: sanalyer.com)",
+    "instanceUrlPlaceholder": "Digite a URL da instância (ex: pirichat.online)",
     "@instanceUrlPlaceholder": {
         "description": "Placeholder for the self-hosted instance URL input."
     },
-    "resetToDefaultInstance": "Redefinir para sanalyer",
+    "resetToDefaultInstance": "Redefinir para pirichat",
     "@resetToDefaultInstance": {
         "description": "Tooltip for the button that resets the instance URL to the official Fluxer instance."
     },

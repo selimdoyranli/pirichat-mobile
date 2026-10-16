@@ -4449,10 +4449,10 @@ class FluxerLocalizationsHu extends FluxerLocalizations {
 
   @override
   String get connectionTokenFileDescription =>
-      'Töltsd le a **sanalyer-verification** fájlt, és helyezd el a **.well-known** mappába, hogy érvényesíteni tudjuk a tartományt.';
+      'Töltsd le a **pirichat-verification** fájlt, és helyezd el a **.well-known** mappába, hogy érvényesíteni tudjuk a tartományt.';
 
   @override
-  String get connectionTokenFileDownload => 'sanalyer-verification letöltése';
+  String get connectionTokenFileDownload => 'pirichat-verification letöltése';
 
   @override
   String connectionTokenFileMeta(String dnsUrl) {
@@ -4460,7 +4460,7 @@ class FluxerLocalizationsHu extends FluxerLocalizations {
   }
 
   @override
-  String get connectionSaveTokenDialogTitle => 'sanalyer-verification mentése';
+  String get connectionSaveTokenDialogTitle => 'pirichat-verification mentése';
 
   @override
   String get connectionVerifyButton => 'Ellenőrzés';
@@ -4532,7 +4532,7 @@ class FluxerLocalizationsHu extends FluxerLocalizations {
       'Nem sikerült eltávolítani a kapcsolatot';
 
   @override
-  String get connectionTokenSavedToast => 'sanalyer-verification mentve';
+  String get connectionTokenSavedToast => 'pirichat-verification mentve';
 
   @override
   String get connectionTokenSaveFailedToast => 'Nem sikerült a fájl mentése';
@@ -9234,7 +9234,7 @@ class FluxerLocalizationsHu extends FluxerLocalizations {
   String get userSettingsNavSecurityLogin => 'Biztonság és bejelentkezés';
 
   @override
-  String get userSettingsNavFluxerPlutonium => 'sanalyer Premium';
+  String get userSettingsNavFluxerPlutonium => 'pirichat Premium';
 
   @override
   String get userSettingsNavGiftsAndCodes => 'Ajándékok';
@@ -9508,7 +9508,7 @@ class FluxerLocalizationsHu extends FluxerLocalizations {
 
   @override
   String get premiumCompletePaymentBody =>
-      'Most a rendszer átirányít a Stripe oldalára a fizetés befejezéséhez. Miután befejezted, térj vissza a sanalyerbe.';
+      'Most a rendszer átirányít a Stripe oldalára a fizetés befejezéséhez. Miután befejezted, térj vissza a pirichatbe.';
 
   @override
   String get premiumChoosePaymentMethodTitle => 'Fizetési mód kiválasztása';
@@ -9550,7 +9550,7 @@ class FluxerLocalizationsHu extends FluxerLocalizations {
 
   @override
   String get premiumExistingSubscriptionBody =>
-      'Már találtunk egy meglévő sanalyer Premium előfizetést ehhez a fiókhoz. Kezeld a biztonságos számlázási portálon a fizetési adatok frissítéséhez vagy az újítási állapot ellenőrzéséhez. Ha most fizettél, várj egy percet, és nyisd meg újra ezt az oldalt.';
+      'Már találtunk egy meglévő pirichat Premium előfizetést ehhez a fiókhoz. Kezeld a biztonságos számlázási portálon a fizetési adatok frissítéséhez vagy az újítási állapot ellenőrzéséhez. Ha most fizettél, várj egy percet, és nyisd meg újra ezt az oldalt.';
 
   @override
   String get premiumPurchasesDisabledTitle => 'Vásárlások nem elérhetők';
@@ -9566,11 +9566,11 @@ class FluxerLocalizationsHu extends FluxerLocalizations {
 
   @override
   String get premiumClaimAccountToPurchase =>
-      'Igényeld a fiókodat a sanalyer Premium megvásárlásához.';
+      'Igényeld a fiókodat a pirichat Premium megvásárlásához.';
 
   @override
   String get premiumVerifyEmailToPurchase =>
-      'A sanalyer Premium megvásárlásához először igazolnod kell az e-mail címedet.';
+      'A pirichat Premium megvásárlásához először igazolnod kell az e-mail címedet.';
 
   @override
   String get premiumPerkCommunities => 'Közösségek';
@@ -9715,21 +9715,21 @@ class FluxerLocalizationsHu extends FluxerLocalizations {
 
   @override
   String get storePlutoniumTagFootnote =>
-      'Csak olyan címkét választhatsz, amellyel még senki más nem rendelkezik ugyanazzal a felhasználónévvel. A felhasználónevek nem különböztetik meg a kis- és nagybetűket, így a Mina#4821 és a mina#4821 ugyanannak számít. A #0000 címke a sanalyer Visionary tagok számára van fenntartva.';
+      'Csak olyan címkét választhatsz, amellyel még senki más nem rendelkezik ugyanazzal a felhasználónévvel. A felhasználónevek nem különböztetik meg a kis- és nagybetűket, így a Mina#4821 és a mina#4821 ugyanannak számít. A #0000 címke a pirichat Visionary tagok számára van fenntartva.';
 
   @override
   String get storePlutoniumLearnVisionary => 'Tudj meg többet a Visionaryról.';
 
   @override
   String get storePlutoniumDonatePrompt =>
-      'Csak a sanalyer nyílt forráskódú fejlesztését szeretnéd támogatni? ';
+      'Csak a pirichat nyílt forráskódú fejlesztését szeretnéd támogatni? ';
 
   @override
   String get storePlutoniumDonateLink => 'Adományozz inkább.';
 
   @override
   String get storePlutoniumHighlightsLead =>
-      'Az előfizetéssel támogatod a sanalyert, és feloldod a következőket';
+      'Az előfizetéssel támogatod a pirichatt, és feloldod a következőket';
 
   @override
   String get storePlutoniumHighlightEmoji =>
@@ -9766,7 +9766,7 @@ class FluxerLocalizationsHu extends FluxerLocalizations {
 
   @override
   String get storePlutoniumAlreadySubscribed =>
-      'Már van sanalyer Premium előfizetésed.';
+      'Már van pirichat Premium előfizetésed.';
 
   @override
   String storePlutoniumSavePercent(int percent) {
@@ -10238,12 +10238,12 @@ class FluxerLocalizationsHu extends FluxerLocalizations {
 
   @override
   String notificationsPushRelaySectionDescription(String pushProvider) {
-    return 'A(z) $pushProvider csak a saját szolgáltatásán keresztül kézbesít push-értesítéseket, ezért az eszköz értesítései a sanalyer továbbítóján haladnak át.';
+    return 'A(z) $pushProvider csak a saját szolgáltatásán keresztül kézbesít push-értesítéseket, ezért az eszköz értesítései a pirichat továbbítóján haladnak át.';
   }
 
   @override
   String get notificationsPushRelayConsentLabel =>
-      'A sanalyer push-továbbítójának használata';
+      'A pirichat push-továbbítójának használata';
 
   @override
   String get notificationsPushRelayConsentDescription =>
@@ -10254,7 +10254,7 @@ class FluxerLocalizationsHu extends FluxerLocalizations {
 
   @override
   String pushRelayConsentDescription(String pushProvider) {
-    return 'A(z) $pushProvider csak a saját szolgáltatásán keresztül kézbesít push-értesítéseket, ezért az eszköz értesítései a sanalyer továbbítóján haladnak át.';
+    return 'A(z) $pushProvider csak a saját szolgáltatásán keresztül kézbesít push-értesítéseket, ezért az eszköz értesítései a pirichat továbbítóján haladnak át.';
   }
 
   @override
@@ -10361,7 +10361,7 @@ class FluxerLocalizationsHu extends FluxerLocalizations {
 
   @override
   String get appIconAndroidChangeDescription =>
-      'sanalyer will restart to apply the new home screen icon.';
+      'pirichat will restart to apply the new home screen icon.';
 
   @override
   String get appIconAndroidChangeConfirm => 'Change icon';
@@ -10405,7 +10405,7 @@ class FluxerLocalizationsHu extends FluxerLocalizations {
 
   @override
   String get advancedCrashReportingSectionDescription =>
-      'Help sanalyer fix bugs in this app by sharing crash and performance data. This is off by default.';
+      'Help pirichat fix bugs in this app by sharing crash and performance data. This is off by default.';
 
   @override
   String get advancedPerformanceReportingLabel =>
@@ -10413,7 +10413,7 @@ class FluxerLocalizationsHu extends FluxerLocalizations {
 
   @override
   String get advancedCrashReportingDescription =>
-      'Reports go to sanalyer\'s error tracker, whichever instance you\'re signed in to. They don\'t include instance names, IDs or message content.';
+      'Reports go to pirichat\'s error tracker, whichever instance you\'re signed in to. They don\'t include instance names, IDs or message content.';
 
   @override
   String get advancedSettingsConfigure => 'Beállítás';
@@ -10973,7 +10973,7 @@ class FluxerLocalizationsHu extends FluxerLocalizations {
   String get userSettingsNavWhatsNew => 'Újdonságok';
 
   @override
-  String get userSettingsJoinFluxerLabs => 'Csatlakozz a sanalyer Labshoz';
+  String get userSettingsJoinFluxerLabs => 'Csatlakozz a pirichat Labshoz';
 
   @override
   String get userSettingsGiveFeedback => 'Give feedback';
@@ -11226,14 +11226,14 @@ class FluxerLocalizationsHu extends FluxerLocalizations {
 
   @override
   String get instanceUrlPlaceholder =>
-      'Add meg a példány URL-jét (pl. sanalyer.com)';
+      'Add meg a példány URL-jét (pl. pirichat.online)';
 
   @override
   String get instanceUrlHelper =>
-      'Használd a sanalyer.com címet a hivatalos példányhoz, vagy egy saját üzemeltetésű példány pontos URL-jét.';
+      'Használd a pirichat.online címet a hivatalos példányhoz, vagy egy saját üzemeltetésű példány pontos URL-jét.';
 
   @override
-  String get resetToDefaultInstance => 'Visszaállítás sanalyer-re';
+  String get resetToDefaultInstance => 'Visszaállítás pirichat-re';
 
   @override
   String get instanceConnect => 'Csatlakozás';
@@ -11255,12 +11255,12 @@ class FluxerLocalizationsHu extends FluxerLocalizations {
 
   @override
   String instanceOutdatedForClient(String domain) {
-    return 'This instance is out of date for this app. Ask whoever runs $domain to update sanalyer.';
+    return 'This instance is out of date for this app. Ask whoever runs $domain to update pirichat.';
   }
 
   @override
   String instanceRequiresNewerClient(String domain) {
-    return '$domain runs a newer version of sanalyer than this app. Update the app, then try again.';
+    return '$domain runs a newer version of pirichat than this app. Update the app, then try again.';
   }
 
   @override
@@ -14822,20 +14822,20 @@ class FluxerLocalizationsHu extends FluxerLocalizations {
 
   @override
   String get assistantNeedsLogin =>
-      'Először nyisd meg a sanalyert, és jelentkezz be.';
+      'Először nyisd meg a pirichatt, és jelentkezz be.';
 
   @override
   String get assistantNotInVoice => 'Nem vagy hívásban.';
 
   @override
-  String get assistantNotFound => 'A sanalyer nem találta.';
+  String get assistantNotFound => 'A pirichat nem találta.';
 
   @override
   String get assistantDmsDisabled =>
       'A közvetlen üzenetek le vannak tiltva ezen a példányon.';
 
   @override
-  String get assistantFailed => 'A sanalyer nem tudta befejezni.';
+  String get assistantFailed => 'A pirichat nem tudta befejezni.';
 
   @override
   String get assistantOkMuted => 'Mikrofon némítva.';
@@ -14858,7 +14858,7 @@ class FluxerLocalizationsHu extends FluxerLocalizations {
   }
 
   @override
-  String get assistantOkOpened => 'sanalyer megnyitása.';
+  String get assistantOkOpened => 'pirichat megnyitása.';
 
   @override
   String get assistantOkMessageSent => 'Üzenet elküldve.';

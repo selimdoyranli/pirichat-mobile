@@ -77,7 +77,7 @@ FluxerColorTheme buildLightColorTheme({double saturationFactor = 1.0}) {
     ],
   ).build(saturationFactor: saturationFactor);
 
-  // sanalyer: #B5179E itself (lightness 40) is too light for brand-coloured
+  // pirichat: the logo red (lightness 50) is too light for brand-coloured
   // text on tinted light surfaces (WCAG AA); 34 keeps the hue and passes.
   final brandPrimary = tone(FluxerColorFamilies.brand, 34);
   final statusOnline = tone(
@@ -144,7 +144,7 @@ FluxerColorTheme buildLightColorTheme({double saturationFactor = 1.0}) {
 
     brandPrimary: brandPrimary,
     brandSecondary: tone(FluxerColorFamilies.brand, 30, saturation: 60),
-    brandPrimaryLight: toneDirect(hue: 309, saturation: 77, lightness: 84),
+    brandPrimaryLight: toneDirect(hue: 349, saturation: 99, lightness: 84),
     brandPrimaryFill: toneDirect(
       hue: 0,
       saturation: 0,

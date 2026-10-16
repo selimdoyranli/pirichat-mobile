@@ -18,7 +18,7 @@ import 'package:phosphor_flutter/phosphor_flutter.dart';
 const String kFluxerLabsInviteUrl = 'https://fluxer.gg/fluxer-labs';
 const String kFluxerFeedbackUrl = 'https://feedback.fluxer.com';
 
-// sanalyer: the Fluxer Labs and feedback links point at Fluxer's own
+// pirichat: the Fluxer Labs and feedback links point at Fluxer's own
 // community, so they stay hidden on every instance.
 bool userSettingsIsMainFluxerInstance(WidgetRef ref) {
   return false;

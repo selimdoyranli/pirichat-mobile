@@ -283,7 +283,7 @@ platform :ios do
       key_content: ENV.fetch("APPSTORE_PRIVATE_KEY")
     )
 
-    app_identifier = "com.sanalyer.mobile"
+    app_identifier = "online.pirichat.mobile"
     flutter_build_name = flutter_marketing_version
     flutter_build_number = next_testflight_build_number(
       api_key: api_key,
@@ -354,10 +354,10 @@ platform :ios do
         teamID: ENV.fetch("APPLE_TEAM_ID"),
         signingCertificate: "Apple Distribution",
         provisioningProfiles: {
-          "com.sanalyer.mobile" => runner_profile_uuid,
-          "com.sanalyer.mobile.BroadcastExtension" => extension_profile_uuid,
-          "com.sanalyer.mobile.NotificationService" => notification_service_profile_uuid,
-          "com.sanalyer.mobile.ShareExtension" => share_extension_profile_uuid
+          "online.pirichat.mobile" => runner_profile_uuid,
+          "online.pirichat.mobile.BroadcastExtension" => extension_profile_uuid,
+          "online.pirichat.mobile.NotificationService" => notification_service_profile_uuid,
+          "online.pirichat.mobile.ShareExtension" => share_extension_profile_uuid
         }
       },
       xcargs: [
@@ -392,7 +392,7 @@ platform :ios do
     end
   end
 
-  desc "Build canary archive and upload to TestFlight (com.sanalyer.mobile.canary)"
+  desc "Build canary archive and upload to TestFlight (online.pirichat.mobile.canary)"
   lane :testflight_canary do
     ENV["MEASURE_RELEASE_CHANNEL"] = "canary"
     profile_path = File.expand_path("~/Library/MobileDevice/Provisioning Profiles/profile.mobileprovision")
@@ -416,7 +416,7 @@ platform :ios do
       key_content: ENV.fetch("APPSTORE_PRIVATE_KEY")
     )
 
-    app_identifier = "com.sanalyer.mobile.canary"
+    app_identifier = "online.pirichat.mobile.canary"
     flutter_build_name = flutter_marketing_version
     flutter_build_number = next_testflight_build_number(
       api_key: api_key,
@@ -487,10 +487,10 @@ platform :ios do
         teamID: ENV.fetch("APPLE_TEAM_ID"),
         signingCertificate: "Apple Distribution",
         provisioningProfiles: {
-          "com.sanalyer.mobile.canary" => runner_profile_uuid,
-          "com.sanalyer.mobile.canary.BroadcastExtension" => extension_profile_uuid,
-          "com.sanalyer.mobile.canary.NotificationService" => notification_service_profile_uuid,
-          "com.sanalyer.mobile.canary.ShareExtension" => share_extension_profile_uuid
+          "online.pirichat.mobile.canary" => runner_profile_uuid,
+          "online.pirichat.mobile.canary.BroadcastExtension" => extension_profile_uuid,
+          "online.pirichat.mobile.canary.NotificationService" => notification_service_profile_uuid,
+          "online.pirichat.mobile.canary.ShareExtension" => share_extension_profile_uuid
         }
       },
       xcargs: [
@@ -545,7 +545,7 @@ platform :ios do
       key_content: ENV.fetch("APPSTORE_PRIVATE_KEY")
     )
 
-    app_identifier = "com.sanalyer.mobile"
+    app_identifier = "online.pirichat.mobile"
     flutter_build_name = flutter_marketing_version
     flutter_build_number = next_testflight_build_number(
       api_key: api_key,
@@ -615,10 +615,10 @@ platform :ios do
         teamID: ENV.fetch("APPLE_TEAM_ID"),
         signingCertificate: "Apple Distribution",
         provisioningProfiles: {
-          "com.sanalyer.mobile" => runner_profile_uuid,
-          "com.sanalyer.mobile.BroadcastExtension" => extension_profile_uuid,
-          "com.sanalyer.mobile.NotificationService" => notification_service_profile_uuid,
-          "com.sanalyer.mobile.ShareExtension" => share_extension_profile_uuid
+          "online.pirichat.mobile" => runner_profile_uuid,
+          "online.pirichat.mobile.BroadcastExtension" => extension_profile_uuid,
+          "online.pirichat.mobile.NotificationService" => notification_service_profile_uuid,
+          "online.pirichat.mobile.ShareExtension" => share_extension_profile_uuid
         }
       },
       xcargs: [
@@ -661,14 +661,14 @@ platform :ios do
     end
   end
 
-  # sanalyer: local TestFlight lane. Reads the App Store Connect API key from ~/.config/sanalyer
+  # pirichat: local TestFlight lane. Reads the App Store Connect API key from ~/.config/pirichat
   # (asc.env + asc_key.p8, never in the repo), creates or reuses the Apple Distribution certificate
   # and the four App Store profiles with that key, and builds the stable flavor. Runner.entitlements
   # gets aps-environment=production for the duration of the build only. After an App ID capability
-  # change run once with SANALYER_REFRESH_PROFILES=1 so the profiles are regenerated.
-  desc "Build stable for com.sanalyer.mobile and upload to TestFlight (local, API key)"
-  lane :sanalyer_testflight do
-    config_dir = File.expand_path("~/.config/sanalyer")
+  # change run once with PIRICHAT_REFRESH_PROFILES=1 so the profiles are regenerated.
+  desc "Build stable for online.pirichat.mobile and upload to TestFlight (local, API key)"
+  lane :pirichat_testflight do
+    config_dir = File.expand_path("~/.config/pirichat")
     asc_env = File.readlines(File.join(config_dir, "asc.env")).each_with_object({}) do |line, env|
       key, value = line.strip.split("=", 2)
       env[key] = value if key && !key.empty? && value
@@ -678,11 +678,11 @@ platform :ios do
       issuer_id: asc_env.fetch("ASC_ISSUER_ID"),
       key_filepath: File.join(config_dir, "asc_key.p8")
     )
-    team_id = ENV.fetch("APPLE_TEAM_ID", "9XYJ4H8U3Y")
-    app_identifier = "com.sanalyer.mobile"
-    build_name = ENV.fetch("SANALYER_VERSION", "1.0.0")
+    team_id = ENV.fetch("APPLE_TEAM_ID", "PL952Y4644")
+    app_identifier = "online.pirichat.mobile"
+    build_name = ENV.fetch("PIRICHAT_VERSION", "1.0.0")
     now = Time.now
-    build_number = ENV.fetch("SANALYER_BUILD_NUMBER", "#{now.strftime('%Y%m%d')}.#{now.strftime('%H%M').to_i}")
+    build_number = ENV.fetch("PIRICHAT_BUILD_NUMBER", "#{now.strftime('%Y%m%d')}.#{now.strftime('%H%M').to_i}")
     UI.message("Building #{app_identifier} #{build_name} (#{build_number})")
 
     signing_dir = File.join(config_dir, "signing")
@@ -702,9 +702,9 @@ platform :ios do
         team_id: team_id,
         app_identifier: bundle_id,
         platform: "ios",
-        filename: "sanalyer_#{target}.mobileprovision",
+        filename: "pirichat_#{target}.mobileprovision",
         output_path: signing_dir,
-        force: ENV["SANALYER_REFRESH_PROFILES"] == "1"
+        force: ENV["PIRICHAT_REFRESH_PROFILES"] == "1"
       )
       profiles[target] = {
         bundle_id: bundle_id,
@@ -718,7 +718,7 @@ platform :ios do
     original_project = File.read(project_file)
     original_entitlements = File.read(entitlements_file)
     begin
-      # Store builds talk to production APNs through push.sanalyer.com; the repo keeps development for debug.
+      # Store builds talk to production APNs through push.pirichat.online; the repo keeps development for debug.
       sh("/usr/libexec/PlistBuddy", "-c", "Set :aps-environment production", entitlements_file)
       profiles.each do |target, profile|
         update_project_provisioning(
@@ -744,7 +744,7 @@ platform :ios do
         configuration: "Release-stable",
         clean: false,
         output_directory: "build/ios/ipa",
-        output_name: "sanalyer-#{build_name}-#{build_number}.ipa",
+        output_name: "pirichat-#{build_name}-#{build_number}.ipa",
         export_method: "app-store",
         codesigning_identity: "Apple Distribution",
         export_options: {

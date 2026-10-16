@@ -89,14 +89,14 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="sanalyer.com" android:pathPrefix="/channels" />
-                <data android:scheme="https" android:host="sanalyer.com" android:pathPrefix="/invite" />
-                <data android:scheme="https" android:host="sanalyer.com" android:pathPrefix="/gift" />
-                <data android:scheme="https" android:host="sanalyer.com" android:pathPrefix="/users" />
-                <data android:scheme="https" android:host="sanalyer.com" android:pathPrefix="/settings/user" />
-                <data android:scheme="https" android:host="sanalyer.com" android:pathPrefix="/reset" />
-                <data android:scheme="https" android:host="sanalyer.com" android:pathPrefix="/notifications" />
-                <data android:scheme="https" android:host="sanalyer.com" android:pathPrefix="/you" />
+                <data android:scheme="https" android:host="pirichat.online" android:pathPrefix="/channels" />
+                <data android:scheme="https" android:host="pirichat.online" android:pathPrefix="/invite" />
+                <data android:scheme="https" android:host="pirichat.online" android:pathPrefix="/gift" />
+                <data android:scheme="https" android:host="pirichat.online" android:pathPrefix="/users" />
+                <data android:scheme="https" android:host="pirichat.online" android:pathPrefix="/settings/user" />
+                <data android:scheme="https" android:host="pirichat.online" android:pathPrefix="/reset" />
+                <data android:scheme="https" android:host="pirichat.online" android:pathPrefix="/notifications" />
+                <data android:scheme="https" android:host="pirichat.online" android:pathPrefix="/you" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />

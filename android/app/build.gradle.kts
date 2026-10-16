@@ -131,16 +131,16 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.sanalyer.mobile"
+        applicationId = "online.pirichat.mobile"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
         multiDexEnabled = true
-        manifestPlaceholders["appLabel"] = "sanalyer"
+        manifestPlaceholders["appLabel"] = "pirichat"
         manifestPlaceholders["buildEnvironment"] = "stable"
         manifestPlaceholders["pushProvider"] = "fcm"
-        manifestPlaceholders["appIconAliasPrefix"] = "com.sanalyer.mobile.MainActivity"
+        manifestPlaceholders["appIconAliasPrefix"] = "online.pirichat.mobile.MainActivity"
         manifestPlaceholders["measureApiKey"] = ""
         manifestPlaceholders["measureApiUrl"] = measureApiUrl
     }
@@ -150,9 +150,9 @@ android {
             dimension = "environment"
             applicationIdSuffix = ".canary"
             versionNameSuffix = "-canary"
-            manifestPlaceholders["appLabel"] = "sanalyer Canary"
+            manifestPlaceholders["appLabel"] = "pirichat Canary"
             manifestPlaceholders["buildEnvironment"] = "canary"
-            manifestPlaceholders["appIconAliasPrefix"] = "com.sanalyer.mobile.canary.MainActivity"
+            manifestPlaceholders["appIconAliasPrefix"] = "online.pirichat.mobile.canary.MainActivity"
             manifestPlaceholders["measureApiKey"] =
                 readMeasureAndroidApiKey(
                     environment = "canary",
@@ -162,7 +162,7 @@ android {
         }
         create("stable") {
             dimension = "environment"
-            manifestPlaceholders["appLabel"] = "sanalyer"
+            manifestPlaceholders["appLabel"] = "pirichat"
             manifestPlaceholders["buildEnvironment"] = "stable"
             manifestPlaceholders["measureApiKey"] =
                 readMeasureAndroidApiKey(
@@ -173,7 +173,7 @@ android {
         }
         create("beta") {
             dimension = "environment"
-            manifestPlaceholders["appLabel"] = "sanalyer Beta"
+            manifestPlaceholders["appLabel"] = "pirichat Beta"
             manifestPlaceholders["buildEnvironment"] = "beta"
             manifestPlaceholders["measureApiKey"] =
                 readMeasureAndroidApiKey(

@@ -5,7 +5,7 @@ import 'package:fluxer_app/features/gifts/utils/gift_code_utils.dart';
 const int kMaxSharedThemesPerMessage = 10;
 
 const List<String> kOfficialThemeUrlBases = <String>[
-  'https://sanalyer.com/theme',
+  'https://pirichat.online/theme',
 ];
 
 String? _cachedThemePatternKey;

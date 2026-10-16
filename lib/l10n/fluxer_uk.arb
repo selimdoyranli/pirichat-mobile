@@ -4271,11 +4271,11 @@
     "@connectionTokenFileTitle": {
         "description": "Title of the token-file section in the verify step."
     },
-    "connectionTokenFileDescription": "Завантажте **sanalyer-verification** і помістіть його у папку **.well-known**, щоб ми могли перевірити домен.",
+    "connectionTokenFileDescription": "Завантажте **pirichat-verification** і помістіть його у папку **.well-known**, щоб ми могли перевірити домен.",
     "@connectionTokenFileDescription": {
         "description": "Explanatory text for the token-file step. **bold markers** indicate inline-code styling applied by the widget."
     },
-    "connectionTokenFileDownload": "Завантажити sanalyer-verification",
+    "connectionTokenFileDownload": "Завантажити pirichat-verification",
     "@connectionTokenFileDownload": {
         "description": "Label on the download button for the verification token file."
     },
@@ -4285,11 +4285,11 @@
         "placeholders": {
             "dnsUrl": {
                 "type": "String",
-                "example": "https://example.com/.well-known/fluxer-verification"
+                "example": "https://example.com/.well-known/pirichat-verification"
             }
         }
     },
-    "connectionSaveTokenDialogTitle": "Зберегти sanalyer-verification",
+    "connectionSaveTokenDialogTitle": "Зберегти pirichat-verification",
     "@connectionSaveTokenDialogTitle": {
         "description": "Title of the save-file dialog opened by the download button."
     },
@@ -4373,7 +4373,7 @@
     "@connectionRemoveFailed": {
         "description": "Toast shown when the delete request fails."
     },
-    "connectionTokenSavedToast": "sanalyer-verification збережено",
+    "connectionTokenSavedToast": "pirichat-verification збережено",
     "@connectionTokenSavedToast": {
         "description": "Toast shown after the token file is saved successfully."
     },
@@ -6202,7 +6202,7 @@
     "@userSettingsNavSecurityLogin": {
         "description": "User settings navigation item for security and login settings."
     },
-    "userSettingsNavFluxerPlutonium": "sanalyer Premium",
+    "userSettingsNavFluxerPlutonium": "pirichat Premium",
     "@userSettingsNavFluxerPlutonium": {
         "description": "User settings navigation item for Fluxer Plutonium subscription settings."
     },
@@ -6500,15 +6500,15 @@
     "@instanceUrlLabel": {
         "description": "Label for the self-hosted instance URL input on the login screen."
     },
-    "instanceUrlPlaceholder": "Введіть URL екземпляра (наприклад, sanalyer.com)",
+    "instanceUrlPlaceholder": "Введіть URL екземпляра (наприклад, pirichat.online)",
     "@instanceUrlPlaceholder": {
         "description": "Placeholder for the self-hosted instance URL input."
     },
-    "instanceUrlHelper": "Використовуйте sanalyer.com для офіційного екземпляра або точну URL-адресу самостійно розміщеного екземпляра.",
+    "instanceUrlHelper": "Використовуйте pirichat.online для офіційного екземпляра або точну URL-адресу самостійно розміщеного екземпляра.",
     "@instanceUrlHelper": {
         "description": "Helper text explaining official vs self-hosted instance URLs."
     },
-    "resetToDefaultInstance": "Скинути до sanalyer",
+    "resetToDefaultInstance": "Скинути до pirichat",
     "@resetToDefaultInstance": {
         "description": "Tooltip for the button that resets the instance URL to the official Fluxer instance."
     },
@@ -9021,7 +9021,7 @@
     "@notificationsPushRelaySectionTitle": {
         "description": "Notification settings section title for the Fluxer push relay."
     },
-    "notificationsPushRelaySectionDescription": "{pushProvider} доставляє push-сповіщення лише через власну службу, тож сповіщення для цього пристрою йдуть через ретранслятор sanalyer.",
+    "notificationsPushRelaySectionDescription": "{pushProvider} доставляє push-сповіщення лише через власну службу, тож сповіщення для цього пристрою йдуть через ретранслятор pirichat.",
     "@notificationsPushRelaySectionDescription": {
         "description": "Notification settings section description explaining why the push relay exists.",
         "placeholders": {
@@ -9030,7 +9030,7 @@
             }
         }
     },
-    "notificationsPushRelayConsentLabel": "Використовувати push-ретранслятор sanalyer",
+    "notificationsPushRelayConsentLabel": "Використовувати push-ретранслятор pirichat",
     "@notificationsPushRelayConsentLabel": {
         "description": "Toggle label for agreeing to the Fluxer push relay on this device."
     },
@@ -9042,7 +9042,7 @@
     "@pushRelayConsentTitle": {
         "description": "Title of the one-time Fluxer push relay consent sheet."
     },
-    "pushRelayConsentDescription": "{pushProvider} доставляє push-сповіщення лише через власну службу, тож сповіщення для цього пристрою йдуть через ретранслятор sanalyer.",
+    "pushRelayConsentDescription": "{pushProvider} доставляє push-сповіщення лише через власну службу, тож сповіщення для цього пристрою йдуть через ретранслятор pirichat.",
     "@pushRelayConsentDescription": {
         "description": "Subtitle of the push relay consent sheet explaining why the relay exists.",
         "placeholders": {
@@ -14666,7 +14666,7 @@
         "description": "Error shown on a self-hosted instance when the selected Plutonium plan is not available. Names no support mailbox."
     },
     "premiumCompletePaymentTitle": "Завершити оплату",
-    "premiumCompletePaymentBody": "Ви переходите до Stripe для завершення оплати. Поверніться до sanalyer після завершення.",
+    "premiumCompletePaymentBody": "Ви переходите до Stripe для завершення оплати. Поверніться до pirichat після завершення.",
     "premiumChoosePaymentMethodTitle": "Виберіть спосіб оплати",
     "premiumPixPaymentPromptDescription": "Сплачуйте автоматично через Pix, щоб авторизувати регулярні платежі безпосередньо з вашого бразильського банку. Або виберіть \"Використати картку\", щоб ввести дані кредитної картки на наступному екрані Stripe.",
     "premiumUsePix": "Використовуйте Pix",
@@ -14678,7 +14678,7 @@
     "premiumAlreadyVisionaryTitle": "Ви вже Visionary",
     "premiumAlreadyVisionaryBody": "Visionary вже надає постійний доступ, тому регулярна підписка не потрібна. Ви й надалі можете купувати подарунки для інших.",
     "premiumExistingSubscriptionTitle": "Підписка вже існує",
-    "premiumExistingSubscriptionBody": "Ми знайшли наявну підписку sanalyer Premium для цього облікового запису. Керуйте нею в захищеному платіжному порталі, щоб оновити платіжні дані або перевірити статус поновлення. Якщо ви щойно оплатили, зачекайте хвилину та знову відкрийте цю сторінку.",
+    "premiumExistingSubscriptionBody": "Ми знайшли наявну підписку pirichat Premium для цього облікового запису. Керуйте нею в захищеному платіжному порталі, щоб оновити платіжні дані або перевірити статус поновлення. Якщо ви щойно оплатили, зачекайте хвилину та знову відкрийте цю сторінку.",
     "premiumPurchasesDisabledTitle": "Покупки недоступні",
     "premiumPurchasesDisabledBody": "Покупки для цього облікового запису вимкнено. Зверніться до {supportEmail}, якщо це виглядає неправильно.",
     "@premiumPurchasesDisabledBody": {
@@ -14693,8 +14693,8 @@
     "@premiumPurchasesDisabledBodySelfHosted": {
         "description": "Shown on a self-hosted instance when purchases are disabled for the account. Names no email address."
     },
-    "premiumClaimAccountToPurchase": "Активуйте свій обліковий запис, щоб придбати sanalyer Premium.",
-    "premiumVerifyEmailToPurchase": "Щоб придбати sanalyer Premium, вам потрібно підтвердити свою електронну пошту.",
+    "premiumClaimAccountToPurchase": "Активуйте свій обліковий запис, щоб придбати pirichat Premium.",
+    "premiumVerifyEmailToPurchase": "Щоб придбати pirichat Premium, вам потрібно підтвердити свою електронну пошту.",
     "premiumPerkCommunities": "Спільноти",
     "premiumPerkMessageCharacterLimit": "Обмеження на кількість символів у повідомленні",
     "premiumPerkBookmarkedMessages": "Збережені повідомлення",
@@ -14746,11 +14746,11 @@
     "storePlutoniumCompareThemes": "Власні теми для програми",
     "storePlutoniumVideoFree": "До 720p зі швидкістю 30 кадрів/сек",
     "storePlutoniumVideoPlutonium": "До 4K зі швидкістю 60 кадрів/сек",
-    "storePlutoniumTagFootnote": "Ви можете вибрати лише той тег, якого ще не має інший користувач із таким самим ім'ям. Імена користувачів не чутливі до регістру, тому Mina#4821 і mina#4821 вважаються однаковими. Тег #0000 зарезервовано для учасників sanalyer Visionary.",
+    "storePlutoniumTagFootnote": "Ви можете вибрати лише той тег, якого ще не має інший користувач із таким самим ім'ям. Імена користувачів не чутливі до регістру, тому Mina#4821 і mina#4821 вважаються однаковими. Тег #0000 зарезервовано для учасників pirichat Visionary.",
     "storePlutoniumLearnVisionary": "Дізнайтеся більше про Visionary.",
-    "storePlutoniumDonatePrompt": "Хочете просто підтримати розробку sanalyer з відкритим кодом? ",
+    "storePlutoniumDonatePrompt": "Хочете просто підтримати розробку pirichat з відкритим кодом? ",
     "storePlutoniumDonateLink": "Зробити пожертву.",
-    "storePlutoniumHighlightsLead": "Підписка фінансує sanalyer і розблоковує",
+    "storePlutoniumHighlightsLead": "Підписка фінансує pirichat і розблоковує",
     "storePlutoniumHighlightEmoji": "Власні емоджі та стікери в будь-якому чаті",
     "storePlutoniumHighlightProfile": "Анімований профіль, значок і вибраний 4-значний номер",
     "storePlutoniumHighlightFiles": "Завантаження до 500 МБ",
@@ -14759,7 +14759,7 @@
     "storePlutoniumHighlightsMore": "І багато іншого",
     "storePlutoniumRenewsThroughPlay": "Автоматично поновлюється через Google Play, доки ви не скасуєте підписку.",
     "storePlutoniumRenewsThroughAppStore": "Автоматично поновлюється через App Store, доки ви не скасуєте підписку.",
-    "storePlutoniumAlreadySubscribed": "У вас уже є підписка sanalyer Premium.",
+    "storePlutoniumAlreadySubscribed": "У вас уже є підписка pirichat Premium.",
     "storePlutoniumSavePercent": "Заощадьте {percent}%",
     "@storePlutoniumSavePercent": {
         "placeholders": {
@@ -15038,7 +15038,7 @@
             }
         }
     },
-    "userSettingsJoinFluxerLabs": "Приєднатися до sanalyer Labs",
+    "userSettingsJoinFluxerLabs": "Приєднатися до pirichat Labs",
     "@userSettingsJoinFluxerLabs": {
         "description": "User settings What's New action to join the Fluxer Labs community."
     },
@@ -15880,7 +15880,7 @@
     "@homeQuickActionDms": {
         "description": "Home screen quick action that opens Direct Messages."
     },
-    "assistantNeedsLogin": "Спершу відкрийте sanalyer і ввійдіть.",
+    "assistantNeedsLogin": "Спершу відкрийте pirichat і ввійдіть.",
     "@assistantNeedsLogin": {
         "description": "Siri/Shortcuts result when the user is logged out."
     },
@@ -15888,7 +15888,7 @@
     "@assistantNotInVoice": {
         "description": "Siri/Shortcuts result when mute or leave runs with no live call."
     },
-    "assistantNotFound": "sanalyer не вдалося знайти це.",
+    "assistantNotFound": "pirichat не вдалося знайти це.",
     "@assistantNotFound": {
         "description": "Siri/Shortcuts result when a friend, channel, or community cannot be resolved."
     },
@@ -15896,7 +15896,7 @@
     "@assistantDmsDisabled": {
         "description": "Siri/Shortcuts result when DM actions are blocked by instance config."
     },
-    "assistantFailed": "sanalyer не зміг цього зробити.",
+    "assistantFailed": "pirichat не зміг цього зробити.",
     "@assistantFailed": {
         "description": "Siri/Shortcuts fallback when an assistant command fails."
     },
@@ -15913,7 +15913,7 @@
             }
         }
     },
-    "assistantOkOpened": "Відкриваю sanalyer.",
+    "assistantOkOpened": "Відкриваю pirichat.",
     "applicationsTitle": "Застосунки",
     "@applicationsTitle": {
         "description": "Title for the developer Applications settings tab."

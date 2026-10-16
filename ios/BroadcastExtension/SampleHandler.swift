@@ -10,7 +10,7 @@ import OSLog
 
 let broadcastLogger = OSLog(subsystem: "com.fluxer", category: "Broadcast")
 private enum Constants {
-    static let appGroupIdentifier = "group.com.sanalyer.mobile"
+    static let appGroupIdentifier = "group.online.pirichat.mobile"
 }
 
 class SampleHandler: RPBroadcastSampleHandler {

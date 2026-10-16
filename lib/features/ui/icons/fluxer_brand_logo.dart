@@ -18,9 +18,12 @@ class FluxerBrandLogo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fill = backgroundColor ?? context.colors.brandPrimary;
-    final Color mark =
-        symbolColor ?? ColorUtils.bestContrastColor(fill.toARGB32());
+    // pirichat: by default the logo itself, white and red on its dark tile.
+    final Color fill = backgroundColor ?? const Color(0xFF0A0A10);
+    final Color? mark = symbolColor ??
+        (backgroundColor == null
+            ? null
+            : ColorUtils.bestContrastColor(fill.toARGB32()));
     return ExcludeSemantics(
       child: SizedBox(
         width: size,
@@ -37,7 +40,9 @@ class FluxerBrandLogo extends StatelessWidget {
               Assets.fluxerSymbol,
               width: size,
               height: size,
-              colorFilter: ColorFilter.mode(mark, BlendMode.srcIn),
+              colorFilter: mark == null
+                  ? null
+                  : ColorFilter.mode(mark, BlendMode.srcIn),
             ),
           ],
         ),

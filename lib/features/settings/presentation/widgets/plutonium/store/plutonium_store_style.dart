@@ -24,8 +24,8 @@ enum PremiumStoreStyle {
     inkSoft: Color(0xF2121122),
     inkFaint: Color(0x73121122),
     line: Color(0x14121122),
-    accent: Color(0xFFB5179E),
-    wave: Color(0xFFB5179E),
+    accent: Color(0xFFFD012D),
+    wave: Color(0xFFFD012D),
     panelFill: Color(0x80FFFFFF),
     panelShadow: Color(0x2E121122),
   );

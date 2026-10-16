@@ -8,7 +8,7 @@ import 'package:fluxer_app/material_ui.dart';
 import 'package:fluxer_app/shared/utils/display_name.dart';
 import 'package:fluxer_dart/export.dart';
 
-const int guildProfileDefaultAccentColor = 0xB5179E;
+const int guildProfileDefaultAccentColor = 0xFD012D;
 const int guildProfileAvatarUnsetFlag = 1 << 0;
 const int guildProfileBannerUnsetFlag = 1 << 1;
 

@@ -8,8 +8,8 @@ const List<String> kOAuth2Scopes = <String>[
 
 const int kMaxApplicationRedirectUris = 10;
 
-const String kApplicationDocsUrl = 'https://sanalyer.com/docs';
-const String kApplicationDocsDomain = 'sanalyer.com/docs';
+const String kApplicationDocsUrl = 'https://pirichat.online/docs';
+const String kApplicationDocsDomain = 'pirichat.online/docs';
 const String kExampleCallbackUrl = 'https://example.com/callback';
 
 String resolveOAuthAuthorizeOrigin({

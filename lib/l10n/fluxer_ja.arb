@@ -4271,11 +4271,11 @@
     "@connectionTokenFileTitle": {
         "description": "Title of the token-file section in the verify step."
     },
-    "connectionTokenFileDescription": "**sanalyer-verification**をダウンロードし、**well-known**フォルダに配置してドメインを検証できるようにしてください。",
+    "connectionTokenFileDescription": "**pirichat-verification**をダウンロードし、**well-known**フォルダに配置してドメインを検証できるようにしてください。",
     "@connectionTokenFileDescription": {
         "description": "Explanatory text for the token-file step. **bold markers** indicate inline-code styling applied by the widget."
     },
-    "connectionTokenFileDownload": "sanalyer-verificationをダウンロード",
+    "connectionTokenFileDownload": "pirichat-verificationをダウンロード",
     "@connectionTokenFileDownload": {
         "description": "Label on the download button for the verification token file."
     },
@@ -4285,11 +4285,11 @@
         "placeholders": {
             "dnsUrl": {
                 "type": "String",
-                "example": "https://example.com/.well-known/fluxer-verification"
+                "example": "https://example.com/.well-known/pirichat-verification"
             }
         }
     },
-    "connectionSaveTokenDialogTitle": "sanalyer-verificationを保存",
+    "connectionSaveTokenDialogTitle": "pirichat-verificationを保存",
     "@connectionSaveTokenDialogTitle": {
         "description": "Title of the save-file dialog opened by the download button."
     },
@@ -4373,7 +4373,7 @@
     "@connectionRemoveFailed": {
         "description": "Toast shown when the delete request fails."
     },
-    "connectionTokenSavedToast": "sanalyer-verificationを保存しました",
+    "connectionTokenSavedToast": "pirichat-verificationを保存しました",
     "@connectionTokenSavedToast": {
         "description": "Toast shown after the token file is saved successfully."
     },
@@ -6202,7 +6202,7 @@
     "@userSettingsNavSecurityLogin": {
         "description": "User settings navigation item for security and login settings."
     },
-    "userSettingsNavFluxerPlutonium": "sanalyer Premium",
+    "userSettingsNavFluxerPlutonium": "pirichat Premium",
     "@userSettingsNavFluxerPlutonium": {
         "description": "User settings navigation item for Fluxer Plutonium subscription settings."
     },
@@ -6500,15 +6500,15 @@
     "@instanceUrlLabel": {
         "description": "Label for the self-hosted instance URL input on the login screen."
     },
-    "instanceUrlPlaceholder": "インスタンスURLを入力 (例: sanalyer.com)",
+    "instanceUrlPlaceholder": "インスタンスURLを入力 (例: pirichat.online)",
     "@instanceUrlPlaceholder": {
         "description": "Placeholder for the self-hosted instance URL input."
     },
-    "instanceUrlHelper": "公式インスタンスにはsanalyer.comを、セルフホスト型インスタンスには正確なURLを使用してください。",
+    "instanceUrlHelper": "公式インスタンスにはpirichat.onlineを、セルフホスト型インスタンスには正確なURLを使用してください。",
     "@instanceUrlHelper": {
         "description": "Helper text explaining official vs self-hosted instance URLs."
     },
-    "resetToDefaultInstance": "sanalyerにリセット",
+    "resetToDefaultInstance": "pirichatにリセット",
     "@resetToDefaultInstance": {
         "description": "Tooltip for the button that resets the instance URL to the official Fluxer instance."
     },
@@ -9254,7 +9254,7 @@
     "@notificationsPushRelaySectionTitle": {
         "description": "Notification settings section title for the Fluxer push relay."
     },
-    "notificationsPushRelaySectionDescription": "{pushProvider} は自社のサービス経由でしかプッシュ通知を配信しないため、このデバイスへの通知は sanalyer のリレーを経由します。",
+    "notificationsPushRelaySectionDescription": "{pushProvider} は自社のサービス経由でしかプッシュ通知を配信しないため、このデバイスへの通知は pirichat のリレーを経由します。",
     "@notificationsPushRelaySectionDescription": {
         "description": "Notification settings section description explaining why the push relay exists.",
         "placeholders": {
@@ -9263,7 +9263,7 @@
             }
         }
     },
-    "notificationsPushRelayConsentLabel": "sanalyer のプッシュリレーを使う",
+    "notificationsPushRelayConsentLabel": "pirichat のプッシュリレーを使う",
     "@notificationsPushRelayConsentLabel": {
         "description": "Toggle label for agreeing to the Fluxer push relay on this device."
     },
@@ -9275,7 +9275,7 @@
     "@pushRelayConsentTitle": {
         "description": "Title of the one-time Fluxer push relay consent sheet."
     },
-    "pushRelayConsentDescription": "{pushProvider} は自社のサービス経由でしかプッシュ通知を配信しないため、このデバイスへの通知は sanalyer のリレーを経由します。",
+    "pushRelayConsentDescription": "{pushProvider} は自社のサービス経由でしかプッシュ通知を配信しないため、このデバイスへの通知は pirichat のリレーを経由します。",
     "@pushRelayConsentDescription": {
         "description": "Subtitle of the push relay consent sheet explaining why the relay exists.",
         "placeholders": {
@@ -14666,7 +14666,7 @@
         "description": "Error shown on a self-hosted instance when the selected Plutonium plan is not available. Names no support mailbox."
     },
     "premiumCompletePaymentTitle": "支払いを完了",
-    "premiumCompletePaymentBody": "支払いを完了するためにStripeに移動します。完了したらsanalyerに戻ってください。",
+    "premiumCompletePaymentBody": "支払いを完了するためにStripeに移動します。完了したらpirichatに戻ってください。",
     "premiumChoosePaymentMethodTitle": "支払い方法を選択",
     "premiumPixPaymentPromptDescription": "Pix自動払いで、ブラジル国内銀行から直接定期請求を承認します。または、カードを使用を選択して、次の画面でStripeにクレジットカード情報を入力してください。",
     "premiumUsePix": "Pix を使う",
@@ -14678,7 +14678,7 @@
     "premiumAlreadyVisionaryTitle": "すでにVisionaryです",
     "premiumAlreadyVisionaryBody": "Visionaryには永続的なアクセス権がすでに含まれているため、定期的なサブスクリプションは不要です。他のユーザーへのギフトは引き続き購入できます。",
     "premiumExistingSubscriptionTitle": "すでにサブスクリプションをご利用中です",
-    "premiumExistingSubscriptionBody": "このアカウントには、既存のsanalyer Premiumサブスクリプションが見つかりました。支払い方法の更新や更新状況の確認は、安全な請求ポータルで管理してください。最近お支払いいただいた場合は、1分ほど待ってからこのページを再度開いてください。",
+    "premiumExistingSubscriptionBody": "このアカウントには、既存のpirichat Premiumサブスクリプションが見つかりました。支払い方法の更新や更新状況の確認は、安全な請求ポータルで管理してください。最近お支払いいただいた場合は、1分ほど待ってからこのページを再度開いてください。",
     "premiumPurchasesDisabledTitle": "購入できません",
     "premiumPurchasesDisabledBody": "このアカウントでは購入が無効になっています。問題があると思われる場合は、{supportEmail} までお問い合わせください。",
     "@premiumPurchasesDisabledBody": {
@@ -14693,8 +14693,8 @@
     "@premiumPurchasesDisabledBodySelfHosted": {
         "description": "Shown on a self-hosted instance when purchases are disabled for the account. Names no email address."
     },
-    "premiumClaimAccountToPurchase": "sanalyer Premium を購入するためにアカウントを請求してください。",
-    "premiumVerifyEmailToPurchase": "sanalyer Premium を購入するには、メールアドレスの認証が必要です。",
+    "premiumClaimAccountToPurchase": "pirichat Premium を購入するためにアカウントを請求してください。",
+    "premiumVerifyEmailToPurchase": "pirichat Premium を購入するには、メールアドレスの認証が必要です。",
     "premiumPerkCommunities": "コミュニティ",
     "premiumPerkMessageCharacterLimit": "メッセージの文字数制限",
     "premiumPerkBookmarkedMessages": "ブックマークしたメッセージ",
@@ -14746,11 +14746,11 @@
     "storePlutoniumCompareThemes": "アプリのカスタムテーマ",
     "storePlutoniumVideoFree": "最大720p、30FPS",
     "storePlutoniumVideoPlutonium": "最大4K、60FPS",
-    "storePlutoniumTagFootnote": "他のユーザーが同じユーザー名でまだ使用していないタグのみを選択できます。ユーザー名は大文字と小文字を区別しないため、Mina#4821とmina#4821は同じものとして扱われます。#0000タグはsanalyer Visionaryメンバー専用です。",
+    "storePlutoniumTagFootnote": "他のユーザーが同じユーザー名でまだ使用していないタグのみを選択できます。ユーザー名は大文字と小文字を区別しないため、Mina#4821とmina#4821は同じものとして扱われます。#0000タグはpirichat Visionaryメンバー専用です。",
     "storePlutoniumLearnVisionary": "Visionaryについて詳しくはこちら。",
-    "storePlutoniumDonatePrompt": "sanalyerのオープンソース開発を支援したいだけですか？ ",
+    "storePlutoniumDonatePrompt": "pirichatのオープンソース開発を支援したいだけですか？ ",
     "storePlutoniumDonateLink": "寄付する",
-    "storePlutoniumHighlightsLead": "購読するとsanalyerの活動を支援でき、以下の特典が利用可能になります",
+    "storePlutoniumHighlightsLead": "購読するとpirichatの活動を支援でき、以下の特典が利用可能になります",
     "storePlutoniumHighlightEmoji": "どのチャットでもカスタム絵文字とスタンプ",
     "storePlutoniumHighlightProfile": "アニメーションプロフィール、バッジ、カスタム4桁の番号",
     "storePlutoniumHighlightFiles": "最大500MBのアップロード",
@@ -14759,7 +14759,7 @@
     "storePlutoniumHighlightsMore": "その他多数",
     "storePlutoniumRenewsThroughPlay": "キャンセルするまでGoogle Playを通じて自動更新されます。",
     "storePlutoniumRenewsThroughAppStore": "キャンセルしない限り、App Storeを通じて自動的に更新されます。",
-    "storePlutoniumAlreadySubscribed": "すでにsanalyer Premiumサブスクリプションをご利用中です。",
+    "storePlutoniumAlreadySubscribed": "すでにpirichat Premiumサブスクリプションをご利用中です。",
     "storePlutoniumSavePercent": "{percent}% オフ",
     "@storePlutoniumSavePercent": {
         "placeholders": {
@@ -15030,7 +15030,7 @@
             }
         }
     },
-    "userSettingsJoinFluxerLabs": "sanalyer Labsに参加する",
+    "userSettingsJoinFluxerLabs": "pirichat Labsに参加する",
     "@userSettingsJoinFluxerLabs": {
         "description": "User settings What's New action to join the Fluxer Labs community."
     },
@@ -15872,7 +15872,7 @@
     "@homeQuickActionDms": {
         "description": "Home screen quick action that opens Direct Messages."
     },
-    "assistantNeedsLogin": "まずsanalyerを開いてサインインしてください。",
+    "assistantNeedsLogin": "まずpirichatを開いてサインインしてください。",
     "@assistantNeedsLogin": {
         "description": "Siri/Shortcuts result when the user is logged out."
     },
@@ -15880,7 +15880,7 @@
     "@assistantNotInVoice": {
         "description": "Siri/Shortcuts result when mute or leave runs with no live call."
     },
-    "assistantNotFound": "sanalyerでそれを見つけられませんでした。",
+    "assistantNotFound": "pirichatでそれを見つけられませんでした。",
     "@assistantNotFound": {
         "description": "Siri/Shortcuts result when a friend, channel, or community cannot be resolved."
     },
@@ -15888,7 +15888,7 @@
     "@assistantDmsDisabled": {
         "description": "Siri/Shortcuts result when DM actions are blocked by instance config."
     },
-    "assistantFailed": "sanalyerがその操作を完了できませんでした。",
+    "assistantFailed": "pirichatがその操作を完了できませんでした。",
     "@assistantFailed": {
         "description": "Siri/Shortcuts fallback when an assistant command fails."
     },
@@ -15905,7 +15905,7 @@
             }
         }
     },
-    "assistantOkOpened": "sanalyerを開いています。",
+    "assistantOkOpened": "pirichatを開いています。",
     "applicationsTitle": "アプリ",
     "@applicationsTitle": {
         "description": "Title for the developer Applications settings tab."

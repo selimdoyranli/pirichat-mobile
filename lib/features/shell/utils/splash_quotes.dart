@@ -19,7 +19,7 @@ const List<SplashQuote> _baseSplashQuotes = <SplashQuote>[
   ),
   SplashQuote(
     text:
-        'Did you know that sanalyer spelled backwards makes no sense? Why would you do that?',
+        'Did you know that pirichat spelled backwards makes no sense? Why would you do that?',
     source: 'jackzie',
   ),
   SplashQuote(
@@ -31,7 +31,7 @@ const List<SplashQuote> _baseSplashQuotes = <SplashQuote>[
         "Unfortunately, it doesn't run on regular unleaded gasoline. It requires something with a little more kick. Plutonium.",
     source: 'Cookie',
   ),
-  SplashQuote(text: '9/10 dentists recommend sanalyer.', source: 'Hugopuntocom'),
+  SplashQuote(text: '9/10 dentists recommend pirichat.', source: 'Hugopuntocom'),
   SplashQuote(text: 'Is this thing on?', source: 'Pufty'),
   SplashQuote(
     text: 'Now supports sending messages over the Internet!',
@@ -50,7 +50,7 @@ const List<SplashQuote> _baseSplashQuotes = <SplashQuote>[
   ),
   SplashQuote(
     text:
-        "sanalyer is 100% powered by flux capacitors. And furries. We don't forget about the furries.",
+        "pirichat is 100% powered by flux capacitors. And furries. We don't forget about the furries.",
     source: 'jb',
   ),
   SplashQuote(
@@ -68,31 +68,31 @@ const List<SplashQuote> _baseSplashQuotes = <SplashQuote>[
   SplashQuote(text: 'Nu \u00e4r det dags f\u00f6r en fika.', source: 'Chip'),
   SplashQuote(
     text:
-        "Is sanalyer loading? Why are you asking me? I'm just a loading screen!",
+        "Is pirichat loading? Why are you asking me? I'm just a loading screen!",
     source: 'Caus',
   ),
   SplashQuote(text: 'Welcome back to 2015!', source: 'Pan'),
-  SplashQuote(text: 'Connecting to irc.sanalyer.com:6667...', source: 'viriona'),
+  SplashQuote(text: 'Connecting to irc.pirichat.online:6667...', source: 'viriona'),
   SplashQuote(text: "Wait, hold on, I'm not ready yet!", source: 'Vee'),
-  SplashQuote(text: "Feel that? That's sanalyer.", source: 'TheFastestBoy'),
+  SplashQuote(text: "Feel that? That's pirichat.", source: 'TheFastestBoy'),
   SplashQuote(
-    text: 'The real sanalyer was the friends we made along the way.',
+    text: 'The real pirichat was the friends we made along the way.',
     source: 'viriona',
   ),
   SplashQuote(
-    text: 'Is sanalyer an instrument? No, sanalyer is a communication platform.',
+    text: 'Is pirichat an instrument? No, pirichat is a communication platform.',
     source: 'Comfy_Deer',
   ),
   SplashQuote(text: "Hi! I'm a loading screen!", source: 'jackzie'),
-  SplashQuote(text: '3 Billion Devices Run sanalyer.', source: 'jackzie'),
+  SplashQuote(text: '3 Billion Devices Run pirichat.', source: 'jackzie'),
   SplashQuote(
     text: 'To connect or not to connect, that is the question.',
     source: 'Tea',
   ),
-  SplashQuote(text: 'Please do not the sanalyer.', source: 'Chris'),
+  SplashQuote(text: 'Please do not the pirichat.', source: 'Chris'),
   SplashQuote(text: 'I am the one who fluxes.', source: 'Anonymous'),
   SplashQuote(
-    text: 'Installing sanalyer on the nearest smart fridge...',
+    text: 'Installing pirichat on the nearest smart fridge...',
     source: 'TyphonBagrid',
   ),
   SplashQuote(text: 'Ya like Jazz?', source: 'catnaros'),

@@ -70,7 +70,7 @@ ios/build/
 # Perf drive credentials (tool/perf_drive.sh)
 .env.perf
 
-# sanalyer signing: fastlane cert/sigh output must never land in the repo
+# pirichat signing: fastlane cert/sigh output must never land in the repo
 *.p12
 *.cer
 *.certSigningRequest

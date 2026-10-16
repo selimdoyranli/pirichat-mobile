@@ -4268,10 +4268,10 @@ class FluxerLocalizationsKo extends FluxerLocalizations {
 
   @override
   String get connectionTokenFileDescription =>
-      '**sanalyer-verification**을 다운로드하여 **.well-known** 폴더에 배치하면 도메인을 확인할 수 있습니다.';
+      '**pirichat-verification**을 다운로드하여 **.well-known** 폴더에 배치하면 도메인을 확인할 수 있습니다.';
 
   @override
-  String get connectionTokenFileDownload => 'sanalyer-verification 다운로드';
+  String get connectionTokenFileDownload => 'pirichat-verification 다운로드';
 
   @override
   String connectionTokenFileMeta(String dnsUrl) {
@@ -4279,7 +4279,7 @@ class FluxerLocalizationsKo extends FluxerLocalizations {
   }
 
   @override
-  String get connectionSaveTokenDialogTitle => 'sanalyer-verification 저장';
+  String get connectionSaveTokenDialogTitle => 'pirichat-verification 저장';
 
   @override
   String get connectionVerifyButton => '인증하기';
@@ -4344,7 +4344,7 @@ class FluxerLocalizationsKo extends FluxerLocalizations {
   String get connectionRemoveFailed => '연결 삭제 불가';
 
   @override
-  String get connectionTokenSavedToast => 'sanalyer-verification 저장됨';
+  String get connectionTokenSavedToast => 'pirichat-verification 저장됨';
 
   @override
   String get connectionTokenSaveFailedToast => '파일 저장 불가';
@@ -8795,7 +8795,7 @@ class FluxerLocalizationsKo extends FluxerLocalizations {
   String get userSettingsNavSecurityLogin => '보안 및 로그인';
 
   @override
-  String get userSettingsNavFluxerPlutonium => 'sanalyer Premium';
+  String get userSettingsNavFluxerPlutonium => 'pirichat Premium';
 
   @override
   String get userSettingsNavGiftsAndCodes => '선물';
@@ -9034,7 +9034,7 @@ class FluxerLocalizationsKo extends FluxerLocalizations {
 
   @override
   String get premiumDisclaimerRefund =>
-      '결제 후 3일 이내, 30일마다 한 번씩 직접 환불할 수 있습니다. 구독을 환불하면 구독이 취소됩니다. EU/EEA 구매자는 콘텐츠에 즉시 액세스하기 위해 결제 시 14일 철회 권리를 포기합니다. 차지백 대신 앱 내 환불 버튼을 사용하세요. 차지백은 계정을 영구적으로 제한할 수 있습니다. Stripe가 결제를 안전하게 처리하며, sanalyer는 고객님의 전체 카드 번호를 볼 수 없습니다.';
+      '결제 후 3일 이내, 30일마다 한 번씩 직접 환불할 수 있습니다. 구독을 환불하면 구독이 취소됩니다. EU/EEA 구매자는 콘텐츠에 즉시 액세스하기 위해 결제 시 14일 철회 권리를 포기합니다. 차지백 대신 앱 내 환불 버튼을 사용하세요. 차지백은 계정을 영구적으로 제한할 수 있습니다. Stripe가 결제를 안전하게 처리하며, pirichat는 고객님의 전체 카드 번호를 볼 수 없습니다.';
 
   @override
   String get premiumTermsOfService => '이용약관';
@@ -9061,7 +9061,7 @@ class FluxerLocalizationsKo extends FluxerLocalizations {
 
   @override
   String get premiumCompletePaymentBody =>
-      '결제를 완료하기 위해 Stripe로 이동합니다. 완료 후 sanalyer로 돌아오세요.';
+      '결제를 완료하기 위해 Stripe로 이동합니다. 완료 후 pirichat로 돌아오세요.';
 
   @override
   String get premiumChoosePaymentMethodTitle => '결제 수단 선택';
@@ -9102,7 +9102,7 @@ class FluxerLocalizationsKo extends FluxerLocalizations {
 
   @override
   String get premiumExistingSubscriptionBody =>
-      '이 계정에 기존 sanalyer Premium 구독이 있습니다. 결제 정보 업데이트 또는 갱신 상태 확인은 보안 결제 포털에서 관리하세요. 방금 결제하셨다면 1분 정도 기다렸다가 이 페이지를 다시 열어주세요.';
+      '이 계정에 기존 pirichat Premium 구독이 있습니다. 결제 정보 업데이트 또는 갱신 상태 확인은 보안 결제 포털에서 관리하세요. 방금 결제하셨다면 1분 정도 기다렸다가 이 페이지를 다시 열어주세요.';
 
   @override
   String get premiumPurchasesDisabledTitle => '구매 불가';
@@ -9118,11 +9118,11 @@ class FluxerLocalizationsKo extends FluxerLocalizations {
 
   @override
   String get premiumClaimAccountToPurchase =>
-      'sanalyer Premium을 구매하려면 계정을 등록하세요.';
+      'pirichat Premium을 구매하려면 계정을 등록하세요.';
 
   @override
   String get premiumVerifyEmailToPurchase =>
-      'sanalyer Premium을 구매하려면 먼저 이메일을 인증해야 합니다.';
+      'pirichat Premium을 구매하려면 먼저 이메일을 인증해야 합니다.';
 
   @override
   String get premiumPerkCommunities => '커뮤니티';
@@ -9255,20 +9255,20 @@ class FluxerLocalizationsKo extends FluxerLocalizations {
 
   @override
   String get storePlutoniumTagFootnote =>
-      '동일한 사용자 이름을 가진 다른 사람이 사용하지 않는 태그만 선택할 수 있습니다. 사용자 이름은 대소문자를 구분하지 않으므로 Mina#4821과 mina#4821은 동일하게 간주됩니다. #0000 태그는 sanalyer Visionary 멤버를 위해 예약되어 있습니다.';
+      '동일한 사용자 이름을 가진 다른 사람이 사용하지 않는 태그만 선택할 수 있습니다. 사용자 이름은 대소문자를 구분하지 않으므로 Mina#4821과 mina#4821은 동일하게 간주됩니다. #0000 태그는 pirichat Visionary 멤버를 위해 예약되어 있습니다.';
 
   @override
   String get storePlutoniumLearnVisionary => 'Visionary에 대해 자세히 알아보기.';
 
   @override
-  String get storePlutoniumDonatePrompt => 'sanalyer의 오픈 소스 개발만 후원하고 싶으신가요? ';
+  String get storePlutoniumDonatePrompt => 'pirichat의 오픈 소스 개발만 후원하고 싶으신가요? ';
 
   @override
   String get storePlutoniumDonateLink => '대신 기부하기';
 
   @override
   String get storePlutoniumHighlightsLead =>
-      '구독하시면 sanalyer를 후원하고 다음 기능을 이용하실 수 있습니다';
+      '구독하시면 pirichat를 후원하고 다음 기능을 이용하실 수 있습니다';
 
   @override
   String get storePlutoniumHighlightEmoji => '모든 채팅에서 사용자 지정 이모티콘 및 스티커';
@@ -9300,7 +9300,7 @@ class FluxerLocalizationsKo extends FluxerLocalizations {
   String get storePlutoniumRestorePurchases => 'Restore purchases';
 
   @override
-  String get storePlutoniumAlreadySubscribed => '이미 sanalyer Premium을 구독 중입니다.';
+  String get storePlutoniumAlreadySubscribed => '이미 pirichat Premium을 구독 중입니다.';
 
   @override
   String storePlutoniumSavePercent(int percent) {
@@ -9741,11 +9741,11 @@ class FluxerLocalizationsKo extends FluxerLocalizations {
 
   @override
   String notificationsPushRelaySectionDescription(String pushProvider) {
-    return '$pushProvider은(는) 자사 서비스를 통해서만 푸시 알림을 전달하므로 이 기기의 푸시는 sanalyer 릴레이를 거칩니다.';
+    return '$pushProvider은(는) 자사 서비스를 통해서만 푸시 알림을 전달하므로 이 기기의 푸시는 pirichat 릴레이를 거칩니다.';
   }
 
   @override
-  String get notificationsPushRelayConsentLabel => 'sanalyer 푸시 릴레이 사용';
+  String get notificationsPushRelayConsentLabel => 'pirichat 푸시 릴레이 사용';
 
   @override
   String get notificationsPushRelayConsentDescription =>
@@ -9756,7 +9756,7 @@ class FluxerLocalizationsKo extends FluxerLocalizations {
 
   @override
   String pushRelayConsentDescription(String pushProvider) {
-    return '$pushProvider은(는) 자사 서비스를 통해서만 푸시 알림을 전달하므로 이 기기의 푸시는 sanalyer 릴레이를 거칩니다.';
+    return '$pushProvider은(는) 자사 서비스를 통해서만 푸시 알림을 전달하므로 이 기기의 푸시는 pirichat 릴레이를 거칩니다.';
   }
 
   @override
@@ -9857,7 +9857,7 @@ class FluxerLocalizationsKo extends FluxerLocalizations {
 
   @override
   String get appIconAndroidChangeDescription =>
-      'sanalyer will restart to apply the new home screen icon.';
+      'pirichat will restart to apply the new home screen icon.';
 
   @override
   String get appIconAndroidChangeConfirm => 'Change icon';
@@ -9900,14 +9900,14 @@ class FluxerLocalizationsKo extends FluxerLocalizations {
 
   @override
   String get advancedCrashReportingSectionDescription =>
-      'Help sanalyer fix bugs in this app by sharing crash and performance data. This is off by default.';
+      'Help pirichat fix bugs in this app by sharing crash and performance data. This is off by default.';
 
   @override
   String get advancedPerformanceReportingLabel => '충돌 및 성능 보고서 보내기';
 
   @override
   String get advancedCrashReportingDescription =>
-      'Reports go to sanalyer\'s error tracker, whichever instance you\'re signed in to. They don\'t include instance names, IDs or message content.';
+      'Reports go to pirichat\'s error tracker, whichever instance you\'re signed in to. They don\'t include instance names, IDs or message content.';
 
   @override
   String get advancedSettingsConfigure => '구성';
@@ -10409,7 +10409,7 @@ class FluxerLocalizationsKo extends FluxerLocalizations {
   String get userSettingsNavWhatsNew => '새로운 기능';
 
   @override
-  String get userSettingsJoinFluxerLabs => 'sanalyer Labs 가입하기';
+  String get userSettingsJoinFluxerLabs => 'pirichat Labs 가입하기';
 
   @override
   String get userSettingsGiveFeedback => 'Give feedback';
@@ -10653,14 +10653,14 @@ class FluxerLocalizationsKo extends FluxerLocalizations {
   String get instanceUrlLabel => '인스턴스 URL';
 
   @override
-  String get instanceUrlPlaceholder => '인스턴스 URL 입력 (예: sanalyer.com)';
+  String get instanceUrlPlaceholder => '인스턴스 URL 입력 (예: pirichat.online)';
 
   @override
   String get instanceUrlHelper =>
-      '공식 인스턴스에는 sanalyer.com을 사용하거나 자체 호스팅 인스턴스의 정확한 URL을 사용하세요.';
+      '공식 인스턴스에는 pirichat.online을 사용하거나 자체 호스팅 인스턴스의 정확한 URL을 사용하세요.';
 
   @override
-  String get resetToDefaultInstance => 'sanalyer로 재설정';
+  String get resetToDefaultInstance => 'pirichat로 재설정';
 
   @override
   String get instanceConnect => '연결';
@@ -10682,12 +10682,12 @@ class FluxerLocalizationsKo extends FluxerLocalizations {
 
   @override
   String instanceOutdatedForClient(String domain) {
-    return 'This instance is out of date for this app. Ask whoever runs $domain to update sanalyer.';
+    return 'This instance is out of date for this app. Ask whoever runs $domain to update pirichat.';
   }
 
   @override
   String instanceRequiresNewerClient(String domain) {
-    return '$domain runs a newer version of sanalyer than this app. Update the app, then try again.';
+    return '$domain runs a newer version of pirichat than this app. Update the app, then try again.';
   }
 
   @override
@@ -14087,19 +14087,19 @@ class FluxerLocalizationsKo extends FluxerLocalizations {
   String get homeQuickActionDms => 'DM';
 
   @override
-  String get assistantNeedsLogin => 'sanalyer를 열고 먼저 로그인하세요.';
+  String get assistantNeedsLogin => 'pirichat를 열고 먼저 로그인하세요.';
 
   @override
   String get assistantNotInVoice => '통화 중이 아닙니다.';
 
   @override
-  String get assistantNotFound => 'sanalyer에서 찾을 수 없습니다.';
+  String get assistantNotFound => 'pirichat에서 찾을 수 없습니다.';
 
   @override
   String get assistantDmsDisabled => '이 인스턴스에서는 DM이 비활성화되어 있습니다.';
 
   @override
-  String get assistantFailed => 'sanalyer가 작업을 완료할 수 없습니다.';
+  String get assistantFailed => 'pirichat가 작업을 완료할 수 없습니다.';
 
   @override
   String get assistantOkMuted => '마이크를 음소거했습니다.';
@@ -14122,7 +14122,7 @@ class FluxerLocalizationsKo extends FluxerLocalizations {
   }
 
   @override
-  String get assistantOkOpened => 'sanalyer를 엽니다.';
+  String get assistantOkOpened => 'pirichat를 엽니다.';
 
   @override
   String get assistantOkMessageSent => '메시지 전송 완료.';

@@ -128,12 +128,12 @@ String buildFluxerClientUserAgent({
   required String? releaseChannel,
 }) {
   final String clientName = switch (clientPlatform) {
-    'android' => 'sanalyer Android',
-    'ios' => 'sanalyer iOS',
-    'linux' => 'sanalyer Linux',
-    'desktop' => 'sanalyer Desktop',
-    'client' => 'sanalyer Client',
-    _ => 'sanalyer Client',
+    'android' => 'pirichat Android',
+    'ios' => 'pirichat iOS',
+    'linux' => 'pirichat Linux',
+    'desktop' => 'pirichat Desktop',
+    'client' => 'pirichat Client',
+    _ => 'pirichat Client',
   };
   final String? version = normalizeOptionalString(clientVersion);
   final String? channel = normalizeOptionalString(releaseChannel);

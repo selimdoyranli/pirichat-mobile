@@ -1,7 +1,7 @@
 import Foundation
 
 enum AssistantDefaults {
-  static let suiteName = "group.com.sanalyer.mobile"
+  static let suiteName = "group.online.pirichat.mobile"
 
   static var store: UserDefaults {
     UserDefaults(suiteName: suiteName) ?? .standard

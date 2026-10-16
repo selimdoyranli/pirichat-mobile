@@ -4271,11 +4271,11 @@
     "@connectionTokenFileTitle": {
         "description": "Title of the token-file section in the verify step."
     },
-    "connectionTokenFileDescription": "قم بتنزيل **sanalyer-verification** وضعه في مجلد **.well-known** الخاص بك حتى نتمكن من التحقق من صحة النطاق.",
+    "connectionTokenFileDescription": "قم بتنزيل **pirichat-verification** وضعه في مجلد **.well-known** الخاص بك حتى نتمكن من التحقق من صحة النطاق.",
     "@connectionTokenFileDescription": {
         "description": "Explanatory text for the token-file step. **bold markers** indicate inline-code styling applied by the widget."
     },
-    "connectionTokenFileDownload": "تنزيل sanalyer-verification",
+    "connectionTokenFileDownload": "تنزيل pirichat-verification",
     "@connectionTokenFileDownload": {
         "description": "Label on the download button for the verification token file."
     },
@@ -4285,11 +4285,11 @@
         "placeholders": {
             "dnsUrl": {
                 "type": "String",
-                "example": "https://example.com/.well-known/fluxer-verification"
+                "example": "https://example.com/.well-known/pirichat-verification"
             }
         }
     },
-    "connectionSaveTokenDialogTitle": "حفظ sanalyer-verification",
+    "connectionSaveTokenDialogTitle": "حفظ pirichat-verification",
     "@connectionSaveTokenDialogTitle": {
         "description": "Title of the save-file dialog opened by the download button."
     },
@@ -4373,7 +4373,7 @@
     "@connectionRemoveFailed": {
         "description": "Toast shown when the delete request fails."
     },
-    "connectionTokenSavedToast": "تم حفظ sanalyer-verification",
+    "connectionTokenSavedToast": "تم حفظ pirichat-verification",
     "@connectionTokenSavedToast": {
         "description": "Toast shown after the token file is saved successfully."
     },
@@ -6202,7 +6202,7 @@
     "@userSettingsNavSecurityLogin": {
         "description": "User settings navigation item for security and login settings."
     },
-    "userSettingsNavFluxerPlutonium": "sanalyer Premium",
+    "userSettingsNavFluxerPlutonium": "pirichat Premium",
     "@userSettingsNavFluxerPlutonium": {
         "description": "User settings navigation item for Fluxer Plutonium subscription settings."
     },
@@ -6500,15 +6500,15 @@
     "@instanceUrlLabel": {
         "description": "Label for the self-hosted instance URL input on the login screen."
     },
-    "instanceUrlPlaceholder": "أدخل عنوان URL للمثيل (مثل sanalyer.com)",
+    "instanceUrlPlaceholder": "أدخل عنوان URL للمثيل (مثل pirichat.online)",
     "@instanceUrlPlaceholder": {
         "description": "Placeholder for the self-hosted instance URL input."
     },
-    "instanceUrlHelper": "استخدم sanalyer.com للمثيل الرسمي، أو عنوان URL الدقيق لمثيل مستضاف ذاتيًا.",
+    "instanceUrlHelper": "استخدم pirichat.online للمثيل الرسمي، أو عنوان URL الدقيق لمثيل مستضاف ذاتيًا.",
     "@instanceUrlHelper": {
         "description": "Helper text explaining official vs self-hosted instance URLs."
     },
-    "resetToDefaultInstance": "إعادة الضبط إلى sanalyer",
+    "resetToDefaultInstance": "إعادة الضبط إلى pirichat",
     "@resetToDefaultInstance": {
         "description": "Tooltip for the button that resets the instance URL to the official Fluxer instance."
     },
@@ -11434,7 +11434,7 @@
     "@notificationsPushRelaySectionTitle": {
         "description": "Notification settings section title for the Fluxer push relay."
     },
-    "notificationsPushRelaySectionDescription": "لا يوصّل {pushProvider} الإشعارات الفورية إلا عبر خدمته الخاصة، لذلك تمر إشعارات هذا الجهاز عبر مُرحِّل sanalyer.",
+    "notificationsPushRelaySectionDescription": "لا يوصّل {pushProvider} الإشعارات الفورية إلا عبر خدمته الخاصة، لذلك تمر إشعارات هذا الجهاز عبر مُرحِّل pirichat.",
     "@notificationsPushRelaySectionDescription": {
         "description": "Notification settings section description explaining why the push relay exists.",
         "placeholders": {
@@ -11443,7 +11443,7 @@
             }
         }
     },
-    "notificationsPushRelayConsentLabel": "استخدام مُرحِّل sanalyer للإشعارات",
+    "notificationsPushRelayConsentLabel": "استخدام مُرحِّل pirichat للإشعارات",
     "@notificationsPushRelayConsentLabel": {
         "description": "Toggle label for agreeing to the Fluxer push relay on this device."
     },
@@ -11455,7 +11455,7 @@
     "@pushRelayConsentTitle": {
         "description": "Title of the one-time Fluxer push relay consent sheet."
     },
-    "pushRelayConsentDescription": "لا يوصّل {pushProvider} الإشعارات الفورية إلا عبر خدمته الخاصة، لذلك تمر إشعارات هذا الجهاز عبر مُرحِّل sanalyer.",
+    "pushRelayConsentDescription": "لا يوصّل {pushProvider} الإشعارات الفورية إلا عبر خدمته الخاصة، لذلك تمر إشعارات هذا الجهاز عبر مُرحِّل pirichat.",
     "@pushRelayConsentDescription": {
         "description": "Subtitle of the push relay consent sheet explaining why the relay exists.",
         "placeholders": {
@@ -14666,7 +14666,7 @@
         "description": "Error shown on a self-hosted instance when the selected Plutonium plan is not available. Names no support mailbox."
     },
     "premiumCompletePaymentTitle": "إتمام الدفع",
-    "premiumCompletePaymentBody": "أنت الآن تنتقل إلى Stripe لإكمال الدفع. عد إلى sanalyer بمجرد الانتهاء منه.",
+    "premiumCompletePaymentBody": "أنت الآن تنتقل إلى Stripe لإكمال الدفع. عد إلى pirichat بمجرد الانتهاء منه.",
     "premiumChoosePaymentMethodTitle": "اختيار طريقة الدفع",
     "premiumPixPaymentPromptDescription": "ادفع باستخدام Pix تلقائي لتفويض الرسوم المتكررة مباشرة من حسابك البنكي البرازيلي. أو اختر استخدام البطاقة لإدخال بطاقة ائتمان في الشاشة التالية لـ Stripe.",
     "premiumUsePix": "استخدم بيكس",
@@ -14678,7 +14678,7 @@
     "premiumAlreadyVisionaryTitle": "أنت من فئة Visionary بالفعل",
     "premiumAlreadyVisionaryBody": "يتضمن Visionary بالفعل وصولاً دائمًا، لذا لا يلزم اشتراك متكرر. لا يزال بإمكانك شراء هدايا للآخرين.",
     "premiumExistingSubscriptionTitle": "الاشتراك موجود بالفعل",
-    "premiumExistingSubscriptionBody": "لقد وجدنا اشتراكًا حاليًا في sanalyer Premium لهذا الحساب. قم بإدارته في بوابة الفوترة الآمنة لتحديث تفاصيل الدفع أو التحقق من حالة التجديد. إذا دفعت للتو، انتظر دقيقة وأعد فتح هذه الصفحة.",
+    "premiumExistingSubscriptionBody": "لقد وجدنا اشتراكًا حاليًا في pirichat Premium لهذا الحساب. قم بإدارته في بوابة الفوترة الآمنة لتحديث تفاصيل الدفع أو التحقق من حالة التجديد. إذا دفعت للتو، انتظر دقيقة وأعد فتح هذه الصفحة.",
     "premiumPurchasesDisabledTitle": "المشتريات غير متاحة",
     "premiumPurchasesDisabledBody": "تم تعطيل عمليات الشراء لهذا الحساب. اتصل بـ {supportEmail} إذا بدا هذا الأمر خاطئًا.",
     "@premiumPurchasesDisabledBody": {
@@ -14693,8 +14693,8 @@
     "@premiumPurchasesDisabledBodySelfHosted": {
         "description": "Shown on a self-hosted instance when purchases are disabled for the account. Names no email address."
     },
-    "premiumClaimAccountToPurchase": "احصل على حسابك لشراء sanalyer Premium.",
-    "premiumVerifyEmailToPurchase": "تحتاج إلى التحقق من بريدك الإلكتروني قبل أن تتمكن من شراء sanalyer Premium.",
+    "premiumClaimAccountToPurchase": "احصل على حسابك لشراء pirichat Premium.",
+    "premiumVerifyEmailToPurchase": "تحتاج إلى التحقق من بريدك الإلكتروني قبل أن تتمكن من شراء pirichat Premium.",
     "premiumPerkCommunities": "المجتمعات",
     "premiumPerkMessageCharacterLimit": "الحد الأقصى لأحرف الرسالة",
     "premiumPerkBookmarkedMessages": "الرسائل ذات الإشارات المرجعية",
@@ -14746,11 +14746,11 @@
     "storePlutoniumCompareThemes": "سمات مخصصة للتطبيق",
     "storePlutoniumVideoFree": "حتى 720p بمعدل 30 إطارًا في الثانية",
     "storePlutoniumVideoPlutonium": "حتى 4K بمعدل 60 إطارًا في الثانية",
-    "storePlutoniumTagFootnote": "يمكنك اختيار علامة لا يمتلكها أي شخص آخر بنفس اسم المستخدم. أسماء المستخدمين لا تميز بين الأحرف الكبيرة والصغيرة، لذا فإن Mina#4821 وmina#4821 يعتبران متطابقين. العلامة #0000 محجوزة لأعضاء sanalyer Visionary.",
+    "storePlutoniumTagFootnote": "يمكنك اختيار علامة لا يمتلكها أي شخص آخر بنفس اسم المستخدم. أسماء المستخدمين لا تميز بين الأحرف الكبيرة والصغيرة، لذا فإن Mina#4821 وmina#4821 يعتبران متطابقين. العلامة #0000 محجوزة لأعضاء pirichat Visionary.",
     "storePlutoniumLearnVisionary": "تعرّف على المزيد حول Visionary.",
-    "storePlutoniumDonatePrompt": "هل تريد فقط دعم تطوير sanalyer مفتوح المصدر؟ ",
+    "storePlutoniumDonatePrompt": "هل تريد فقط دعم تطوير pirichat مفتوح المصدر؟ ",
     "storePlutoniumDonateLink": "تبرّع بدلاً من ذلك.",
-    "storePlutoniumHighlightsLead": "يساهم الاشتراك في تمويل sanalyer ويفتح لك",
+    "storePlutoniumHighlightsLead": "يساهم الاشتراك في تمويل pirichat ويفتح لك",
     "storePlutoniumHighlightEmoji": "رموز تعبيرية وملصقات مخصصة في أي محادثة",
     "storePlutoniumHighlightProfile": "ملف شخصي متحرك، وشارة، ورقم مخصص مكون من 4 أرقام",
     "storePlutoniumHighlightFiles": "تحميلات تصل إلى 500 ميجابايت",
@@ -14759,7 +14759,7 @@
     "storePlutoniumHighlightsMore": "والمزيد",
     "storePlutoniumRenewsThroughPlay": "يُجدّد تلقائيًا عبر Google Play حتى تقوم بالإلغاء.",
     "storePlutoniumRenewsThroughAppStore": "يتجدد تلقائيًا عبر App Store حتى تقوم بالإلغاء.",
-    "storePlutoniumAlreadySubscribed": "لديك بالفعل اشتراك في sanalyer Premium.",
+    "storePlutoniumAlreadySubscribed": "لديك بالفعل اشتراك في pirichat Premium.",
     "storePlutoniumSavePercent": "وفر {percent}%",
     "@storePlutoniumSavePercent": {
         "placeholders": {
@@ -15030,7 +15030,7 @@
             }
         }
     },
-    "userSettingsJoinFluxerLabs": "انضم إلى مختبرات sanalyer",
+    "userSettingsJoinFluxerLabs": "انضم إلى مختبرات pirichat",
     "@userSettingsJoinFluxerLabs": {
         "description": "User settings What's New action to join the Fluxer Labs community."
     },
@@ -15872,7 +15872,7 @@
     "@homeQuickActionDms": {
         "description": "Home screen quick action that opens Direct Messages."
     },
-    "assistantNeedsLogin": "افتح sanalyer وسجّل الدخول أولاً.",
+    "assistantNeedsLogin": "افتح pirichat وسجّل الدخول أولاً.",
     "@assistantNeedsLogin": {
         "description": "Siri/Shortcuts result when the user is logged out."
     },
@@ -15880,7 +15880,7 @@
     "@assistantNotInVoice": {
         "description": "Siri/Shortcuts result when mute or leave runs with no live call."
     },
-    "assistantNotFound": "لم يتمكن sanalyer من العثور على ذلك.",
+    "assistantNotFound": "لم يتمكن pirichat من العثور على ذلك.",
     "@assistantNotFound": {
         "description": "Siri/Shortcuts result when a friend, channel, or community cannot be resolved."
     },
@@ -15888,7 +15888,7 @@
     "@assistantDmsDisabled": {
         "description": "Siri/Shortcuts result when DM actions are blocked by instance config."
     },
-    "assistantFailed": "تعذر على sanalyer إكمال ذلك.",
+    "assistantFailed": "تعذر على pirichat إكمال ذلك.",
     "@assistantFailed": {
         "description": "Siri/Shortcuts fallback when an assistant command fails."
     },
@@ -15905,7 +15905,7 @@
             }
         }
     },
-    "assistantOkOpened": "جارٍ فتح sanalyer.",
+    "assistantOkOpened": "جارٍ فتح pirichat.",
     "applicationsTitle": "التطبيقات",
     "@applicationsTitle": {
         "description": "Title for the developer Applications settings tab."

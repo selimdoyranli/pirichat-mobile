@@ -30,13 +30,13 @@ import 'package:go_router/go_router.dart';
 String _fluxerAppLinkToHttps(String href) {
   if (href.startsWith('fluxer://')) {
     final Uri uri = Uri.parse(href);
-    return 'https://sanalyer.com${uri.path}';
+    return 'https://pirichat.online${uri.path}';
   }
   if (href.startsWith('fluxer:/')) {
-    return 'https://sanalyer.com/${href.substring('fluxer:/'.length)}';
+    return 'https://pirichat.online/${href.substring('fluxer:/'.length)}';
   }
   if (href.startsWith('fluxer:')) {
-    return 'https://sanalyer.com/${href.substring('fluxer:'.length)}';
+    return 'https://pirichat.online/${href.substring('fluxer:'.length)}';
   }
   return href;
 }

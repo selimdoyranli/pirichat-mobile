@@ -4395,10 +4395,10 @@ class FluxerLocalizationsAr extends FluxerLocalizations {
 
   @override
   String get connectionTokenFileDescription =>
-      'قم بتنزيل **sanalyer-verification** وضعه في مجلد **.well-known** الخاص بك حتى نتمكن من التحقق من صحة النطاق.';
+      'قم بتنزيل **pirichat-verification** وضعه في مجلد **.well-known** الخاص بك حتى نتمكن من التحقق من صحة النطاق.';
 
   @override
-  String get connectionTokenFileDownload => 'تنزيل sanalyer-verification';
+  String get connectionTokenFileDownload => 'تنزيل pirichat-verification';
 
   @override
   String connectionTokenFileMeta(String dnsUrl) {
@@ -4406,7 +4406,7 @@ class FluxerLocalizationsAr extends FluxerLocalizations {
   }
 
   @override
-  String get connectionSaveTokenDialogTitle => 'حفظ sanalyer-verification';
+  String get connectionSaveTokenDialogTitle => 'حفظ pirichat-verification';
 
   @override
   String get connectionVerifyButton => 'تحقق';
@@ -4475,7 +4475,7 @@ class FluxerLocalizationsAr extends FluxerLocalizations {
   String get connectionRemoveFailed => 'تعذر إزالة الاتصال';
 
   @override
-  String get connectionTokenSavedToast => 'تم حفظ sanalyer-verification';
+  String get connectionTokenSavedToast => 'تم حفظ pirichat-verification';
 
   @override
   String get connectionTokenSaveFailedToast => 'تعذر حفظ الملف';
@@ -9096,7 +9096,7 @@ class FluxerLocalizationsAr extends FluxerLocalizations {
   String get userSettingsNavSecurityLogin => 'الأمان وتسجيل الدخول';
 
   @override
-  String get userSettingsNavFluxerPlutonium => 'sanalyer Premium';
+  String get userSettingsNavFluxerPlutonium => 'pirichat Premium';
 
   @override
   String get userSettingsNavGiftsAndCodes => 'الهدايا';
@@ -9365,7 +9365,7 @@ class FluxerLocalizationsAr extends FluxerLocalizations {
 
   @override
   String get premiumCompletePaymentBody =>
-      'أنت الآن تنتقل إلى Stripe لإكمال الدفع. عد إلى sanalyer بمجرد الانتهاء منه.';
+      'أنت الآن تنتقل إلى Stripe لإكمال الدفع. عد إلى pirichat بمجرد الانتهاء منه.';
 
   @override
   String get premiumChoosePaymentMethodTitle => 'اختيار طريقة الدفع';
@@ -9406,7 +9406,7 @@ class FluxerLocalizationsAr extends FluxerLocalizations {
 
   @override
   String get premiumExistingSubscriptionBody =>
-      'لقد وجدنا اشتراكًا حاليًا في sanalyer Premium لهذا الحساب. قم بإدارته في بوابة الفوترة الآمنة لتحديث تفاصيل الدفع أو التحقق من حالة التجديد. إذا دفعت للتو، انتظر دقيقة وأعد فتح هذه الصفحة.';
+      'لقد وجدنا اشتراكًا حاليًا في pirichat Premium لهذا الحساب. قم بإدارته في بوابة الفوترة الآمنة لتحديث تفاصيل الدفع أو التحقق من حالة التجديد. إذا دفعت للتو، انتظر دقيقة وأعد فتح هذه الصفحة.';
 
   @override
   String get premiumPurchasesDisabledTitle => 'المشتريات غير متاحة';
@@ -9422,11 +9422,11 @@ class FluxerLocalizationsAr extends FluxerLocalizations {
 
   @override
   String get premiumClaimAccountToPurchase =>
-      'احصل على حسابك لشراء sanalyer Premium.';
+      'احصل على حسابك لشراء pirichat Premium.';
 
   @override
   String get premiumVerifyEmailToPurchase =>
-      'تحتاج إلى التحقق من بريدك الإلكتروني قبل أن تتمكن من شراء sanalyer Premium.';
+      'تحتاج إلى التحقق من بريدك الإلكتروني قبل أن تتمكن من شراء pirichat Premium.';
 
   @override
   String get premiumPerkCommunities => 'المجتمعات';
@@ -9570,21 +9570,21 @@ class FluxerLocalizationsAr extends FluxerLocalizations {
 
   @override
   String get storePlutoniumTagFootnote =>
-      'يمكنك اختيار علامة لا يمتلكها أي شخص آخر بنفس اسم المستخدم. أسماء المستخدمين لا تميز بين الأحرف الكبيرة والصغيرة، لذا فإن Mina#4821 وmina#4821 يعتبران متطابقين. العلامة #0000 محجوزة لأعضاء sanalyer Visionary.';
+      'يمكنك اختيار علامة لا يمتلكها أي شخص آخر بنفس اسم المستخدم. أسماء المستخدمين لا تميز بين الأحرف الكبيرة والصغيرة، لذا فإن Mina#4821 وmina#4821 يعتبران متطابقين. العلامة #0000 محجوزة لأعضاء pirichat Visionary.';
 
   @override
   String get storePlutoniumLearnVisionary => 'تعرّف على المزيد حول Visionary.';
 
   @override
   String get storePlutoniumDonatePrompt =>
-      'هل تريد فقط دعم تطوير sanalyer مفتوح المصدر؟ ';
+      'هل تريد فقط دعم تطوير pirichat مفتوح المصدر؟ ';
 
   @override
   String get storePlutoniumDonateLink => 'تبرّع بدلاً من ذلك.';
 
   @override
   String get storePlutoniumHighlightsLead =>
-      'يساهم الاشتراك في تمويل sanalyer ويفتح لك';
+      'يساهم الاشتراك في تمويل pirichat ويفتح لك';
 
   @override
   String get storePlutoniumHighlightEmoji =>
@@ -9621,7 +9621,7 @@ class FluxerLocalizationsAr extends FluxerLocalizations {
 
   @override
   String get storePlutoniumAlreadySubscribed =>
-      'لديك بالفعل اشتراك في sanalyer Premium.';
+      'لديك بالفعل اشتراك في pirichat Premium.';
 
   @override
   String storePlutoniumSavePercent(int percent) {
@@ -10078,12 +10078,12 @@ class FluxerLocalizationsAr extends FluxerLocalizations {
 
   @override
   String notificationsPushRelaySectionDescription(String pushProvider) {
-    return 'لا يوصّل $pushProvider الإشعارات الفورية إلا عبر خدمته الخاصة، لذلك تمر إشعارات هذا الجهاز عبر مُرحِّل sanalyer.';
+    return 'لا يوصّل $pushProvider الإشعارات الفورية إلا عبر خدمته الخاصة، لذلك تمر إشعارات هذا الجهاز عبر مُرحِّل pirichat.';
   }
 
   @override
   String get notificationsPushRelayConsentLabel =>
-      'استخدام مُرحِّل sanalyer للإشعارات';
+      'استخدام مُرحِّل pirichat للإشعارات';
 
   @override
   String get notificationsPushRelayConsentDescription =>
@@ -10094,7 +10094,7 @@ class FluxerLocalizationsAr extends FluxerLocalizations {
 
   @override
   String pushRelayConsentDescription(String pushProvider) {
-    return 'لا يوصّل $pushProvider الإشعارات الفورية إلا عبر خدمته الخاصة، لذلك تمر إشعارات هذا الجهاز عبر مُرحِّل sanalyer.';
+    return 'لا يوصّل $pushProvider الإشعارات الفورية إلا عبر خدمته الخاصة، لذلك تمر إشعارات هذا الجهاز عبر مُرحِّل pirichat.';
   }
 
   @override
@@ -10198,7 +10198,7 @@ class FluxerLocalizationsAr extends FluxerLocalizations {
 
   @override
   String get appIconAndroidChangeDescription =>
-      'sanalyer will restart to apply the new home screen icon.';
+      'pirichat will restart to apply the new home screen icon.';
 
   @override
   String get appIconAndroidChangeConfirm => 'Change icon';
@@ -10242,7 +10242,7 @@ class FluxerLocalizationsAr extends FluxerLocalizations {
 
   @override
   String get advancedCrashReportingSectionDescription =>
-      'Help sanalyer fix bugs in this app by sharing crash and performance data. This is off by default.';
+      'Help pirichat fix bugs in this app by sharing crash and performance data. This is off by default.';
 
   @override
   String get advancedPerformanceReportingLabel =>
@@ -10250,7 +10250,7 @@ class FluxerLocalizationsAr extends FluxerLocalizations {
 
   @override
   String get advancedCrashReportingDescription =>
-      'Reports go to sanalyer\'s error tracker, whichever instance you\'re signed in to. They don\'t include instance names, IDs or message content.';
+      'Reports go to pirichat\'s error tracker, whichever instance you\'re signed in to. They don\'t include instance names, IDs or message content.';
 
   @override
   String get advancedSettingsConfigure => 'تكوين';
@@ -10796,7 +10796,7 @@ class FluxerLocalizationsAr extends FluxerLocalizations {
   String get userSettingsNavWhatsNew => 'ما الجديد';
 
   @override
-  String get userSettingsJoinFluxerLabs => 'انضم إلى مختبرات sanalyer';
+  String get userSettingsJoinFluxerLabs => 'انضم إلى مختبرات pirichat';
 
   @override
   String get userSettingsGiveFeedback => 'Give feedback';
@@ -11046,14 +11046,14 @@ class FluxerLocalizationsAr extends FluxerLocalizations {
 
   @override
   String get instanceUrlPlaceholder =>
-      'أدخل عنوان URL للمثيل (مثل sanalyer.com)';
+      'أدخل عنوان URL للمثيل (مثل pirichat.online)';
 
   @override
   String get instanceUrlHelper =>
-      'استخدم sanalyer.com للمثيل الرسمي، أو عنوان URL الدقيق لمثيل مستضاف ذاتيًا.';
+      'استخدم pirichat.online للمثيل الرسمي، أو عنوان URL الدقيق لمثيل مستضاف ذاتيًا.';
 
   @override
-  String get resetToDefaultInstance => 'إعادة الضبط إلى sanalyer';
+  String get resetToDefaultInstance => 'إعادة الضبط إلى pirichat';
 
   @override
   String get instanceConnect => 'اتصال';
@@ -11075,12 +11075,12 @@ class FluxerLocalizationsAr extends FluxerLocalizations {
 
   @override
   String instanceOutdatedForClient(String domain) {
-    return 'This instance is out of date for this app. Ask whoever runs $domain to update sanalyer.';
+    return 'This instance is out of date for this app. Ask whoever runs $domain to update pirichat.';
   }
 
   @override
   String instanceRequiresNewerClient(String domain) {
-    return '$domain runs a newer version of sanalyer than this app. Update the app, then try again.';
+    return '$domain runs a newer version of pirichat than this app. Update the app, then try again.';
   }
 
   @override
@@ -14579,19 +14579,19 @@ class FluxerLocalizationsAr extends FluxerLocalizations {
   String get homeQuickActionDms => 'الرسائل المباشرة';
 
   @override
-  String get assistantNeedsLogin => 'افتح sanalyer وسجّل الدخول أولاً.';
+  String get assistantNeedsLogin => 'افتح pirichat وسجّل الدخول أولاً.';
 
   @override
   String get assistantNotInVoice => 'أنت لست في مكالمة.';
 
   @override
-  String get assistantNotFound => 'لم يتمكن sanalyer من العثور على ذلك.';
+  String get assistantNotFound => 'لم يتمكن pirichat من العثور على ذلك.';
 
   @override
   String get assistantDmsDisabled => 'الرسائل المباشرة معطلة في هذا المثيل.';
 
   @override
-  String get assistantFailed => 'تعذر على sanalyer إكمال ذلك.';
+  String get assistantFailed => 'تعذر على pirichat إكمال ذلك.';
 
   @override
   String get assistantOkMuted => 'تم كتم الميكروفون.';
@@ -14614,7 +14614,7 @@ class FluxerLocalizationsAr extends FluxerLocalizations {
   }
 
   @override
-  String get assistantOkOpened => 'جارٍ فتح sanalyer.';
+  String get assistantOkOpened => 'جارٍ فتح pirichat.';
 
   @override
   String get assistantOkMessageSent => 'تم إرسال الرسالة.';
