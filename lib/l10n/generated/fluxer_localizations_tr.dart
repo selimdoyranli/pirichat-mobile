@@ -9436,7 +9436,7 @@ class FluxerLocalizationsTr extends FluxerLocalizations {
 
   @override
   String get premiumCompletePaymentBody =>
-      'Ödemeyi tamamlamak için şimdi Stripe\'a yönlendiriliyorsunuz. Tamamladıktan sonra pirichat\'e geri dönün.';
+      'Ödemeyi tamamlamak için şimdi Stripe\'a yönlendiriliyorsunuz. Tamamladıktan sonra pirichat\'a geri dönün.';
 
   @override
   String get premiumChoosePaymentMethodTitle => 'Ödeme yöntemi seçin';
@@ -9652,14 +9652,14 @@ class FluxerLocalizationsTr extends FluxerLocalizations {
 
   @override
   String get storePlutoniumDonatePrompt =>
-      'Sadece pirichat\'in açık kaynak geliştirmesini mi desteklemek istiyorsunuz? ';
+      'Sadece pirichat\'ın açık kaynak geliştirmesini mi desteklemek istiyorsunuz? ';
 
   @override
   String get storePlutoniumDonateLink => 'Bunun yerine bağış yapın.';
 
   @override
   String get storePlutoniumHighlightsLead =>
-      'Abone olmak pirichat\'i finanse eder ve şunların kilidini açar';
+      'Abone olmak pirichat\'ı finanse eder ve şunların kilidini açar';
 
   @override
   String get storePlutoniumHighlightEmoji =>
@@ -11142,7 +11142,7 @@ class FluxerLocalizationsTr extends FluxerLocalizations {
       'Resmi kurulum için pirichat.online\'u veya kendi barındırdığınız bir kurulumun tam URL\'sini kullanın.';
 
   @override
-  String get resetToDefaultInstance => 'pirichat\'e sıfırla';
+  String get resetToDefaultInstance => 'pirichat\'a sıfırla';
 
   @override
   String get instanceConnect => 'Bağlan';
@@ -14687,7 +14687,7 @@ class FluxerLocalizationsTr extends FluxerLocalizations {
   String get homeQuickActionDms => 'DM\'ler';
 
   @override
-  String get assistantNeedsLogin => 'Önce pirichat\'i açın ve oturum açın.';
+  String get assistantNeedsLogin => 'Önce pirichat\'ı açın ve oturum açın.';
 
   @override
   String get assistantNotInVoice => 'Bir aramada değilsiniz.';

@@ -11146,7 +11146,8 @@ class FluxerLocalizationsSv extends FluxerLocalizations {
   String get instanceUrlLabel => 'Instans-URL';
 
   @override
-  String get instanceUrlPlaceholder => 'Ange instans-URL (t.ex. pirichat.online)';
+  String get instanceUrlPlaceholder =>
+      'Ange instans-URL (t.ex. pirichat.online)';
 
   @override
   String get instanceUrlHelper =>

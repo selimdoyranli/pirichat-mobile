@@ -11050,7 +11050,8 @@ class FluxerLocalizationsTh extends FluxerLocalizations {
   String get instanceUrlLabel => 'URL อินสแตนซ์';
 
   @override
-  String get instanceUrlPlaceholder => 'ป้อน URL อินสแตนซ์ (เช่น pirichat.online)';
+  String get instanceUrlPlaceholder =>
+      'ป้อน URL อินสแตนซ์ (เช่น pirichat.online)';
 
   @override
   String get instanceUrlHelper =>

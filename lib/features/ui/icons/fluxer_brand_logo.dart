@@ -2,7 +2,6 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fluxer_app/core/constants/assets.dart';
 import 'package:fluxer_app/core/theme/color_utils.dart';
-import 'package:fluxer_app/core/theme/fluxer_theme_extension.dart';
 
 class FluxerBrandLogo extends StatelessWidget {
   const FluxerBrandLogo({

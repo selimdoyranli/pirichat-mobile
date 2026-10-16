@@ -26638,7 +26638,8 @@ class FluxerLocalizationsEnGb extends FluxerLocalizationsEn {
   String get instanceUrlLabel => 'Instance URL';
 
   @override
-  String get instanceUrlPlaceholder => 'Enter instance URL (e.g. pirichat.online)';
+  String get instanceUrlPlaceholder =>
+      'Enter instance URL (e.g. pirichat.online)';
 
   @override
   String get instanceUrlHelper =>
