@@ -82,8 +82,13 @@ class FluxerAppZoom {
 
 class FluxerAppZoomBinding extends WidgetsFlutterBinding {
   static WidgetsBinding ensureInitialized() {
-    FluxerAppZoomBinding();
-    return WidgetsBinding.instance;
+    // pirichat: integration tests install their own binding first; keep it (zoom then stays at 1).
+    try {
+      return WidgetsBinding.instance;
+    } on Object {
+      FluxerAppZoomBinding();
+      return WidgetsBinding.instance;
+    }
   }
 
   double get _zoom => FluxerAppZoom.factor.value;
