@@ -117,6 +117,9 @@ private final class VoipPushDelegate: NSObject, PKPushRegistryDelegate {
     owner.receive(payload: payload, completion: completion)
   }
 
+  // pirichat: PKVoIPPushMetadata needs the iOS 26.4 SDK (Xcode 26.4, Swift 6.3); older Xcode builds use
+  // the delegate method above. shortcut: drop the #if once every build machine has Xcode 26.4+.
+  #if compiler(>=6.3)
   @available(iOS 26.4, *)
   func pushRegistry(
     _ registry: PKPushRegistry,
@@ -129,4 +132,5 @@ private final class VoipPushDelegate: NSObject, PKPushRegistryDelegate {
     }
     owner.receive(payload: payload, completion: completion)
   }
+  #endif
 }
