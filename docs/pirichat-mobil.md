@@ -93,27 +93,45 @@ export PATH=~/.cache/flutter-stable-pirichat/bin:~/.cargo/bin:$PATH
 dart tool/configure_build.dart --profile=ios-store && flutter pub get
 dart run build_runner build --delete-conflicting-outputs
 (cd ios && pod install)
-APPLE_TEAM_ID=PL952Y4644 fastlane ios pirichat_testflight
+APPLE_TEAM_ID=PL952Y4644 FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT=180 fastlane ios pirichat_testflight
 ```
+
+İmza kimliği (Apple Distribution QC4RFX8YB4) ayrı bir anahtar zincirinde durur:
+`~/Library/Keychains/pirichat-signing.keychain-db`, şifresi `~/.config/pirichat/signing/keychain.pw`.
+Arama listesinde login'den önce gelir, codesign şifre sormaz. Bu Mac'teki Xcode 26.3'te iOS 26.4 VoIP
+delegate'i derlenmez; `VoipRegistry.swift` onu `#if compiler(>=6.3)` ile ayırır.
 
 Apple tarafında gerekenler (takım PL952Y4644): App Group `group.online.pirichat.mobile`; App ID'ler
 `online.pirichat.mobile` (App Groups, Associated Domains, Communication Notifications, Push),
 `.ShareExtension` ve `.BroadcastExtension` (App Groups), `.NotificationService` (App Groups,
 Communication Notifications, Push); App Store Connect'te `online.pirichat.mobile` uygulama kaydı.
 
-## Mağazaya çıkmak için kalanlar
+## Durum (2026-10-17)
 
-1. **Push relay.** iOS ve FCM bildirimleri sunucudan Web Push olarak `push.pirichat.online`'daki
-   relay'e gider (`fluxer-push --mode relay`), relay APNs'e/FCM'e iletir. sanalyer bunu
-   RadKod/sanalyer.com `deploy/fluxer/push-relay.compose.yml` ile kuruyor; pirichat için aynısı,
-   pirichat'ın APNs anahtarıyla kurulmalı.
-2. **Android imzası ve Play.** `android/key.properties` (storeFile, storePassword, keyAlias,
-   keyPassword) ve upload keystore'u, repoya girmeden. Play Console'da `online.pirichat.mobile`.
-3. **Android push.** FCM flavor'ı için `online.pirichat.mobile` paketli Firebase projesi ve
-   `google-services.json`; yoksa yalnız `unifiedpush` dağıtılır.
-4. **Uygulama linkleri.** pirichat.online'da `/.well-known/assetlinks.json` (keystore SHA-256) ve
-   `/.well-known/apple-app-site-association` (`PL952Y4644.online.pirichat.mobile`).
-5. **Mağaza metinleri, ekran görüntüleri, gizlilik formu** Play Console ve App Store Connect'te.
+- **iOS:** TestFlight'ta 1.0.0 (20261016.2011), iç test grubu "pirichat ekibi" (selimdoyranli@gmail.com).
+  App Store Connect'te uygulama `pirichat` (Apple ID 6823670202): Türkçe açıklama, anahtar kelimeler,
+  altyazı, gizlilik bağlantısı, iPhone 6.9" ve iPad 13" ekran görüntüleri yüklü. İncelemeye
+  gönderilmedi.
+- **Android:** Play Console'da `pirichat` (online.pirichat.mobile). Dahili test kanalında 1.0.0 (1)
+  yayında; kapalı test (Alpha) sürümü ve 16 değişiklik Google incelemesinde. Test listesi
+  "pirichat kapali test". Mağaza girişi Türkçe, kategori Haberleşme, tüm uygulama içeriği
+  beyanları dolu. Ön plan hizmeti beyanının videosu `docs/media/pirichat-arka-plan-hizmetleri.mp4`.
+  Play App Signing açık; upload anahtarı `~/.config/pirichat/android/upload.jks`.
+- **Push:** relay container'ı yok. `FLUXER_PUSH_SERVICE_OWN_RELAY_HOSTS=push.pirichat.online` olduğu
+  için ana push servisi `push.pirichat.online/relay/v1/...` adreslerini kendi içinde APNs'e (anahtar
+  3YRXA9BX48, sandbox+production, takım geneli) ve FCM'e (Firebase projesi `pirichat-mobile`, servis
+  hesabı `pirichat-push`) gönderir. Değerler Coolify env'lerinde. Android'de uçtan uca denendi.
+- **Uygulama linkleri:** pirichat.online `apple-app-site-association` ve `assetlinks.json`
+  (`fluxer_app_proxy`) pirichat kimliklerini veriyor.
+- **İnceleme hesabı:** `pirichatinceleme` (şifre `~/.config/pirichat/review_account.txt`), demo
+  topluluğu "pirichat Ekibi". İkinci hesap `pirichattest2` bildirim testi için.
+
+## Mağaza görselleri
+
+`integration_test/flows/store_screenshots_test.dart` + `tool/store_screenshots.sh <simülatör-udid>
+<klasör>` inceleme hesabıyla demo topluluğu gezer ve her ekranı simctl ile kaydeder
+(TEST_LAB_EMAIL, TEST_LAB_PASSWORD, TEST_LAB_GUILD_ID env'den). Bildirim izni kanalları testte
+taklit edilir, simülatör ilk çalıştırmada `xcrun simctl erase` ile temiz olmalı.
 
 ## Bilerek bırakılanlar
 
