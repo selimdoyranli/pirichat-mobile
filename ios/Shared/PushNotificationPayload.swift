@@ -228,7 +228,7 @@ enum PushNotificationPayload {
     return nil
   }
 
-  static let appGroupSuiteName = "group.com.fluxer"
+  static let appGroupSuiteName = "group.online.pirichat.mobile"
   static let notificationSoundSettingsKey = "fluxer_push_notification_sounds"
   static let messageSoundSettingKey = "message"
   static let directMessageSoundSettingKey = "direct_message"
