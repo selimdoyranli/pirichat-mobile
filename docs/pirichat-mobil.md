@@ -106,14 +106,14 @@ Apple tarafında gerekenler (takım PL952Y4644): App Group `group.online.piricha
 `.ShareExtension` ve `.BroadcastExtension` (App Groups), `.NotificationService` (App Groups,
 Communication Notifications, Push); App Store Connect'te `online.pirichat.mobile` uygulama kaydı.
 
-## Durum (2026-10-17)
+## Durum (2026-10-18)
 
-- **iOS:** TestFlight'ta 1.0.0 (20261017.207, sanalyer merge'ü), iç test grubu "pirichat ekibi" (selimdoyranli@gmail.com).
+- **iOS:** TestFlight'ta 1.0.0 (20261018.1724, sanalyer merge'ü: sınırlı fotoğraf erişimi, topluluk önizleme menüsü), iç test grubu "pirichat ekibi" (selimdoyranli@gmail.com).
   App Store Connect'te uygulama `pirichat` (Apple ID 6823670202): Türkçe açıklama, anahtar kelimeler,
   altyazı, gizlilik bağlantısı, iPhone 6.9" ve iPad 13" ekran görüntüleri yüklü. İncelemeye
   gönderilmedi.
 - **Android:** Play Console'da `pirichat` (online.pirichat.mobile). Dahili test ve kapalı test (Alpha)
-  kanallarında 1.0.0 (2) yayında; ilk inceleme geçti, yeni sürümler artık taslak değil doğrudan
+  kanallarında 1.0.0 (3) yayında; ilk inceleme geçti, yeni sürümler artık taslak değil doğrudan
   yayına alınabiliyor. Test listesi
   "pirichat kapali test". Mağaza girişi Türkçe, kategori Haberleşme, tüm uygulama içeriği
   beyanları dolu. Ön plan hizmeti beyanının videosu `docs/media/pirichat-arka-plan-hizmetleri.mp4`.
